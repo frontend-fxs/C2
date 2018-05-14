@@ -1,6 +1,6 @@
 {{#tradeable}}
 es tradeable
 {{/tradeable}}
-{{!tradeable}}
+{{^tradeable}}
 no es tradeable
 {{/tradeable}}

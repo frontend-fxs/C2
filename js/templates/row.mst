@@ -1,4 +1,2 @@
-<script id="row" type="x-tmpl-mustache">
         row template loaded
         {{name}}
-        </script>

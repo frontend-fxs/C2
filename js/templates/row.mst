@@ -1,2 +1,6 @@
-        row template loaded
-        {{name}}
+{{#tradeable}}
+es tradeable
+{{/tradeable}}
+{{!tradeable}}
+no es tradeable
+{{/tradeable}}

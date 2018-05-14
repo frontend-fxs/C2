@@ -1,18 +1,8 @@
-var init = function(json){
-  setSettingsByObject(json);
+var init = function(){
   setVars();
   render();
   addEvents();
 };
-var setSettingsByObject = function (json) {
-  for (var propName in json)  {
-    if (json.hasOwnProperty(propName))  {
-      if (this[propName] !== undefined)  {
-        this[propName] = json[propName]; 
-      }
-    }
-  }
-}
 var setVars = function () {}
 var render = function () {
   $.get('./templates/row.mst', function(template) {
@@ -22,5 +12,4 @@ var render = function () {
   });
 } 
 var addEvents = function () { }; 
-var json = {}; 
-init(json);
+init();

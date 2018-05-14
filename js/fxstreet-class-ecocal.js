@@ -1,5 +1,7 @@
-var FXStreet = { Class:{} };
 (function() {
+
+  var FXStreet = { Class:{} };
+
   FXStreet.Class.EcoCal = function () {
     var _this = this;
 
@@ -33,4 +35,9 @@ var FXStreet = { Class:{} };
 
     };
   }
+
+  var json = {};
+  
+  FXStreet.Class.EcoCal.init(json);
+
 }())

@@ -30,7 +30,7 @@ var FXStreet = {
       Mustache.parse(template);
       var rendered = Mustache.render(template,{name:'Oriol'} );
       $('#targetRender').html(rendered);
-    }
+    });
 
     _this.addEvents = function () {}
   }

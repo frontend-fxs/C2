@@ -24,7 +24,7 @@
     _this.render = function () {
         var templateRow = _this.get('./templates/row.html');
         var json = {
-            name : "oriol";
+            name : "oriol"
         }
         console.log(templateRow);
         var html = Mustache.to_html(templateRow, json);

@@ -1,4 +1,4 @@
-(function() {
+function() {
 
   var FXStreet = { Class:{} };
 
@@ -40,4 +40,4 @@
   
   FXStreet.Class.EcoCal.init(json);
 
-}())
+}

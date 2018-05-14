@@ -1,5 +1,5 @@
 {{#tradeable}}
-es tradeable
+<div class="fxs_star_icon"></div>
 {{/tradeable}}
 {{^tradeable}}
 no es tradeable

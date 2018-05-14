@@ -5,6 +5,7 @@ var FXStreet = {
   FXStreet.Class.EcoCal = function () {
     var _this = this
 
+
     _this.init = function (json) {
       _this.setSettingsByObject(json)
       _this.setVars()
@@ -25,30 +26,10 @@ var FXStreet = {
     _this.setVars = function () {}
 
     _this.render = function () {
-        var templateRow = _this.get('https://frontend-fxs.github.io/C2/js/templates/row.mst');
-        var json = {
-            name : "oriol"
-        }
-        console.log(templateRow);
-        var html = Mustache.to_html(templateRow, json);
-        document.querySelector("#targetRender").innerHtml += html;
-    }
-
-    _this.get = function (file) {
-      var request = new XMLHttpRequest();
-      request.open('GET', file, true);
-      request.onload = function() {
-        if (request.status >= 200 && request.status < 400) {
-          var resp = request.responseText;
-          return resp;
-        }
-      };
-      
-      request.onerror = function() {
-        console.log('error loading file');
-      };
-      
-      request.send();
+      $.get('./templates/row.mst', function(template) {
+      Mustache.parse(template);
+      var rendered = Mustache.render(template,{name:'Oriol'} );
+      $('#targetRender').html(rendered);
     }
 
     _this.addEvents = function () {}

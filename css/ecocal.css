@@ -1,4 +1,4 @@
-#fxs_star_icon {
+.fxs_star_icon {
     margin: 50px 0;
     position: relative;
     display: block;
@@ -13,7 +13,7 @@
     -ms-transform:     rotate(35deg);
     -o-transform:      rotate(35deg);
  }
- #fxs_star_icon:before {
+ .fxs_star_icon:before {
     border-bottom: 8.0px solid red;
     border-left: 3.0px solid transparent;
     border-right: 3.0px solid transparent;
@@ -30,7 +30,7 @@
     -o-transform:      rotate(-35deg);
  
  }
- #fxs_star_icon:after {
+ .fxs_star_icon:after {
     position: absolute;
     display: block;
     color: red;

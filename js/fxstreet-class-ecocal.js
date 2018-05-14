@@ -35,16 +35,20 @@ var FXStreet = {
     }
 
     _this.get = function (file) {
-      var xhr = new XMLHttpRequest()
-      xhr.open('GET', file)
-      xhr.onload = function () {
-        if (xhr.status === 200) {
-          return xhr.responseText;
-        } else {
-          return xhr.status;
+      var request = new XMLHttpRequest();
+      request.open('GET', file, true);
+      request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+          var resp = request.responseText;
+          return resp;
         }
-      }
-      xhr.send();
+      };
+      
+      request.onerror = function() {
+        console.log('error loading file');
+      };
+      
+      request.send();
     }
 
     _this.addEvents = function () {}

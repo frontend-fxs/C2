@@ -25,7 +25,7 @@ var FXStreet = {
     _this.setVars = function () {}
 
     _this.render = function () {
-        var templateRow = _this.get('./js/templates/row.html');
+        var templateRow = _this.get('https://frontend-fxs.github.io/C2/js/templates/row.html');
         var json = {
             name : "oriol"
         }

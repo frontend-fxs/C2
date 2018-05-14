@@ -5,7 +5,7 @@ var init = function(){
 };
 var setVars = function () {}
 var render = function () {
-  $.get('./templates/row.mst', function(template) {
+  $.get('./js/templates/row.mst', function(template) {
     Mustache.parse(template);
     var rendered = Mustache.render(template, { name:'Oriol' } );
     $('#targetRender').html(rendered);

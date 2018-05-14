@@ -1,27 +1,27 @@
-.fxs_star_icon {
+#star-five {
     margin: 50px 0;
     position: relative;
     display: block;
     color: red;
     width: 0px;
     height: 0px;
-    border-right:  10px solid transparent;
-    border-bottom: 7px  solid red;
-    border-left:   10px solid transparent;
+    border-right:  100px solid transparent;
+    border-bottom: 70px  solid red;
+    border-left:   100px solid transparent;
     -moz-transform:    rotate(35deg);
     -webkit-transform: rotate(35deg);
     -ms-transform:     rotate(35deg);
     -o-transform:      rotate(35deg);
  }
- .fxs_star_icon:before {
-    border-bottom: 9px solid red;
-    border-left: 3px solid transparent;
-    border-right: 3px solid transparent;
+.fxs_star_icon:before {
+    border-bottom: 80px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
     position: absolute;
     height: 0;
     width: 0;
-    top: -5px;
-    left: -6.5px;
+    top: -45px;
+    left: -65px;
     display: block;
     content: '';
     -webkit-transform: rotate(-35deg);
@@ -30,17 +30,17 @@
     -o-transform:      rotate(-35deg);
  
  }
- .fxs_star_icon:after {
+.fxs_star_icon:after {
     position: absolute;
     display: block;
     color: red;
-    top: .3px;
-    left: -10.5px;
+    top: 3px;
+    left: -105px;
     width: 0px;
     height: 0px;
-    border-right: 10px solid transparent;
-    border-bottom: 7px solid red;
-    border-left: 10px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
     -webkit-transform: rotate(-70deg);
     -moz-transform:    rotate(-70deg);
     -ms-transform:     rotate(-70deg);

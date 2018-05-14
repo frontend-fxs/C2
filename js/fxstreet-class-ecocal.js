@@ -1,23 +1,20 @@
-var FXStreet = {
-    Class:{}
-};
-(function () {
+var FXStreet = { Class:{} };
+function () {
   FXStreet.Class.EcoCal = function () {
-    var _this = this
-
+    var _this = this;
 
     _this.init = function (json) {
-      _this.setSettingsByObject(json)
-      _this.setVars()
-      _this.render()
-      _this.addEvents()
+      _this.setSettingsByObject(json);
+      _this.setVars();
+      _this.render();
+      _this.addEvents();
     }
 
     _this.setSettingsByObject = function (json) {
       for (var propName in json) {
         if (json.hasOwnProperty(propName)) {
           if (this[propName] !== undefined) {
-            this[propName] = json[propName]
+            this[propName] = json[propName];
           }
         }
       }
@@ -32,6 +29,8 @@ var FXStreet = {
       $('#targetRender').html(rendered);
     });
 
-    _this.addEvents = function () {}
+    _this.addEvents = function () {
+
+    };
   }
-})()
+}

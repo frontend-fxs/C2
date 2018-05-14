@@ -1,6 +1,5 @@
 var FXStreet = {
-    Class:{
-    }
+    Class:{}
 };
 (function () {
   FXStreet.Class.EcoCal = function () {

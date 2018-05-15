@@ -14,8 +14,7 @@
       </defs>
       <polygon points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" fill="url(#starGradient)" />
     </svg>
-    {{/Tradeable}}
-    {{^Tradeable}}
+    {{/Tradeable}} {{^Tradeable}}
     <span class="fa fa-chevron-down"></span>
     {{/Tradeable}}
   </div>
@@ -24,21 +23,17 @@
   </div>
   <div class="fxs_ecocal_event_row_volatility">
     {{#VolatilityLevel1}}
-    <svg height="400" width="450">
-      <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="5" fill="none" />
+    <svg height="60" width="60">
+        <path d="M 30 30 C 0,30 30,60 60,30" stroke="blue" stroke-width="5" fill="none" />
     </svg>
-    {{/VolatilityLevel1}}
-    {{#VolatilityLevel2}}
-    <svg height="400" width="450">
-        <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="5" fill="none" />
-      </svg>
-  
-    {{/VolatilityLevel2}}
-    {{#VolatilityLevel3}}
-    <svg height="400" width="450">
-        <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="5" fill="none" />
-      </svg>
-  
+    {{/VolatilityLevel1}} {{#VolatilityLevel2}}
+    <svg height="600" width="60">
+        <path d="M 30 30 C 0,30 30,60 60,30" stroke="blue" stroke-width="5" fill="none" />
+    </svg>
+    {{/VolatilityLevel2}} {{#VolatilityLevel3}}
+    <svg height="600" width="60">
+        <path d="M 30 30 C 0,30 30,60 60,30" stroke="blue" stroke-width="5" fill="none" />
+    </svg>
     {{/VolatilityLevel3}}
   </div>
 </div>

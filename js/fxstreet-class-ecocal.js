@@ -22,7 +22,7 @@ var event = {
     TimeStampString: function(){
       return this.End.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit',hour12: false})
     },
-    CountdownString: function(){
+    CountdownString: function(this){
       switch (true) {
         case this.CountdownMilliseconds() <= 0:
           countdownString = Translations.Now

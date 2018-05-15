@@ -1,5 +1,5 @@
 {{#tradeable}}
-<svg height="210" width="500">
+<svg height="21" width="50">
   <defs>
     <linearGradient id="starGradient" x1="0%" y1="100%" x2="100%" y1="0%" >
       <stop offset="0%" stop-color="#e4871b">
@@ -10,6 +10,6 @@
       </stop>
     </linearGradient>
   </defs>
-  <polygon points="100,10 40,198 190,78 10,78 160,198" fill="url(#starGradient)" />
+  <polygon points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" fill="url(#starGradient)" />
 </svg>
 {{/tradeable}} {{^tradeable}} no es tradeable {{/tradeable}}

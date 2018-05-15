@@ -13,7 +13,7 @@ var event = {
     var countdownMilliseconds = end.getTime() - now.getTime()
     var countdownSeconds = parseInt(countdownMilliseconds / 1000)
     var countdownMinutes = parseInt(countdownMilliseconds / 1000 * 60)
-    var TimeStampString = end.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit' })
+    var TimeStampString = end.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit',hour12: false})
     var countdownString = ''
     switch (true) {
       case countdownMilliseconds <= 0:

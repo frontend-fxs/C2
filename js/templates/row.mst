@@ -1,5 +1,8 @@
 {{#tradeable}}
-<div class="fxs_star_icon"></div>
+<svg height="21" width="50">
+  <polygon points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" style="fill:#e4871b;"/>
+  Sorry, your browser does not support inline SVG.
+</svg>
 {{/tradeable}}
 {{^tradeable}}
 no es tradeable

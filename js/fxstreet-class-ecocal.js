@@ -22,19 +22,19 @@ var event = {
     TimeStampString: function(){
       return this.End.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit',hour12: false})
     },
-    CountdownString: function(this){
+    CountdownString: function(){
       switch (true) {
-        case this.CountdownMilliseconds() <= 0:
+        case self.CountdownMilliseconds() <= 0:
           countdownString = Translations.Now
           break
-        case this.CountdownMilliseconds() < 60000:
-          countdownString = Translations.In + this.CountdownSeconds() + Translations.SecondsLabel
+        case self.CountdownMilliseconds() < 60000:
+          countdownString = Translations.In + self.CountdownSeconds() + Translations.SecondsLabel
           break
-        case this.CountdownMilliseconds() < 3600000:
-          countdownString = Translations.In + this.CountdownMinutes() + Translations.MinutesLabel
+        case self.CountdownMilliseconds() < 3600000:
+          countdownString = Translations.In + self.CountdownMinutes() + Translations.MinutesLabel
           break
         default:
-          countdownString = this.TimeStampString()
+          countdownString = self.TimeStampString()
           break
       }
       return countdownString;

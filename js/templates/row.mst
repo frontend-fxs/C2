@@ -7,7 +7,7 @@
         <animate attributeName="offset" values="1;0" dur="2s" repeatCount="indefinite" />    
       </stop>
       <stop offset="100%"  stop-color="#000000">
-        <animate attributeName="stop-color" values="#e4871b;#000000" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="stop-color" values="#000000;#e4871b" dur="2s" repeatCount="indefinite" />
         <animate attributeName="offset" values="1;0" dur="2s" repeatCount="indefinite" />    
       </stop>
     </linearGradient>

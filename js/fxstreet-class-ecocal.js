@@ -39,7 +39,7 @@ var event = {
       }
       return countdownString;
     }
-  },
+  }.call(this),
   Volatility: 0,
   Title: 'event title',
   Flag: 'flagname',

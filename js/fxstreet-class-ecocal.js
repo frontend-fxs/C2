@@ -44,7 +44,10 @@ var countDown = getCountDownString(time)
 var ecoCalEvent = {
   Tradeable: true,
   CountDown: countDown,
-  Volatility: 0,
+  VolatilityLevel0:false,
+  VolatilityLevel1:true,
+  VolatilityLevel2:false,
+  VolatilityLevel3:false,
   Title: 'event title',
   Flag: 'flagname',
   Actual: 27,

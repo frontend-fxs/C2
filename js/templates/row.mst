@@ -22,4 +22,23 @@
   <div class="fxs_ecocal_event_row_time">
     {{CountDown}}
   </div>
+  <div class="fxs_ecocal_event_row_volatility">
+    {{#VolatilityLevel1}}
+    <svg height="400" width="450">
+      <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="5" fill="none" />
+    </svg>
+    {{/VolatilityLevel1}}
+    {{#VolatilityLevel2}}
+    <svg height="400" width="450">
+        <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="5" fill="none" />
+      </svg>
+  
+    {{/VolatilityLevel2}}
+    {{#VolatilityLevel3}}
+    <svg height="400" width="450">
+        <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="5" fill="none" />
+      </svg>
+  
+    {{/VolatilityLevel3}}
+  </div>
 </div>

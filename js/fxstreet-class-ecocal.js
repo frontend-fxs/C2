@@ -6,30 +6,30 @@ var Translations = {
   TimeStampSeparator: ':'
 }
 var event = {
-  Tradeable: false,
+  Tradeable: true,
   Time: function () {
-    var end = new Date(2018, 5, 15, 14, 25, 0, 0)
-    var now = new Date()
-    var countdownMilliseconds = end.getTime() - now.getTime()
-    var countdownSeconds = parseInt(countdownMilliseconds / 1000)
-    var countdownMinutes = parseInt(countdownMilliseconds / 1000 * 60)
-    var TimeStampString = end.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit',hour12: false})
-    var countdownString = ''
+    this.end = new Date(2018, 5, 15, 14, 25, 0, 0)
+    this.now = new Date()
+    this.CountdownMilliseconds = end.getTime() - now.getTime()
+    this.CountdownSeconds = parseInt(this.CountdownMilliseconds / 1000)
+    this.CountdownMinutes = parseInt(this.CountdownMilliseconds / 1000 * 60)
+    this.TimeStampString = end.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit',hour12: false})
+    this.CountdownString = ''
     switch (true) {
-      case countdownMilliseconds <= 0:
-        countdownString = Translations.Now
+      case this.CountdownMilliseconds <= 0:
+        this.CountdownString = Translations.Now
         break
-      case countdownMilliseconds < 60000:
-        countdownString = Translations.In + countdownSeconds + Translations.SecondsLabel
+      case this.CountdownMilliseconds < 60000:
+        this.CountdownString = Translations.In + this.CountdownSeconds + Translations.SecondsLabel
         break
-      case countdownMilliseconds < 3600000:
-        countdownString = Translations.In + countdownMinutes + Translations.MinutesLabel
+      case this.CountdownMilliseconds < 3600000:
+        this.CountdownString = Translations.In + this.CountdownMinutes + Translations.MinutesLabel
         break
       default:
-        countdownString = TimeStampString
+        this.CountdownString = this.TimeStampString
         break
     }
-    return countdownString;
+    return this.CountdownString;
   },
   Volatility: 0,
   Title: 'event title',

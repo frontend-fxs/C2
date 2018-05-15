@@ -30,6 +30,7 @@ var event = {
         countdownString = TimeStampString
         break
     }
+    return countdownString;
   },
   Volatility: 0,
   Title: 'event title',

@@ -5,7 +5,7 @@
       <stop style="stop-color:#e4871b;">
         <animate attributeName="offset" values="0;1" dur="1s" repeatCount="indefinite" />
       </stop>
-      <stop class="fxs_end_star_gradient" style="stop-color:#000000;">
+      <stop style="stop-color:#000000;">
         <animate attributeName="offset" values="0;1" dur="1s" repeatCount="indefinite" />
       </stop>
     </linearGradient>

@@ -1,17 +1,15 @@
 {{#tradeable}}
 <svg height="210" width="500">
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%"  stop-color="#e4871b">
-        <animate attributeName="stop-color" values="#000000;#e4871b" dur="2s" repeatCount="indefinite" />
-        <animate attributeName="offset" values="0;1" dur="2s" repeatCount="indefinite" />    
+    <linearGradient id="starGradient" x1="0%" y1="100%" x2="100%" y1="0%" >
+      <stop offset="0%" stop-color="#e4871b">
+        <animate attributeName="stop-color" values="#e4871b; #000000" dur="3s" fill="freeze" />
       </stop>
-      <stop offset="100%"  stop-color="#e4871b">
-        <animate attributeName="stop-color" values="#000000;#e4871b" dur="2s" repeatCount="indefinite" />
-        <animate attributeName="offset" values="0;1" dur="2s" repeatCount="indefinite" />    
+      <stop offset="100%" stop-color="#000000">
+      <animate attributeName="stop-color" values="#000000; #e4871b" dur="3s" fill="freeze" />
       </stop>
     </linearGradient>
   </defs>
-  <polygon points="100,10 40,198 190,78 10,78 160,198" fill="url(#grad1)" />
+  <polygon points="100,10 40,198 190,78 10,78 160,198" fill="url(#starGradient)" />
 </svg>
 {{/tradeable}} {{^tradeable}} no es tradeable {{/tradeable}}

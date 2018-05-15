@@ -7,29 +7,38 @@ var Translations = {
 }
 var event = {
   Tradeable: true,
-  Time: function () {
-    this.End = new Date(2018, 5, 15, 14, 25, 0, 0)
-    this.Now = new Date()
-    this.CountdownMilliseconds = this.End.getTime() - this.Now.getTime()
-    this.CountdownSeconds = parseInt(this.CountdownMilliseconds / 1000)
-    this.CountdownMinutes = parseInt(this.CountdownMilliseconds / 1000 * 60)
-    this.TimeStampString = this.End.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit',hour12: false})
-    this.CountdownString = ''
-    switch (true) {
-      case this.CountdownMilliseconds <= 0:
-        this.CountdownString = Translations.Now
-        break
-      case this.CountdownMilliseconds < 60000:
-        this.CountdownString = Translations.In + this.CountdownSeconds + Translations.SecondsLabel
-        break
-      case this.CountdownMilliseconds < 3600000:
-        this.CountdownString = Translations.In + this.CountdownMinutes + Translations.MinutesLabel
-        break
-      default:
-        this.CountdownString = this.TimeStampString
-        break
+  Time: {
+    End: new Date(2018, 5, 15, 14, 25, 0, 0),
+    Now: new Date(),
+    CountdownMilliseconds: function(){
+      return this.End.getTime() - this.Now.getTime()
+    },
+    CountdownSeconds:function(){
+      return parseInt(this.CountdownMilliseconds / 1000)
+    },
+    CountdownMinutes:function(){
+      return parseInt(this.CountdownMilliseconds / 1000 * 60)
+    },
+    TimeStampString: function(){
+      return this.End.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit',hour12: false})
+    },
+    CountdownString: function(){
+      switch (true) {
+        case this.CountdownMilliseconds <= 0:
+          countdownString = Translations.Now
+          break
+        case this.CountdownMilliseconds < 60000:
+          countdownString = Translations.In + this.CountdownSeconds + Translations.SecondsLabel
+          break
+        case this.CountdownMilliseconds < 3600000:
+          countdownString = Translations.In + this.CountdownMinutes + Translations.MinutesLabel
+          break
+        default:
+          countdownString = this.TimeStampString
+          break
+      }
+      return countdownString;
     }
-    return this.CountdownString;
   },
   Volatility: 0,
   Title: 'event title',

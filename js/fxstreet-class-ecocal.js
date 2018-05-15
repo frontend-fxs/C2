@@ -24,22 +24,22 @@ var event = {
     },
     CountdownString: function(){
       switch (true) {
-        case parent.CountdownMilliseconds() <= 0:
+        case Parent.CountdownMilliseconds() <= 0:
           countdownString = Translations.Now
           break
-        case parent.CountdownMilliseconds() < 60000:
-          countdownString = Translations.In + parent.CountdownSeconds() + Translations.SecondsLabel
+        case Parent.CountdownMilliseconds() < 60000:
+          countdownString = Translations.In + Parent.CountdownSeconds() + Translations.SecondsLabel
           break
-        case parent.CountdownMilliseconds() < 3600000:
-          countdownString = Translations.In + parent.CountdownMinutes() + Translations.MinutesLabel
+        case Parent.CountdownMilliseconds() < 3600000:
+          countdownString = Translations.In + Parent.CountdownMinutes() + Translations.MinutesLabel
           break
         default:
-          countdownString = parent.TimeStampString()
+          countdownString = Parent.TimeStampString()
           break
       }
       return countdownString;
     }
-  }.call(this),
+  },
   Volatility: 0,
   Title: 'event title',
   Flag: 'flagname',

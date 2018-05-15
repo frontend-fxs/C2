@@ -1,14 +1,44 @@
+var Translations = {
+  In: 'in ',
+  Now: 'NOW',
+  SecondsLabel: '"',
+  MinutesLabel: "'",
+  TimeStampSeparator: ':'
+}
 var event = {
-  tradeable: false,
-  time: new Date(),
-  volatility: 0,
-  title: 'event title',
-  flag: 'flagname',
-  actual: 27,
-  deviation: 107,
-  consensus: 107,
-  previous: -1.7,
-  dashboardLink: 'google.es'
+  Tradeable: false,
+  Time: function () {
+    var end = new Date(2018, 5, 15, 12, 25, 0, 0)
+    var now = new Date()
+    var countdownMilliseconds = end.getTime() - now.getTime()
+    var countdownSeconds = parseInt(countdownMilliseconds / 1000)
+    var countdownMinutes = parseInt(countdownMilliseconds / 1000 * 60)
+    var TimeStampString = end.toLocaleTimeString('en-us', { month: 'short', day: 'numeric' })
+    var dateString = end.toLocaleTimeString('en-us', { month: 'short', day: 'numeric' })
+    var countdownString = ''
+    switch (true) {
+      case countdownMilliseconds <= 0:
+        countdownString = Translations.Now
+        break
+      case countdownMilliseconds < 60000:
+        countdownString = Translations.In + countdownSeconds + Translations.SecondsLabel
+        break
+      case countdownMilliseconds < 3600000:
+        countdownString = Translations.In + countdownMinutes + Translations.MinutesLabel
+        break
+      default:
+        countdownString = TimeStampString
+        break
+    }
+  },
+  Volatility: 0,
+  Title: 'event title',
+  Flag: 'flagname',
+  Actual: 27,
+  Deviation: 107,
+  Consensus: 107,
+  Previous: -1.7,
+  DashboardLink: 'google.es'
 }
 
 $.get('https://frontend-fxs.github.io/C2/js/templates/row.mst', function (template) {

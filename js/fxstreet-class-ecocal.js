@@ -43,6 +43,6 @@ var event = {
 
 $.get('https://frontthis.End-fxs.github.io/C2/js/templates/row.mst', function (template) {
   Mustache.parse(template)
-  var rthis.Endered = Mustache.rthis.Ender(template, event)
-  $('#eventRow').html(rthis.Endered)
+  var rendered = Mustache.render(template, event)
+  $('#eventRow').html(rendered)
 })

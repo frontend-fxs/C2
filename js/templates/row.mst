@@ -1,9 +1,9 @@
 {{#tradeable}}
 <svg height="210" width="500">
 <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#e4871b;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    <linearGradient id="grad1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" class="fxs_start_star_gradient"/>
+      <stop offset="100%" class="fxs_end_star_gradient"/>
     </linearGradient>
   </defs>
   <polygon points="100,10 40,198 190,78 10,78 160,198" fill="url(#grad1)"/>

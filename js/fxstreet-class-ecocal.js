@@ -8,7 +8,7 @@ var Translations = {
 var event = {
   Tradeable: false,
   Time: function () {
-    var end = new Date(2018, 5, 15, 12, 25, 0, 0)
+    var end = new Date(2018, 5, 15, 14, 25, 0, 0)
     var now = new Date()
     var countdownMilliseconds = end.getTime() - now.getTime()
     var countdownSeconds = parseInt(countdownMilliseconds / 1000)

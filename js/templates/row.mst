@@ -1,6 +1,6 @@
 {{#tradeable}}
-<svg height="21" width="50">
-  <polygon points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" style="fill:#e4871b;"/>
+<svg height="210" width="500">
+  <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:#e4871b;"/>
   Sorry, your browser does not support inline SVG.
 </svg>
 {{/tradeable}}

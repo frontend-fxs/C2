@@ -1,5 +1,5 @@
 var event = {
-  tradeable: true,
+  tradeable: false,
   time: new Date(),
   volatility: 0,
   title: 'event title',
@@ -14,5 +14,5 @@ var event = {
 $.get('https://frontend-fxs.github.io/C2/js/templates/row.mst', function (template) {
   Mustache.parse(template)
   var rendered = Mustache.render(template, event)
-  $('#targetRender').html(rendered)
+  $('#eventRow').html(rendered)
 })

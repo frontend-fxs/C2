@@ -2,11 +2,11 @@
 <svg height="210" width="500">
   <defs>
     <linearGradient id="grad1" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop style="stop-color:#e4871b;">
-        <animate attributeName="offset" values="0;1" dur="1s" repeatCount="indefinite" />
+      <stop offset="0%"  stop-color="#e4871b">
+        <animate attributeName="stop-color" values="#e4871b;#000000" dur="1s" repeatCount="indefinite" />
       </stop>
-      <stop style="stop-color:#000000;">
-        <animate attributeName="offset" values="0;1" dur="1s" repeatCount="indefinite" />
+      <stop offset="100%"  stop-color="#000000">
+        <animate attributeName="stop-color" values="#e4871b;#000000" dur="1s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
   </defs>

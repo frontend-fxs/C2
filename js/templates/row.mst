@@ -3,10 +3,10 @@
   <defs>
     <linearGradient id="starGradient" x1="0%" y1="100%" x2="100%" y1="0%" >
       <stop offset="0%" stop-color="#DEAF37">
-        <animate attributeName="stop-color" values="#DEAF37; #CF4836; #DEAF37" dur="3s" fill="freeze" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="#DEAF37; #CF4836; #DEAF37" dur="2s" fill="freeze" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#CF4836">
-      <animate attributeName="stop-color" values="#DEAF37; #CF4836; #DEAF37" dur="3s" fill="freeze" repeatCount="indefinite"/>
+      <animate attributeName="stop-color" values="#DEAF37; #CF4836; #DEAF37" dur="2s" fill="freeze" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
   </defs>

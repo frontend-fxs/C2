@@ -14,23 +14,23 @@ var event = {
       return this.End.getTime() - this.Now.getTime()
     },
     CountdownSeconds:function(){
-      return parseInt(this.CountdownMilliseconds / 1000)
+      return parseInt(this.CountdownMilliseconds() / 1000)
     },
     CountdownMinutes:function(){
-      return parseInt(this.CountdownMilliseconds / 1000 * 60)
+      return parseInt(this.CountdownMilliseconds() / 1000 * 60)
     },
     TimeStampString: function(){
       return this.End.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit',hour12: false})
     },
     CountdownString: function(){
       switch (true) {
-        case this.CountdownMilliseconds <= 0:
+        case this.CountdownMilliseconds() <= 0:
           countdownString = Translations.Now
           break
-        case this.CountdownMilliseconds < 60000:
+        case this.CountdownMilliseconds() < 60000:
           countdownString = Translations.In + this.CountdownSeconds() + Translations.SecondsLabel
           break
-        case this.CountdownMilliseconds < 3600000:
+        case this.CountdownMilliseconds() < 3600000:
           countdownString = Translations.In + this.CountdownMinutes() + Translations.MinutesLabel
           break
         default:

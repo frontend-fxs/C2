@@ -24,17 +24,17 @@ var event = {
     },
     CountdownString: function(){
       switch (true) {
-        case this.parent.CountdownMilliseconds() <= 0:
+        case parent.CountdownMilliseconds() <= 0:
           countdownString = Translations.Now
           break
-        case this.parent.CountdownMilliseconds() < 60000:
-          countdownString = Translations.In + this.parent.CountdownSeconds() + Translations.SecondsLabel
+        case parent.CountdownMilliseconds() < 60000:
+          countdownString = Translations.In + parent.CountdownSeconds() + Translations.SecondsLabel
           break
-        case this.parent.CountdownMilliseconds() < 3600000:
-          countdownString = Translations.In + this.parent.CountdownMinutes() + Translations.MinutesLabel
+        case parent.CountdownMilliseconds() < 3600000:
+          countdownString = Translations.In + parent.CountdownMinutes() + Translations.MinutesLabel
           break
         default:
-          countdownString = this.parent.TimeStampString()
+          countdownString = parent.TimeStampString()
           break
       }
       return countdownString;

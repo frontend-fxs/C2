@@ -8,7 +8,7 @@ var Translations = {
 var event = {
   Tradeable: true,
   Time: {
-    End: new Date(2018, 5, 15, 14, 25, 0, 0),
+    End: new Date(2018, 4, 15, 14, 25, 0, 0),
     Now: new Date(),
     CountdownMilliseconds: function(){
       return this.End.getTime() - this.Now.getTime()

@@ -8,38 +8,13 @@ var Translations = {
 var event = {
   Tradeable: true,
   Time: {
-    End: new Date(2018, 4, 15, 14, 25, 0, 0),
-    Now: new Date(),
-    CountdownMilliseconds: function(){
-      return this.End.getTime() - this.Now.getTime()
-    },
-    CountdownSeconds:function(){
-      return parseInt(this.CountdownMilliseconds() / 1000)
-    },
-    CountdownMinutes:function(){
-      return parseInt(this.CountdownMilliseconds() / 1000 * 60)
-    },
-    TimeStampString: function(){
-      return this.End.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit',hour12: false})
-    },
-    CountdownString: function(){
-      switch (true) {
-        case super.CountdownMilliseconds() <= 0:
-          countdownString = Translations.Now
-          break
-        case super.CountdownMilliseconds() < 60000:
-          countdownString = Translations.In + super.CountdownSeconds() + Translations.SecondsLabel
-          break
-        case super.CountdownMilliseconds() < 3600000:
-          countdownString = Translations.In + super.CountdownMinutes() + Translations.MinutesLabel
-          break
-        default:
-          countdownString = super.TimeStampString()
-          break
-      }
-      return countdownString;
-    }
+    Year: 2018,
+    Month: 4,
+    Day: 15,
+    Hour: 17,
+    Minute: 45
   },
+  CountDown: getTime(this.Time),
   Volatility: 0,
   Title: 'event title',
   Flag: 'flagname',
@@ -48,6 +23,35 @@ var event = {
   Consensus: 107,
   Previous: -1.7,
   DashboardLink: 'google.es'
+}
+
+var getTime = function (time) {
+  var end = new Date(time.year, time.month, time.day, time.hour, time.minute)
+  var now = new Date()
+  var countdownString = calcCountDownString(end,now)
+  return countdownString
+}
+var calcCountDownString = function (end,now) {
+  var countdownMilliseconds = end.getTime() - now.getTime()
+  var countdownSeconds = parseInt(countdownMilliseconds / 1000)
+  var countdownMinutes = parseInt(countdownMilliseconds / 1000 * 60)
+  var timeStampString = end.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit', hour12: false })
+  var countdownString = "";
+  switch (true) {
+    case countdownMilliseconds <= 0:
+      countdownString = Translations.Now
+      break
+    case countdownMilliseconds < 60000:
+      countdownString = Translations.In + countdownSeconds + Translations.SecondsLabel
+      break
+    case countdownMilliseconds < 3600000:
+      countdownString = Translations.In + countdownMinutes + Translations.MinutesLabel
+      break
+    default:
+      countdownString = timeStampString
+      break
+  }
+  return countdownString
 }
 
 $.get('https://frontend-fxs.github.io/C2/js/templates/row.mst', function (template) {

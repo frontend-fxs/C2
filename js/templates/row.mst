@@ -20,6 +20,6 @@
     {{/Tradeable}}
   </div>
   <div class="fxs_ecocal_event_row_time">
-    {{Time.CountdownString}}
+    {{CountDown}}
   </div>
 </div>

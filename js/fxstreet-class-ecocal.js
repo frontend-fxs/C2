@@ -8,12 +8,12 @@ var Translations = {
 var event = {
   Tradeable: true,
   Time: function () {
-    this.end = new Date(2018, 5, 15, 14, 25, 0, 0)
-    this.now = new Date()
-    this.CountdownMilliseconds = end.getTime() - now.getTime()
+    this.End = new Date(2018, 5, 15, 14, 25, 0, 0)
+    this.Now = new Date()
+    this.CountdownMilliseconds = this.End.getTime() - this.Now.getTime()
     this.CountdownSeconds = parseInt(this.CountdownMilliseconds / 1000)
     this.CountdownMinutes = parseInt(this.CountdownMilliseconds / 1000 * 60)
-    this.TimeStampString = end.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit',hour12: false})
+    this.TimeStampString = this.End.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit',hour12: false})
     this.CountdownString = ''
     switch (true) {
       case this.CountdownMilliseconds <= 0:
@@ -41,8 +41,8 @@ var event = {
   DashboardLink: 'google.es'
 }
 
-$.get('https://frontend-fxs.github.io/C2/js/templates/row.mst', function (template) {
+$.get('https://frontthis.End-fxs.github.io/C2/js/templates/row.mst', function (template) {
   Mustache.parse(template)
-  var rendered = Mustache.render(template, event)
-  $('#eventRow').html(rendered)
+  var rthis.Endered = Mustache.rthis.Ender(template, event)
+  $('#eventRow').html(rthis.Endered)
 })

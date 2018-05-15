@@ -35,7 +35,7 @@ var calcCountDownString = function (end, now) {
   return countdownString
 }
 var getCountDownString = function (time) {
-  var end = new Date(time.year, time.month, time.day, time.hour, time.minute)
+  var end = new Date(time.Year, time.Month, time.Day, time.Hour, time.Minute)
   var now = new Date()
   var countdownString = calcCountDownString(end, now)
   return countdownString

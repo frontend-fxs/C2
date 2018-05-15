@@ -28,13 +28,13 @@ var event = {
           countdownString = Translations.Now
           break
         case this.CountdownMilliseconds < 60000:
-          countdownString = Translations.In + this.CountdownSeconds + Translations.SecondsLabel
+          countdownString = Translations.In + this.CountdownSeconds() + Translations.SecondsLabel
           break
         case this.CountdownMilliseconds < 3600000:
-          countdownString = Translations.In + this.CountdownMinutes + Translations.MinutesLabel
+          countdownString = Translations.In + this.CountdownMinutes() + Translations.MinutesLabel
           break
         default:
-          countdownString = this.TimeStampString
+          countdownString = this.TimeStampString()
           break
       }
       return countdownString;

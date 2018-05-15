@@ -6,7 +6,7 @@
       <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <polygon points="100,10 40,198 190,78 10,78 160,198"/>
+  <polygon points="100,10 40,198 190,78 10,78 160,198" fill="url(#grad1)"/>
 </svg>
 {{/tradeable}}
 {{^tradeable}}

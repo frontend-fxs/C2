@@ -4,6 +4,7 @@
 .fxs_ecocal_event_row_item {
 	padding: 5px;
 	float: left;
+	line-height: 40px;
 }
 .fxs_ecocal_event_row_item.tradeable {
 }

@@ -1,5 +1,8 @@
 .fxs_ecocal_event_row {
 	cursor: pointer;
+	width: 100%;
+	clear: both;
+	float: left;
 }
 .fxs_ecocal_event_row_item {
 	padding: 5px;
@@ -86,4 +89,9 @@
 }
 
 .fxs_ecocal_event_row_item.expandable {
+}
+.fxs_ecocal_event_collapsible{
+	width: 100%;
+	clear: both;
+	float: left;
 }

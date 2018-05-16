@@ -46,7 +46,7 @@
     <span class="fa fa-chevron-left" aria-hidden="true"  id="fxs_ecocal_event_row_chevron_left_{{Id}}"></span>
   </div>
 </div>
-<div id="fxs_ecocal_event_collapsible_{{Id}}" class="fxs_hideElements">
+<div id="fxs_ecocal_event_collapsible_{{Id}}" class="fxs_ecocal_event_collapsible fxs_hideElements">
     Collapsed content 
     Collapsed content 
     Collapsed content 

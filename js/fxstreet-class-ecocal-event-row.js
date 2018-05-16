@@ -42,10 +42,10 @@ var EventRow = function(eventJson) {
   }
   var addEvents = function(){
 		$('[data-toggle="tooltip"]').tooltip();
-		$('#fxs_ecocal_event_row_' + ecoCalEvent.Id).click(function() {
-			$('#fxs_ecocal_event_collapsible_' + ecoCalEvent.Id).toggleClass('fxs_hideElements');
-			$('#fxs_ecocal_event_row_chevron_right_' + ecoCalEvent.Id).toggleClass('fa-chevron-right fa-chevron-down');
-			$('#fxs_ecocal_event_row_chevron_left_' + ecoCalEvent.Id).toggleClass('fa-chevron-left fa-chevron-down');
+		$('#fxs_ecocal_event_row_' + ecoCalEventJson.Id).click(function() {
+			$('#fxs_ecocal_event_collapsible_' + ecoCalEventJson.Id).toggleClass('fxs_hideElements');
+			$('#fxs_ecocal_event_row_chevron_right_' + ecoCalEventJson.Id).toggleClass('fa-chevron-right fa-chevron-down');
+			$('#fxs_ecocal_event_row_chevron_left_' + ecoCalEventJson.Id).toggleClass('fa-chevron-left fa-chevron-down');
 		});
   }
   var render = function(){

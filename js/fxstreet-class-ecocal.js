@@ -9,8 +9,8 @@ var time = {
   Year: 2018,
   Month: 4,
   Day: 16,
-  Hour: 15,
-  Minute: 50
+  Hour: 16,
+  Minute: 00
 }
 var calcCountDownString = function (end, now) {
   var countdownMilliseconds = end.getTime() - now.getTime()
@@ -78,5 +78,8 @@ $.get('https://frontend-fxs.github.io/C2/js/templates/row.mst', function (templa
   Mustache.parse(template)
   var rendered = Mustache.render(template, ecoCalEvent)
   $('#eventRow').html(rendered)
-  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="tooltip"]').tooltip()
+  $('fxs_ecocal_event_row_'+ecoCalEvent.Id).click(function(){
+    $('fxs_ecocal_event_collapsible_'+ecoCalEvent.Id).toggleClass('fxs_hideElements');
+  });
 })

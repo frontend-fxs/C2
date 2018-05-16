@@ -51,3 +51,20 @@
     {{/Expanded}}
   </div>
 </div>
+<div id="fxs_ecocal_event_collapsible_{{Id}}" class="fxs_hideElements">
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+    Collapsed content 
+  </div>

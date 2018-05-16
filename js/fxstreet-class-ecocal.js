@@ -79,4 +79,4 @@ $.get('https://frontend-fxs.github.io/C2/js/templates/row.mst', function (templa
   var rendered = Mustache.render(template, ecoCalEvent)
   $('#eventRow').html(rendered)
 })
-document.querySelector('[data-toggle="tooltip"]').tooltip();
+$('[data-toggle="tooltip"]').tooltip();

@@ -43,7 +43,7 @@ var getCountDownString = function (time) {
 var countDown = getCountDownString(time)
 var ecoCalEvent = {
   Id:1,
-  Tradeable: true,
+  Tradeable: false,
   CountDown: countDown,
   VolatilityLevel: { ImageURL: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Information_circle.png' },
   Flag: 'us',

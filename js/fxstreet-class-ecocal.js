@@ -43,17 +43,35 @@ var getCountDownString = function (time) {
 var countDown = getCountDownString(time)
 var ecoCalEvent = {
   Tradeable: true,
+  Expanded: true,
   CountDown: countDown,
-  VolatilityLevel0:false,
-  VolatilityLevel1:true,
-  VolatilityLevel2:false,
-  VolatilityLevel3:false,
-  Title: 'event title',
-  Flag: 'flagname',
-  Actual: 27,
-  Deviation: 107,
-  Consensus: 107,
-  Previous: -1.7,
+  VolatilityLevel: { ImageURL: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Information_circle.png' },
+  Flag: 'us',
+  Currency: 'EUR',
+  Title: 'CBI Distributive Trades Survey - Realized (MoM) (May)',
+  Actual: {
+    Value: '¥-9999.99B',
+    High: true,
+    Low: false,
+    Neutral: false
+  },
+  Deviation: {
+    Value: '-5.66%',
+    High: true,
+    Low: false,
+    Neutral: false
+  },
+  Consensus: '¥-9999.99B',
+  Previous: {
+    Value: '¥-9999.99B',
+    Revised: {
+      Tooltip: 'Revised From ',
+      Value: '¥-9999.99B',
+      High: true,
+      Low: false,
+      Neutral: false
+    }
+  },
   DashboardLink: 'google.es'
 }
 $.get('https://frontend-fxs.github.io/C2/js/templates/row.mst', function (template) {

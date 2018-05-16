@@ -1,39 +1,51 @@
 <div class="fxs_ecocal_event_row">
-  <div class="fxs_ecocal_event_row_tradeable">
-    {{#Tradeable}}
-    <svg height="21" width="50">
-      <defs>
-        <linearGradient id="starGradient" x1="0%" y1="100%" x2="100%" y1="0%">
-          <stop offset="0%" stop-color="#DEAF37">
-            <animate attributeName="stop-color" values="#DEAF37; #CF4836;" dur="2s" fill="freeze" repeatCount="indefinite" />
-          </stop>
-          <stop offset="100%" stop-color="#CF4836">
-            <animate attributeName="stop-color" values="#CF4836; #DEAF37" dur="2s" fill="freeze" repeatCount="indefinite" />
-          </stop>
-        </linearGradient>
-      </defs>
-      <polygon points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" fill="url(#starGradient)" />
-    </svg>
-    {{/Tradeable}} {{^Tradeable}}
-    <span class="fa fa-chevron-down"></span>
+  <div class="fxs_ecocal_event_row_item tradeable">
+    {{#Tradeable}} <span class="fa fa-star"></span> {{/Tradeable}}
+    {{^Tradeable}}
+    {{#Expanded}} <span class="fa fa-chevron-down" aria-hidden="true"></span> {{/Expanded}}
+    {{^Expanded}} <span class="fa fa-chevron-right" aria-hidden="true"></span> {{/Expanded}}
     {{/Tradeable}}
   </div>
-  <div class="fxs_ecocal_event_row_time">
+  <div class="fxs_ecocal_event_row_item time">
     {{CountDown}}
   </div>
-  <div class="fxs_ecocal_event_row_volatility">
-    {{#VolatilityLevel1}}
-    <svg height="60" width="60">
-        <path d="M 30 30 C 0,30 30,60 60,30" stroke="blue" stroke-width="5" fill="none" />
-    </svg>
-    {{/VolatilityLevel1}} {{#VolatilityLevel2}}
-    <svg height="600" width="60">
-        <path d="M 30 30 C 0,30 30,60 60,30" stroke="blue" stroke-width="5" fill="none" />
-    </svg>
-    {{/VolatilityLevel2}} {{#VolatilityLevel3}}
-    <svg height="600" width="60">
-        <path d="M 30 30 C 0,30 30,60 60,30" stroke="blue" stroke-width="5" fill="none" />
-    </svg>
-    {{/VolatilityLevel3}}
+  <div class="fxs_ecocal_event_row_item volatility">
+    {{#VolatilityLevel}} <img src="{{ImageURL}}" /> {{/VolatilityLevel}}
+  </div>
+  <div class="fxs_ecocal_event_row_item flag">
+    <span class="fxst-flag fxst-i-{{Flag}}"></span>
+  </div>
+  <div class="fxs_ecocal_event_row_item currency">
+    {{Currency}}
+  </div>
+  <div class="fxs_ecocal_event_row_item title">
+    {{Title}}
+  </div>
+  <div class="fxs_ecocal_event_row_item actual {{#Actual.High}}high{{/Actual.High}} {{#Actual.Low}}low{{/Actual.Low}}">
+    {{Actual.Value}}
+  </div>
+  <div class="fxs_ecocal_event_row_item deviation {{#Deviation.High}}high{{/Deviation.High}} {{#Deviation.Low}}low{{/Deviation.Low}}">
+    {{Deviation.Value}}
+  </div>
+  <div class="fxs_ecocal_event_row_item consensus">
+    {{Consensus}}
+  </div>
+  <div class="fxs_ecocal_event_row_item previous {{#Previous.Revised.High}}high{{/Previous.Revised.High}} {{#Previous.Revised.Low}}low{{/Previous.Revised.Low}}">
+    {{Previous.Value}}
+    {{#Previous.Revised}} <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-original-title="{{{Tooltip}}} {{Value}}">{{/Previous.Revised}}
+    </span>
+  </div>
+  <div class="fxs_ecocal_event_row_item dashboard">
+    <a href="{{DashboardLink}}">
+      <span class="fa fa-bar-chart" aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="fxs_ecocal_event_row_item caret_right">
+    {{#Expanded}}
+    <span class="fa fa-chevron-down" aria-hidden="true"></span>
+    {{/Expanded}}
+    {{^Expanded}}
+    <span class="fa fa-chevron-left" aria-hidden="true"></span>
+    {{/Expanded}}
   </div>
 </div>

@@ -8,9 +8,9 @@ var translations = {
 var time = {
   Year: 2018,
   Month: 4,
-  Day: 15,
-  Hour: 17,
-  Minute: 58
+  Day: 16,
+  Hour: 14,
+  Minute: 30
 }
 var calcCountDownString = function (end, now) {
   var countdownMilliseconds = end.getTime() - now.getTime()

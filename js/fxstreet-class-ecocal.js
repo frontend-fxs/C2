@@ -79,7 +79,7 @@ $.get('https://frontend-fxs.github.io/C2/js/templates/row.mst', function (templa
   var rendered = Mustache.render(template, ecoCalEvent)
   $('#eventRow').html(rendered)
   $('[data-toggle="tooltip"]').tooltip()
-  $('fxs_ecocal_event_row_'+ecoCalEvent.Id).click(function(){
-    $('fxs_ecocal_event_collapsible_'+ecoCalEvent.Id).toggleClass('fxs_hideElements');
+  $('#fxs_ecocal_event_row_'+ecoCalEvent.Id).click(function(){
+    $('#fxs_ecocal_event_collapsible_'+ecoCalEvent.Id).toggleClass('fxs_hideElements');
   });
 })

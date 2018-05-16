@@ -9,8 +9,8 @@ var time = {
   Year: 2018,
   Month: 4,
   Day: 16,
-  Hour: 14,
-  Minute: 30
+  Hour: 15,
+  Minute: 40
 }
 var calcCountDownString = function (end, now) {
   var countdownMilliseconds = end.getTime() - now.getTime()

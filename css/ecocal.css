@@ -12,7 +12,7 @@
 }
 
 .fxs_ecocal_event_row_item.volatility {
-    width: 60px;
+    width: 40px;
 }
 
 .fxs_ecocal_event_row_item.flag {
@@ -22,7 +22,7 @@
 }
 
 .fxs_ecocal_event_row_item.title {
-    max-width:calc(100% - 650px);
+    max-width:calc(100% - 600px);
 }
 
 .fxs_ecocal_event_row_item.actual {

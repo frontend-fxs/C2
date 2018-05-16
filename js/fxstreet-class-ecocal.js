@@ -44,7 +44,6 @@ var countDown = getCountDownString(time)
 var ecoCalEvent = {
   Id:1,
   Tradeable: true,
-  Expanded: true,
   CountDown: countDown,
   VolatilityLevel: { ImageURL: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Information_circle.png' },
   Flag: 'us',

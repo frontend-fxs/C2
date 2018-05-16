@@ -8,6 +8,48 @@
 }
 .fxs_ecocal_event_row_item.tradeable {
 }
+.fxs_ecocal_event_row_item.tradeable .fa {
+	color: #deaf37;
+}
+.fxs_ecocal_event_row_item.tradeable .fa.triggered {
+	-webkit-animation: colorchange 1s infinite;
+	-moz-animation: colorchange 1s infinite;
+	-o-animation: colorchange 1s infinite;
+	animation: colorchange 1s infinite;
+}
+
+@-webkit-keyframes colorchange {
+	0% {
+		color: #deaf37;
+	}
+	100% {
+		color: #cf4836;
+	}
+}
+@-moz-keyframes colorchange {
+	0% {
+		color: #deaf37;
+	}
+	100% {
+		color: #cf4836;
+	}
+}
+@-o-keyframes colorchange {
+	0% {
+		color: #deaf37;
+	}
+	100% {
+		color: #cf4836;
+	}
+}
+@keyframes colorchange {
+	0% {
+		color: #deaf37;
+	}
+	100% {
+		color: #cf4836;
+	}
+}
 
 .fxs_ecocal_event_row_item.time {
 }

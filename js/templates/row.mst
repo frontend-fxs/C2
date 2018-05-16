@@ -1,5 +1,5 @@
 <div class="fxs_ecocal_event_row" id="fxs_ecocal_event_row_{{Id}}">
-  <div class="fxs_ecocal_event_row_item tradeable">
+  <div class="fxs_ecocal_event_row_item tradeable triggered" id="fxs_ecocal_event_row_tradeable_{{Id}}">
     {{#Tradeable}}
     <span class="fa fa-star"></span> 
     {{/Tradeable}} 
@@ -23,16 +23,16 @@
   <div class="fxs_ecocal_event_row_item title">
     {{Title}}
   </div>
-  <div class="fxs_ecocal_event_row_item actual {{#Actual.High}}high{{/Actual.High}} {{#Actual.Low}}low{{/Actual.Low}}">
+  <div class="fxs_ecocal_event_row_item actual {{#Actual.High}}fxs_txt_success{{/Actual.High}} {{#Actual.Low}}fxs_txt_danger{{/Actual.Low}}">
     {{Actual.Value}}
   </div>
-  <div class="fxs_ecocal_event_row_item deviation {{#Deviation.High}}high{{/Deviation.High}} {{#Deviation.Low}}low{{/Deviation.Low}}">
+  <div class="fxs_ecocal_event_row_item deviation {{#Deviation.High}}fxs_txt_success{{/Deviation.High}} {{#Deviation.Low}}fxs_txt_danger{{/Deviation.Low}}">
     {{Deviation.Value}}
   </div>
   <div class="fxs_ecocal_event_row_item consensus">
     {{Consensus}}
   </div>
-  <div class="fxs_ecocal_event_row_item previous {{#Previous.Revised.High}}high{{/Previous.Revised.High}} {{#Previous.Revised.Low}}low{{/Previous.Revised.Low}}">
+  <div class="fxs_ecocal_event_row_item previous {{#Previous.Revised.High}}fxs_txt_success{{/Previous.Revised.High}} {{#Previous.Revised.Low}}fxs_txt_danger{{/Previous.Revised.Low}}">
     {{Previous.Value}} {{#Previous.Revised}}
     <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-original-title="{{{Tooltip}}} {{Value}}">{{/Previous.Revised}}
     </span>

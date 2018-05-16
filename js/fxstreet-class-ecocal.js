@@ -81,5 +81,7 @@ $.get('https://frontend-fxs.github.io/C2/js/templates/row.mst', function (templa
   $('[data-toggle="tooltip"]').tooltip()
   $('#fxs_ecocal_event_row_'+ecoCalEvent.Id).click(function(){
     $('#fxs_ecocal_event_collapsible_'+ecoCalEvent.Id).toggleClass('fxs_hideElements');
+    $('#fxs_ecocal_event_row_chevron_right_'+ecoCalEvent.Id).toggleClass('fa-chevron-right fa-chevron-down');
+    $('#fxs_ecocal_event_row_chevron_left_'+ecoCalEvent.Id).toggleClass('fa-chevron-left fa-chevron-down');
   });
 })

@@ -42,6 +42,7 @@ var getCountDownString = function (time) {
 }
 var countDown = getCountDownString(time)
 var ecoCalEvent = {
+  Id:1,
   Tradeable: true,
   Expanded: true,
   CountDown: countDown,
@@ -79,3 +80,4 @@ $.get('https://frontend-fxs.github.io/C2/js/templates/row.mst', function (templa
   var rendered = Mustache.render(template, ecoCalEvent)
   $('#eventRow').html(rendered)
 })
+document.querySelector('#fxs_ecocal_event_row_'+ecoCalEvent.Id);

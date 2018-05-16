@@ -40,49 +40,6 @@ var EventRow = function(eventJson) {
     ecoCalEventJson = JsonData;
     ecoCalEventJson.CountDown = getCountDownString(ecoCalEventJson.Time);
   }
-	ecoCalEventJson = {
-    Id: 1,
-    Time = {
-      Year: 2018,
-      Month: 4,
-      Day: 16,
-      Hour: 16,
-      Minute: 00,
-    },
-		Tradeable: false,
-		CountDown: '',
-		VolatilityLevel: { 
-      Value: 1,
-      ImageURL: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Information_circle.png' 
-    },
-		Flag: 'us',
-		Currency: 'EUR',
-		Title: 'CBI Distributive Trades Survey - Realized (MoM) (May)',
-		Actual: {
-			Value: '¥-9999.99B',
-			High: true,
-			Low: false,
-			Neutral: false,
-		},
-		Deviation: {
-			Value: '-5.66%',
-			High: true,
-			Low: false,
-			Neutral: false,
-		},
-		Consensus: '¥-9999.99B',
-		Previous: {
-			Value: '¥-9999.99B',
-			Revised: {
-				Tooltip: 'Revised From ',
-				Value: '¥-9999.99B',
-				High: true,
-				Low: false,
-				Neutral: false,
-			},
-		},
-		DashboardLink: 'google.es',
-  };
   var addEvents = function(){
 		$('[data-toggle="tooltip"]').tooltip();
 		$('#fxs_ecocal_event_row_' + ecoCalEvent.Id).click(function() {

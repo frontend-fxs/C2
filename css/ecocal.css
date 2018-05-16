@@ -11,7 +11,7 @@
 .fxs_ecocal_event_row_item.tradeable .fa {
 	color: #deaf37;
 }
-.fxs_ecocal_event_row_item.tradeable .fa.triggered {
+.fxs_ecocal_event_row_item.tradeable.triggered .fa {
 	-webkit-animation: colorchange 1s infinite;
 	-moz-animation: colorchange 1s infinite;
 	-o-animation: colorchange 1s infinite;

@@ -1,16 +1,16 @@
 <div class="fxs_ecocal_event_row" id="fxs_ecocal_event_row_{{Id}}">
   <div class="fxs_ecocal_event_row_item tradeable">
-    {{#Tradeable}} <span class="fa fa-star"></span> {{/Tradeable}}
-    {{^Tradeable}}
-    {{#Expanded}} <span class="fa fa-chevron-down" aria-hidden="true"></span> {{/Expanded}}
-    {{^Expanded}} <span class="fa fa-chevron-right" aria-hidden="true"></span> {{/Expanded}}
-    {{/Tradeable}}
+    {{#Tradeable}}
+    <span class="fa fa-star"></span> {{/Tradeable}} {{^Tradeable}} {{#Expanded}}
+    <span class="fa fa-chevron-down" aria-hidden="true"></span> {{/Expanded}} {{^Expanded}}
+    <span class="fa fa-chevron-right" aria-hidden="true"></span> {{/Expanded}} {{/Tradeable}}
   </div>
   <div class="fxs_ecocal_event_row_item time">
     {{CountDown}}
   </div>
   <div class="fxs_ecocal_event_row_item volatility">
-    {{#VolatilityLevel}} <img src="{{ImageURL}}" /> {{/VolatilityLevel}}
+    {{#VolatilityLevel}}
+    <img src="{{ImageURL}}" /> {{/VolatilityLevel}}
   </div>
   <div class="fxs_ecocal_event_row_item flag">
     <span class="fxst-flag fxst-i-{{Flag}}"></span>
@@ -31,8 +31,8 @@
     {{Consensus}}
   </div>
   <div class="fxs_ecocal_event_row_item previous {{#Previous.Revised.High}}high{{/Previous.Revised.High}} {{#Previous.Revised.Low}}low{{/Previous.Revised.Low}}">
-    {{Previous.Value}}
-    {{#Previous.Revised}} <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-original-title="{{{Tooltip}}} {{Value}}">{{/Previous.Revised}}
+    {{Previous.Value}} {{#Previous.Revised}}
+    <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-original-title="{{{Tooltip}}} {{Value}}">{{/Previous.Revised}}
     </span>
   </div>
   <div class="fxs_ecocal_event_row_item dashboard">
@@ -40,11 +40,10 @@
       <span class="fa fa-bar-chart" aria-hidden="true"></span>
     </a>
   </div>
-  <div class="fxs_ecocal_event_row_item caret_right">
+  <div class="fxs_ecocal_event_row_item expandable">
     {{#Expanded}}
     <span class="fa fa-chevron-down" aria-hidden="true"></span>
-    {{/Expanded}}
-    {{^Expanded}}
+    {{/Expanded}} {{^Expanded}}
     <span class="fa fa-chevron-left" aria-hidden="true"></span>
     {{/Expanded}}
   </div>

@@ -1,0 +1,42 @@
+.fxs_ecocal_event_row {
+	cursor: pointer;
+}
+.fxs_ecocal_event_row_item {
+	padding: 5px;
+	float: left;
+}
+.fxs_ecocal_event_row_item.tradeable {
+}
+
+.fxs_ecocal_event_row_item.time {
+}
+
+.fxs_ecocal_event_row_item.volatility {
+}
+
+.fxs_ecocal_event_row_item.flag {
+}
+
+.fxs_ecocal_event_row_item.currency {
+}
+
+.fxs_ecocal_event_row_item.title {
+}
+
+.fxs_ecocal_event_row_item.actual {
+}
+
+.fxs_ecocal_event_row_item.deviation {
+}
+
+.fxs_ecocal_event_row_item.consensus {
+}
+
+.fxs_ecocal_event_row_item.previous {
+}
+
+.fxs_ecocal_event_row_item.dashboard {
+}
+
+.fxs_ecocal_event_row_item.expandable {
+}

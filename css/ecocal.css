@@ -4,7 +4,7 @@
 .fxs_ecocal_event_row_item {
 	padding: 5px;
 	float: left;
-	line-height: 40px;
+	line-height: 30px;
 }
 .fxs_ecocal_event_row_item.tradeable {
 }
@@ -13,7 +13,10 @@
 }
 
 .fxs_ecocal_event_row_item.volatility {
-    width: 40px;
+	width: 40px;
+}
+.fxs_ecocal_event_row_item.volatility img {
+	margin-top: 5px;
 }
 
 .fxs_ecocal_event_row_item.flag {
@@ -23,7 +26,7 @@
 }
 
 .fxs_ecocal_event_row_item.title {
-    max-width:calc(100% - 600px);
+	max-width: calc(100% - 600px);
 }
 
 .fxs_ecocal_event_row_item.actual {

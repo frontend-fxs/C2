@@ -15,7 +15,7 @@ var time = {
 var calcCountDownString = function (end, now) {
   var countdownMilliseconds = end.getTime() - now.getTime()
   var countdownSeconds = parseInt(countdownMilliseconds / 1000)
-  var countdownMinutes = parseInt(countdownMilliseconds / 1000 * 60)
+  var countdownMinutes = parseInt(countdownMilliseconds / (1000 * 60))
   var timeStampString = end.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit', hour12: false })
   var countdownString = ''
   switch (true) {

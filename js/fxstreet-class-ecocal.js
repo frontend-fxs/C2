@@ -151,6 +151,6 @@ var renderEcocal = function () {
     $('#fxs_ecocal').html(rendered)
     renderFilter()
     renderMenu()
-    setInterval(renderData, 1000)
+    renderData()
   })
 }

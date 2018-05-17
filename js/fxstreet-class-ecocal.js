@@ -38,7 +38,7 @@ var randomPeriodService = function (year, month, day, header) {
   }
 
   var isFuture = function(){
-    return now.getTime() <= end.getTime() || 
+    return now.getTime() <= end.getTime()
   }
 
   var isTooLongPast = function(){

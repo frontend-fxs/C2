@@ -123,7 +123,7 @@ var renderData = function () {
   $.get('https://frontend-fxs.github.io/C2/js/templates/data.mst', function (template) {
     Mustache.parse(template)
     var rendered = Mustache.render(template, ecoCalEvents)
-    $('#fxs_ecocal_data').append(rendered)
+    $('#fxs_ecocal_data').html(rendered)
     addEvents()
   })
 }
@@ -132,7 +132,7 @@ var renderMenu = function () {
   $.get('https://frontend-fxs.github.io/C2/js/templates/menu.mst', function (template) {
     Mustache.parse(template)
     var rendered = Mustache.render(template, {})
-    $('#fxs_ecocal_menu').append(rendered)
+    $('#fxs_ecocal_menu').html(rendered)
   })
 }
 
@@ -140,7 +140,7 @@ var renderFilter = function () {
   $.get('https://frontend-fxs.github.io/C2/js/templates/filter.mst', function (template) {
     Mustache.parse(template)
     var rendered = Mustache.render(template, {})
-    $('#fxs_ecocal_filter').append(rendered)
+    $('#fxs_ecocal_filter').html(rendered)
   })
 }
 
@@ -148,7 +148,7 @@ var renderEcocal = function () {
   $.get('https://frontend-fxs.github.io/C2/js/templates/ecocal.mst', function (template) {
     Mustache.parse(template)
     var rendered = Mustache.render(template, {})
-    $('#fxs_ecocal').append(rendered)
+    $('#fxs_ecocal').html(rendered)
     renderFilter()
     renderMenu()
     renderData()

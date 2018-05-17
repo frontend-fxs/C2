@@ -45,4 +45,4 @@ for (var i = 1; i < 1000; i++) {
   var event = new EventRow(ecoCalEventJson)
   calendarEvents.push(event)
 }
-calendarEvents..sort(function(a, b){return a - b})
+calendarEvents.sort(function(a, b){return a - b})

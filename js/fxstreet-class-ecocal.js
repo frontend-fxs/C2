@@ -102,7 +102,7 @@ ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 17, 'MONDAY MAY 21'))
 
 var addEvents = function () {
   $('.fxs_ecocal_event_row').click(function () {
-    $(this).find('.fxs_ecocal_event_collapsible').toggleClass('fxs_hideElements')
+    $(this).next('.fxs_ecocal_event_collapsible').toggleClass('fxs_hideElements')
     $(this).find('.fa_chevron_right').toggleClass('fa-chevron-right fa-chevron-down')
     $(this).find('.fa_chevron_left').toggleClass('fa-chevron-left fa-chevron-down')
   })

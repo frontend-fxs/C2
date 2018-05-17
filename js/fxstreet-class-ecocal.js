@@ -103,8 +103,8 @@ ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 17, 'MONDAY MAY 21'))
 var addEvents = function () {
   $('.fxs_ecocal_event_row').click(function () {
     $('.fxs_ecocal_event_collapsible').toggleClass('fxs_hideElements')
-    $('.fxs_ecocal_event_row_chevron_right').toggleClass('fa-chevron-right fa-chevron-down')
-    $('.fxs_ecocal_event_row_chevron_left').toggleClass('fa-chevron-left fa-chevron-down')
+    $('.fa_chevron_right').toggleClass('fa-chevron-right fa-chevron-down')
+    $('.fa_chevron_left').toggleClass('fa-chevron-left fa-chevron-down')
   })
 }
 

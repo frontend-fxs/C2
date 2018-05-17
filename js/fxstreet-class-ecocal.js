@@ -6,7 +6,9 @@ var translations = {
   TimeStampSeparator: ':'
 }
 
-var ecoCalEvents = []
+var ecoCalEvents = {
+  Periods:[]
+}
 
 var randomPeriodService = function (year, month, day, header) {
   var calcCountDownString = function (end, now) {
@@ -91,9 +93,9 @@ var randomPeriodService = function (year, month, day, header) {
   return period
 }
 
-ecoCalEvents.push(randomPeriodService(2018, 4, 17, 'THURSDAY MAY 17'))
-ecoCalEvents.push(randomPeriodService(2018, 4, 17, 'FRIDAY MAY 18'))
-ecoCalEvents.push(randomPeriodService(2018, 4, 17, 'MONDAY MAY 21'))
+ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 17, 'THURSDAY MAY 17'))
+ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 17, 'FRIDAY MAY 18'))
+ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 17, 'MONDAY MAY 21'))
 
 var addEvents = function () {
   $('.fxs_ecocal_event_row').click(function () {

@@ -41,7 +41,10 @@ var randomPeriodService = function (year, month, day, header) {
     return countdownString
   }
 
-  var period = []
+  var period = {
+    Header : header,
+    Rows:[]
+  }
 
   for (var i = 1; i < 10; i++) {
     var randomNumber = Math.random()
@@ -84,10 +87,10 @@ var randomPeriodService = function (year, month, day, header) {
     }
     period.push(event)
   }
-  period.sort(function (a, b) {
+  period.Rows.sort(function (a, b) {
     return a.Minute - b.Minute
   })
-  period.sort(function (a, b) {
+  period.Rows.sort(function (a, b) {
     return a.Hour - b.Hour
   })
   return period

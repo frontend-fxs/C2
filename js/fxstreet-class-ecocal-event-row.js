@@ -49,7 +49,7 @@ var EventRow = function(eventJson) {
 		});
   }
   var render = function(){
-    $.get('https://frontend-fxs.github.io/C2/js/templates/row.mst', function(template) {
+    $.get('https://frontend-fxs.github.io/C2/js/templates/row.html', function(template) {
       Mustache.parse(template);
       var rendered = Mustache.render(template, ecoCalEventJson);
       $('#eventRow').append(rendered);
@@ -61,5 +61,4 @@ var EventRow = function(eventJson) {
     render();
   }
   init(eventJson);
-
 };

@@ -59,6 +59,7 @@ var randomPeriodService = function (year, month, day, header) {
     var event = {
       Tradeable: randomNumber > 0.5,
       CountDown: getCountDownString(time),
+      Date: new Date(time.Year,time.Month,time.Day,time.Hour,time.Minute),
       VolatilityLevel: randomNumber > 0.1 && Math.floor(randomNumber * 3 + 1),
       Flag: 'us',
       Currency: 'EUR',
@@ -88,10 +89,7 @@ var randomPeriodService = function (year, month, day, header) {
     period.Rows.push(event)
   }
   period.Rows.sort(function (a, b) {
-    return a.Minute - b.Minute
-  })
-  period.Rows.sort(function (a, b) {
-    return a.Hour - b.Hour
+    return a.Date - b.Date
   })
   return period
 }

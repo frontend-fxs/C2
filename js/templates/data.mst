@@ -1,73 +1,58 @@
 <div class="fxs_ecocal_data">
-    {{#Periods}}
-    <div class="fxs_ecocal_period_header">{{Header}}</div>
-    {{#Rows}}
-    <div class="fxs_ecocal_event_row">
-  <div class="fxs_ecocal_event_row_item tradeable triggered">
-    {{#Tradeable}}
-    <span class="fa fa-star"></span> 
-    {{/Tradeable}} 
-    {{^Tradeable}} 
-    <span class="fa fa-chevron-right" aria-hidden="true"></span>
-    {{/Tradeable}}
+  {{#Periods}}
+  <div class="fxs_ecocal_period_header">{{Header}}</div>
+  {{#Rows}}
+  <div class="fxs_ecocal_event_row">
+    <div class="fxs_ecocal_event_row_item tradeable triggered">
+      {{#Tradeable}}
+      <span class="fa fa-star"></span>
+      {{/Tradeable}} {{^Tradeable}}
+      <span class="fa fa-chevron-right" aria-hidden="true"></span>
+      {{/Tradeable}}
+    </div>
+    <div class="fxs_ecocal_event_row_item time">
+      {{CountDown}}
+    </div>
+    <div class="fxs_ecocal_event_row_item volatility">
+      {{#VolatilityLevel}}
+      <img src="https://editorial.blob.core.windows.net/ico-logos/ecocal-{{.}}.svg" /> {{/VolatilityLevel}}
+    </div>
+    <div class="fxs_ecocal_event_row_item flag">
+      <span class="fxst-flag fxst-i-{{Flag}}"></span>
+    </div>
+    <div class="fxs_ecocal_event_row_item currency">
+      {{Currency}}
+    </div>
+    <div class="fxs_ecocal_event_row_item title">
+      {{Title}}
+    </div>
+    <div class="fxs_ecocal_event_row_item actual {{#Actual.High}}fxs_txt_success{{/Actual.High}} {{#Actual.Low}}fxs_txt_danger{{/Actual.Low}}">
+      {{Actual.Value}}
+    </div>
+    <div class="fxs_ecocal_event_row_item deviation {{#Deviation.High}}fxs_txt_success{{/Deviation.High}} {{#Deviation.Low}}fxs_txt_danger{{/Deviation.Low}}">
+      {{Deviation.Value}}
+    </div>
+    <div class="fxs_ecocal_event_row_item consensus">
+      {{Consensus}}
+    </div>
+    <div class="fxs_ecocal_event_row_item previous {{#Previous.Revised.High}}fxs_txt_success{{/Previous.Revised.High}} {{#Previous.Revised.Low}}fxs_txt_danger{{/Previous.Revised.Low}}">
+      {{Previous.Value}} {{#Previous.Revised}}
+      <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-original-title="{{{Tooltip}}} {{Value}}">{{/Previous.Revised}}
+      </span>
+    </div>
+    <div class="fxs_ecocal_event_row_item dashboard">
+      <a href="{{DashboardLink}}" onclick="return event.stopImmediatePropagation();">
+        <span class="fa fa-bar-chart" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="fxs_ecocal_event_row_item expandable">
+      <span class="fa fa-chevron-left" aria-hidden="true"></span>
+    </div>
   </div>
-  <div class="fxs_ecocal_event_row_item time">
-    {{CountDown}}
+  <div class="fxs_ecocal_event_collapsible fxs_hideElements">
+    Collapsed content Collapsed content Collapsed content Collapsed content Collapsed content Collapsed content Collapsed content
+    Collapsed content Collapsed content Collapsed content Collapsed content Collapsed content Collapsed content Collapsed
+    content Collapsed content
   </div>
-  <div class="fxs_ecocal_event_row_item volatility">
-    {{#VolatilityLevel}}
-    <img src="https://editorial.blob.core.windows.net/ico-logos/ecocal-{{.}}.svg" /> 
-    {{/VolatilityLevel}}
-  </div>
-  <div class="fxs_ecocal_event_row_item flag">
-    <span class="fxst-flag fxst-i-{{Flag}}"></span>
-  </div>
-  <div class="fxs_ecocal_event_row_item currency">
-    {{Currency}}
-  </div>
-  <div class="fxs_ecocal_event_row_item title">
-    {{Title}}
-  </div>
-  <div class="fxs_ecocal_event_row_item actual {{#Actual.High}}fxs_txt_success{{/Actual.High}} {{#Actual.Low}}fxs_txt_danger{{/Actual.Low}}">
-    {{Actual.Value}}
-  </div>
-  <div class="fxs_ecocal_event_row_item deviation {{#Deviation.High}}fxs_txt_success{{/Deviation.High}} {{#Deviation.Low}}fxs_txt_danger{{/Deviation.Low}}">
-    {{Deviation.Value}}
-  </div>
-  <div class="fxs_ecocal_event_row_item consensus">
-    {{Consensus}}
-  </div>
-  <div class="fxs_ecocal_event_row_item previous {{#Previous.Revised.High}}fxs_txt_success{{/Previous.Revised.High}} {{#Previous.Revised.Low}}fxs_txt_danger{{/Previous.Revised.Low}}">
-    {{Previous.Value}} {{#Previous.Revised}}
-    <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-original-title="{{{Tooltip}}} {{Value}}">{{/Previous.Revised}}
-    </span>
-  </div>
-  <div class="fxs_ecocal_event_row_item dashboard">
-    <a href="{{DashboardLink}}" onclick="return event.stopImmediatePropagation();">
-      <span class="fa fa-bar-chart" aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="fxs_ecocal_event_row_item expandable">
-    <span class="fa fa-chevron-left" aria-hidden="true"></span>
-  </div>
-</div>
-<div class="fxs_ecocal_event_collapsible fxs_hideElements">
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-    Collapsed content 
-  </div>
-  {{/Rows}}
-  {{/Periods}}
+  {{/Rows}} {{/Periods}}
 </div>

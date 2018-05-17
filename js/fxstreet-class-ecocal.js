@@ -85,7 +85,7 @@ var randomPeriodService = function (year, month, day, header) {
       },
       DashboardLink: 'google.es'
     }
-    period.push(event)
+    period.Rows.push(event)
   }
   period.Rows.sort(function (a, b) {
     return a.Minute - b.Minute

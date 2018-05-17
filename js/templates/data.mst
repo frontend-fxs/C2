@@ -1,14 +1,14 @@
 <div class="fxs_ecocal_data">
-    {{#Period}}
+    {{#Periods}}
     <div class="fxs_ecocal_period_header">{{Header}}</div>
     {{#Rows}}
-    <div class="fxs_ecocal_event_row" id="fxs_ecocal_event_row_{{Id}}">
-  <div class="fxs_ecocal_event_row_item tradeable triggered" id="fxs_ecocal_event_row_tradeable_{{Id}}">
+    <div class="fxs_ecocal_event_row">
+  <div class="fxs_ecocal_event_row_item tradeable triggered">
     {{#Tradeable}}
     <span class="fa fa-star"></span> 
     {{/Tradeable}} 
     {{^Tradeable}} 
-    <span class="fa fa-chevron-right" aria-hidden="true" id="fxs_ecocal_event_row_chevron_right_{{Id}}"></span>
+    <span class="fa fa-chevron-right" aria-hidden="true"></span>
     {{/Tradeable}}
   </div>
   <div class="fxs_ecocal_event_row_item time">
@@ -16,7 +16,8 @@
   </div>
   <div class="fxs_ecocal_event_row_item volatility">
     {{#VolatilityLevel}}
-    <img src="{{ImageURL}}" /> {{/VolatilityLevel}}
+    <img src="https://editorial.blob.core.windows.net/ico-logos/ecocal-{{.}}.svg" /> 
+    {{/VolatilityLevel}}
   </div>
   <div class="fxs_ecocal_event_row_item flag">
     <span class="fxst-flag fxst-i-{{Flag}}"></span>
@@ -47,10 +48,10 @@
     </a>
   </div>
   <div class="fxs_ecocal_event_row_item expandable">
-    <span class="fa fa-chevron-left" aria-hidden="true"  id="fxs_ecocal_event_row_chevron_left_{{Id}}"></span>
+    <span class="fa fa-chevron-left" aria-hidden="true"></span>
   </div>
 </div>
-<div id="fxs_ecocal_event_collapsible_{{Id}}" class="fxs_ecocal_event_collapsible fxs_hideElements">
+<div class="fxs_ecocal_event_collapsible fxs_hideElements">
     Collapsed content 
     Collapsed content 
     Collapsed content 
@@ -68,5 +69,5 @@
     Collapsed content 
   </div>
   {{/Rows}}
-  {{/Period}}
+  {{/Periods}}
 </div>

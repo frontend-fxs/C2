@@ -1,13 +1,14 @@
-var calendarEvents = []
+
+var randomPeriodService = function(year,month,day,header){
 
 for (var i = 1; i < 10; i++) {
   var randomNumber = Math.random()
   ecoCalEventJson = {
     Id: i,
     Time: {
-      Year: 2018,
-      Month: Math.floor(Math.random() * Math.floor(11)) + 1,
-      Day: Math.floor(Math.random() * Math.floor(28)) + 1,
+      Year: year,
+      Month: month,
+      Day: day,
       Hour: Math.floor(Math.random() * Math.floor(24)) + 1,
       Minute: Math.floor(Math.random() * Math.floor(59)) + 1
     },
@@ -43,6 +44,9 @@ for (var i = 1; i < 10; i++) {
     DashboardLink: 'google.es'
   }
   var event = new EventRow(ecoCalEventJson)
-  calendarEvents.push(event)
+  period.push(event)
 }
-calendarEvents.sort(function(a, b){return a - b});
+period.sort(function(a, b){return a.Minute - b.Minute});
+period.sort(function(a, b){return a.Hour - b.Hour});
+return period;
+}

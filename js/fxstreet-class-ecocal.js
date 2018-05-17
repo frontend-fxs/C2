@@ -7,11 +7,14 @@ var translations = {
 }
 
 var ecoCalEvents = {
-  Periods:[]
+  Periods: []
 }
 
+var end = null;
+var now = null;
+
 var randomPeriodService = function (year, month, day, header) {
-  var calcCountDownString = function (end, now) {
+  var getCountDownString = function () {
     var countdownMilliseconds = end.getTime() - now.getTime()
     var countdownSeconds = parseInt(countdownMilliseconds / 1000)
     var countdownMinutes = parseInt(countdownMilliseconds / (1000 * 60))
@@ -34,16 +37,21 @@ var randomPeriodService = function (year, month, day, header) {
     return countdownString
   }
 
-  var getCountDownString = function (time) {
-    var end = new Date(time.Year, time.Month, time.Day, time.Hour, time.Minute)
-    var now = new Date()
-    var countdownString = calcCountDownString(end, now)
-    return countdownString
+  var isFuture = function(){
+    return now.getTime() <= end.getTime() || 
+  }
+
+  var isTooLongPast = function(){
+    return !isFuture() && now.getTime() - end.getTime() > 120000;
+  }
+
+  var isVisible = function(){
+    return isFuture() || !isTooLongPast()
   }
 
   var period = {
-    Header : header,
-    Rows:[]
+    Header: header,
+    Rows: []
   }
 
   for (var i = 1; i < 10; i++) {
@@ -55,11 +63,15 @@ var randomPeriodService = function (year, month, day, header) {
       Hour: Math.floor(Math.random() * Math.floor(24)) + 1,
       Minute: Math.floor(Math.random() * Math.floor(59)) + 1
     }
+    var end = new Date(time.Year, time.Month, time.Day, time.Hour, time.Minute)
+    var now = new Date()
 
     var event = {
+      IsActive: !isTooLongPast(),
+      IsVisible: isVisible(),
       Tradeable: randomNumber > 0.5,
-      CountDown: getCountDownString(time),
-      Date: new Date(time.Year,time.Month,time.Day,time.Hour,time.Minute),
+      CountDown: getCountDownString(),
+      Date: end,
       VolatilityLevel: randomNumber > 0.1 && Math.floor(randomNumber * 3 + 1),
       Flag: 'us',
       Currency: 'EUR',
@@ -142,5 +154,4 @@ var renderEcocal = function () {
     renderData()
   })
 }
-
-renderEcocal()
+setInterval(renderEcocal, 1000)

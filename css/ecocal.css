@@ -3,6 +3,16 @@
 	width: 100%;
 	clear: both;
 	float: left;
+	background-color: #fff;
+}
+.fxs_ecocal_event_row:hover {
+	background-color: #f0f0f1;
+}
+.fxs_ecocal_event_row.active {
+	background-color: #f0f0f1;
+}
+.fxs_ecocal_event_row.active:hover {
+	background-color: #fff;
 }
 .fxs_ecocal_event_row_item {
 	padding: 5px;
@@ -90,7 +100,7 @@
 
 .fxs_ecocal_event_row_item.expandable {
 }
-.fxs_ecocal_event_collapsible{
+.fxs_ecocal_event_collapsible {
 	width: 100%;
 	clear: both;
 	float: left;

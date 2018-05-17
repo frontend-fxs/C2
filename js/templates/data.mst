@@ -2,7 +2,8 @@
   {{#Periods}}
   <div class="fxs_ecocal_period_header">{{Header}}</div>
   {{#Rows}}
-  <div class="fxs_ecocal_event_row">
+  {{#IsVisible}}
+  <div class="fxs_ecocal_event_row {{#IsActive}}active{{/IsActive}}">
     <div class="fxs_ecocal_event_row_item tradeable triggered">
       {{#Tradeable}}
       <span class="fa fa-star"></span>
@@ -54,5 +55,6 @@
     Collapsed content Collapsed content Collapsed content Collapsed content Collapsed content Collapsed content Collapsed
     content Collapsed content
   </div>
+  {{/IsVisible}}
   {{/Rows}} {{/Periods}}
 </div>

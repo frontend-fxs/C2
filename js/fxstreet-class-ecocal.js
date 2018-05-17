@@ -39,6 +39,8 @@ var randomPeriodService = function (year, month, day, header) {
     return countdownString
   }
 
+  var period = []
+
   for (var i = 1; i < 10; i++) {
     var randomNumber = Math.random()
     var time = {
@@ -49,10 +51,10 @@ var randomPeriodService = function (year, month, day, header) {
       Minute: Math.floor(Math.random() * Math.floor(59)) + 1
     }
 
-    var period = {
+    var event = {
       Tradeable: randomNumber > 0.5,
       CountDown: getCountDownString(time),
-      VolatilityLevel: randomNumber > .1 && Math.floor(randomNumber*3+1),
+      VolatilityLevel: randomNumber > 0.1 && Math.floor(randomNumber * 3 + 1),
       Flag: 'us',
       Currency: 'EUR',
       Title: 'CBI Distributive Trades Survey - Realized (MoM) (May)',
@@ -88,6 +90,10 @@ var randomPeriodService = function (year, month, day, header) {
   })
   return period
 }
+
+ecoCalEvents.push(randomPeriodService(2018, 4, 17, 'THURSDAY MAY 17'))
+ecoCalEvents.push(randomPeriodService(2018, 4, 17, 'FRIDAY MAY 18'))
+ecoCalEvents.push(randomPeriodService(2018, 4, 17, 'MONDAY MAY 21'))
 
 var addEvents = function () {
   $('.fxs_ecocal_event_row').click(function () {

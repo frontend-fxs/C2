@@ -12,17 +12,13 @@ var ecoCalEvents = {
 
 var randomEcocalService = function () {
 
+
+  var now = new Date()
   var today = new Date()
   var tomorrow = new Date()
   tomorrow.setDate(tomorrow.getDate() + 1)
   var afterTomorrow = new Date()
   afterTomorrow.setDate(afterTomorrow.getDate() + 2)
-
-  ecoCalEvents.Periods.push(randomPeriodService(today))
-  ecoCalEvents.Periods.push(randomPeriodService(tomorrow))
-  ecoCalEvents.Periods.push(randomPeriodService(afterTomorrow))
-
-  var now = null
 
   var randomPeriodService = function (end) {
     var getCountDownString = function () {
@@ -114,6 +110,11 @@ var randomEcocalService = function () {
     })
     return period
   }
+
+  ecoCalEvents.Periods.push(randomPeriodService(today))
+  ecoCalEvents.Periods.push(randomPeriodService(tomorrow))
+  ecoCalEvents.Periods.push(randomPeriodService(afterTomorrow))
+
 }
 
 randomEcocalService()

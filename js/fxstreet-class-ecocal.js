@@ -53,7 +53,7 @@ var randomEcocalService = function () {
     }
 
     var isNow = function () {
-      var result = !isFuture() || !isTooLongPast()
+      var result = !isFuture() && !isTooLongPast()
       return result
     }
 

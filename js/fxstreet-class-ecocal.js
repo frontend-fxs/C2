@@ -56,7 +56,7 @@ var randomEcocalService = function () {
     }
 
     var period = {
-      Header: end.toLocaleDateString('en-EN', { weekday: 'narrow', month: 'short', day: '2-digit' }),
+      Header: end.toLocaleDateString('en-EN', { weekday: 'long', month: 'short', day: '2-digit' }),
       Rows: []
     }
 

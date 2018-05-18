@@ -66,6 +66,18 @@ var randomEcocalService = function () {
       }
       return hour
     }
+    var randomMinute = function () {
+      var minute = 0
+      var difference = Math.random()
+      if (difference < 0.3) {
+        minute = -1
+      } else if (difference > 0.6) {
+        minute = 1
+      }else{
+        minute = Math.floor(Math.random()*60)
+      }
+      return minute
+    }
 
     var period = {
       Header: end.toLocaleDateString('en-EN', { weekday: 'long', month: 'short', day: '2-digit' }),
@@ -76,7 +88,7 @@ var randomEcocalService = function () {
       var randomNumber = Math.random()
       var time = {
         Hour: end.getHours() + randomHour(),
-        Minute: Math.floor(Math.random() * Math.floor(59)) + 1
+        Minute: end.getMinutes() + randomMinute(),
       }
       end.setHours(time.Hour)
       end.setMinutes(time.Minute)

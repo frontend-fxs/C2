@@ -53,7 +53,7 @@ var randomEcocalService = function () {
     }
 
     var isNow = function () {
-      return isFuture() || !isTooLongPast()
+      return !isFuture() || !isTooLongPast()
     }
 
     var period = {

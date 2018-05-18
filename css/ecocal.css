@@ -8,10 +8,10 @@
 .fxs_ecocal_event_row:hover {
 	background-color: #f0f0f1;
 }
-.fxs_ecocal_event_row.active {
+.fxs_ecocal_event_row.fxs_now {
 	background-color: #f0f0f1;
 }
-.fxs_ecocal_event_row.active:hover {
+.fxs_ecocal_event_row.fxs_now:hover {
 	background-color: #fff;
 }
 .fxs_ecocal_event_row_item {

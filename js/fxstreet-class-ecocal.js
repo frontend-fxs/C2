@@ -45,7 +45,7 @@ var randomPeriodService = function (year, month, day, header) {
     return !isFuture() && now.getTime() - end.getTime() > 120000;
   }
 
-  var isVisible = function(){
+  var isNow = function(){
     return isFuture() || !isTooLongPast()
   }
 
@@ -68,7 +68,7 @@ var randomPeriodService = function (year, month, day, header) {
 
     var event = {
       IsActive: !isTooLongPast(),
-      IsVisible: isVisible(),
+      IsNow: isNow(),
       Tradeable: randomNumber > 0.5,
       CountDown: getCountDownString(),
       Date: end,
@@ -106,9 +106,9 @@ var randomPeriodService = function (year, month, day, header) {
   return period
 }
 
-ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 17, 'THURSDAY MAY 17'))
 ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 18, 'FRIDAY MAY 18'))
-ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 19, 'MONDAY MAY 21'))
+ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 21, 'MONDAY MAY 21'))
+ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 22, 'TUESDAY MAY 22'))
 
 var addEvents = function () {
   $('.fxs_ecocal_event_row').click(function () {

@@ -1,8 +1,7 @@
 <div class="fxs_ecocal_data">
   {{#Periods}}
   <div class="fxs_ecocal_period_header">{{Header}}</div>
-  {{#Rows}}
-  {{#IsActive}}
+  {{#Rows}} {{#IsActive}}
   <div class="fxs_ecocal_event_row {{#IsNow}}fxs_now{{/IsNow}}">
     <div class="fxs_ecocal_event_row_item tradeable triggered">
       {{#Tradeable}}
@@ -27,8 +26,10 @@
     <div class="fxs_ecocal_event_row_item title">
       {{Title}}
     </div>
-    <div class="fxs_ecocal_event_row_item actual {{#Actual.High}}fxs_txt_success{{/Actual.High}} {{#Actual.Low}}fxs_txt_danger{{/Actual.Low}}">
-      {{Actual.Value}}
+    <div class="fxs_ecocal_event_row_item actual">
+      <span class="{{#Actual.High}}fxs_txt_success{{/Actual.High}} {{#Actual.Low}}fxs_txt_danger{{/Actual.Low}}">
+        {{Actual.Value}}
+      </span>
     </div>
     <div class="fxs_ecocal_event_row_item deviation {{#Deviation.High}}fxs_txt_success{{/Deviation.High}} {{#Deviation.Low}}fxs_txt_danger{{/Deviation.Low}}">
       {{Deviation.Value}}
@@ -55,6 +56,5 @@
     Collapsed content Collapsed content Collapsed content Collapsed content Collapsed content Collapsed content Collapsed
     content Collapsed content
   </div>
-  {{/IsActive}}
-  {{/Rows}} {{/Periods}}
+  {{/IsActive}} {{/Rows}} {{/Periods}}
 </div>

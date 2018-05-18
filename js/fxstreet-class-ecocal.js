@@ -67,9 +67,8 @@ var randomEcocalService = function () {
         Hour: Math.floor(Math.random() * Math.floor(24)) + 1,
         Minute: Math.floor(Math.random() * Math.floor(59)) + 1
       }
-      var end = date.setHours(time.Hour)
-      var end = date.setMinutes(time.Minute)
-      var now = new Date()
+      end.setHours(time.Hour)
+      end.setMinutes(time.Minute)
 
       var event = {
         IsActive: !isTooLongPast(),

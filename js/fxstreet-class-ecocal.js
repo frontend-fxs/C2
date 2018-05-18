@@ -10,10 +10,9 @@ var ecoCalEvents = {
   Periods: []
 }
 
-var end = null;
 var now = null;
 
-var randomPeriodService = function (date) {
+var randomPeriodService = function (end) {
 
   var getCountDownString = function () {
     var countdownMilliseconds = end.getTime() - now.getTime()

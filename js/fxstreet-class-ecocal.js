@@ -65,7 +65,7 @@ var randomEcocalService = function () {
     for (var i = 1; i < 10; i++) {
       var randomNumber = Math.random()
       var time = {
-        Hour: Math.floor(Math.random() * Math.floor(24)) + 1,
+        Hour: end.getHours() + Math.random() < 0.5 ? -1 : 1,
         Minute: Math.floor(Math.random() * Math.floor(59)) + 1
       }
       end.setHours(time.Hour)

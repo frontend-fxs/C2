@@ -13,7 +13,8 @@ var ecoCalEvents = {
 var end = null;
 var now = null;
 
-var randomPeriodService = function (year, month, day, header) {
+var randomPeriodService = function (date) {
+
   var getCountDownString = function () {
     var countdownMilliseconds = end.getTime() - now.getTime()
     var countdownSeconds = parseInt(countdownMilliseconds / 1000)
@@ -50,20 +51,18 @@ var randomPeriodService = function (year, month, day, header) {
   }
 
   var period = {
-    Header: header,
+    Header: date.toLocaleDateString('en-EN',{weekday:"narrow", month:"short", day:"2-digit"}),
     Rows: []
   }
 
   for (var i = 1; i < 10; i++) {
     var randomNumber = Math.random()
     var time = {
-      Year: year,
-      Month: month,
-      Day: day,
       Hour: Math.floor(Math.random() * Math.floor(24)) + 1,
       Minute: Math.floor(Math.random() * Math.floor(59)) + 1
     }
-    var end = new Date(time.Year, time.Month, time.Day, time.Hour, time.Minute)
+    var end = date.setHours(time.Hour)
+    var end = date.setMinutes(time.Minute)
     var now = new Date()
 
     var event = {
@@ -106,9 +105,15 @@ var randomPeriodService = function (year, month, day, header) {
   return period
 }
 
-ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 18, 'FRIDAY MAY 18'))
-ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 21, 'MONDAY MAY 21'))
-ecoCalEvents.Periods.push(randomPeriodService(2018, 4, 22, 'TUESDAY MAY 22'))
+var today = new Date();
+var tomorrow = new Date();
+tomorrow.setDate(tomorrow.getDate() + 1);
+var afterTomorrow = new Date();
+afterTomorrow.setDate(afterTomorrow.getDate() + 2);
+
+ecoCalEvents.Periods.push(randomPeriodService(today))
+ecoCalEvents.Periods.push(randomPeriodService(tomorrow))
+ecoCalEvents.Periods.push(randomPeriodService(afterTomorrow))
 
 var addEvents = function () {
   $('.fxs_ecocal_event_row').click(function () {

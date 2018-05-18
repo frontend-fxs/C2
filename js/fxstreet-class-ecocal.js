@@ -154,3 +154,4 @@ var renderEcocal = function () {
     renderData()
   })
 }
+renderEcocal();

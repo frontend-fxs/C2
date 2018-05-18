@@ -59,9 +59,9 @@ var randomEcocalService = function () {
     var randomHour = function () {
       var hour = 0
       var difference = Math.random()
-      if (difference < 0.33) {
+      if (difference < 0.1) {
         hour = -1
-      } else if (difference > 0.66) {
+      } else if (difference > 0.9) {
         hour = 1
       }
       return hour

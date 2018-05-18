@@ -12,7 +12,6 @@ var ecoCalEvents = {
 
 var randomEcocalService = function () {
 
-
   var now = new Date()
   var today = new Date()
   var tomorrow = new Date()
@@ -49,7 +48,7 @@ var randomEcocalService = function () {
     }
 
     var isTooLongPast = function () {
-      return !isFuture() && now.getTime() - end.getTime() > 120000
+      return now.getTime() - end.getTime() > 120000
     }
 
     var isNow = function () {

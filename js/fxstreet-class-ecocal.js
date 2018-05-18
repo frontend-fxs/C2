@@ -18,7 +18,8 @@ var randomEcocalService = function () {
   var afterTomorrow = new Date()
   afterTomorrow.setDate(afterTomorrow.getDate() + 2)
 
-  var randomPeriodService = function (end) {
+  var randomPeriodService = function (endParam) {
+    var endCopy = new Date(endParam);
     var getCountDownString = function () {
       var countdownMilliseconds = end.getTime() - now.getTime()
       var countdownSeconds = parseInt(countdownMilliseconds / 1000)
@@ -90,6 +91,7 @@ var randomEcocalService = function () {
         Hour: end.getHours() + randomHour(),
         Minute: end.getMinutes() + randomMinute(),
       }
+      end=new Date(endCopy);
       end.setHours(time.Hour)
       end.setMinutes(time.Minute)
 

@@ -81,17 +81,17 @@ var randomEcocalService = function () {
     }
 
     var period = {
-      Header: end.toLocaleDateString('en-EN', { weekday: 'long', month: 'short', day: '2-digit' }),
+      Header: endCopy.toLocaleDateString('en-EN', { weekday: 'long', month: 'short', day: '2-digit' }),
       Rows: []
     }
 
     for (var i = 1; i < 10; i++) {
       var randomNumber = Math.random()
+      end=new Date(endCopy);
       var time = {
         Hour: end.getHours() + randomHour(),
         Minute: end.getMinutes() + randomMinute(),
       }
-      end=new Date(endCopy);
       end.setHours(time.Hour)
       end.setMinutes(time.Minute)
 

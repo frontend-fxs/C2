@@ -20,6 +20,7 @@ var randomEcocalService = function () {
   afterTomorrow.setDate(afterTomorrow.getDate() + 2)
 
   var randomPeriodService = function (end) {
+
     var getCountDownString = function () {
       var countdownMilliseconds = end.getTime() - now.getTime()
       var countdownSeconds = parseInt(countdownMilliseconds / 1000)
@@ -104,7 +105,7 @@ var randomEcocalService = function () {
       period.Rows.push(event)
     }
     period.Rows.sort(function (a, b) {
-      return a.Date - b.Date
+      return a.Date.getTime() - b.Date.getTime()
     })
     return period
   }

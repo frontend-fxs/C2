@@ -11,7 +11,6 @@ var ecoCalEvents = {
 }
 
 var randomEcocalService = function () {
-
   var now = new Date()
   var today = new Date()
   var tomorrow = new Date()
@@ -20,7 +19,6 @@ var randomEcocalService = function () {
   afterTomorrow.setDate(afterTomorrow.getDate() + 2)
 
   var randomPeriodService = function (end) {
-
     var getCountDownString = function () {
       var countdownMilliseconds = end.getTime() - now.getTime()
       var countdownSeconds = parseInt(countdownMilliseconds / 1000)
@@ -45,15 +43,18 @@ var randomEcocalService = function () {
     }
 
     var isFuture = function () {
-      return now.getTime() <= end.getTime()
+      var result = now.getTime() <= end.getTime()
+      return result
     }
 
     var isTooLongPast = function () {
-      return now.getTime() - end.getTime() > 120000
+      var result = now.getTime() - end.getTime() > 120000
+      return result
     }
 
     var isNow = function () {
-      return !isFuture() || !isTooLongPast()
+      var result = !isFuture() || !isTooLongPast()
+      return result
     }
 
     var period = {
@@ -113,12 +114,9 @@ var randomEcocalService = function () {
   ecoCalEvents.Periods.push(randomPeriodService(today))
   ecoCalEvents.Periods.push(randomPeriodService(tomorrow))
   ecoCalEvents.Periods.push(randomPeriodService(afterTomorrow))
-
 }
 
 randomEcocalService()
-
-
 
 var addEvents = function () {
   $('.fxs_ecocal_event_row').click(function () {

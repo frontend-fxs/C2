@@ -20,6 +20,7 @@
 	line-height: 30px;
 }
 .fxs_ecocal_event_row_item.tradeable {
+	width: 27px;
 }
 .fxs_ecocal_event_row_item.tradeable .fa-star {
 	color: #deaf37;
@@ -65,40 +66,54 @@
 }
 
 .fxs_ecocal_event_row_item.time {
+	width: 51px;
 }
 
 .fxs_ecocal_event_row_item.volatility {
-	width: 40px;
+	width: 41px;
 }
 .fxs_ecocal_event_row_item.volatility img {
 }
 
 .fxs_ecocal_event_row_item.flag {
+	width:27px;
 }
 
 .fxs_ecocal_event_row_item.currency {
+	width:45px;
 }
 
 .fxs_ecocal_event_row_item.title {
-	max-width: calc(100% - 600px);
+	max-width: calc(100% - 605px);
 }
 
 .fxs_ecocal_event_row_item.actual {
+	width:93px;
 }
 
 .fxs_ecocal_event_row_item.deviation {
+	width:61px;
+
 }
 
 .fxs_ecocal_event_row_item.consensus {
+	width:93px;
+
 }
 
 .fxs_ecocal_event_row_item.previous {
+	width:111px;
+
 }
 
 .fxs_ecocal_event_row_item.dashboard {
+	width:29px;
+
 }
 
 .fxs_ecocal_event_row_item.expandable {
+	width:27px;
+
 }
 .fxs_ecocal_event_collapsible {
 	width: 100%;

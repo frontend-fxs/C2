@@ -117,6 +117,8 @@ var randomEcocalService = function () {
 
 randomEcocalService()
 
+
+
 var addEvents = function () {
   $('.fxs_ecocal_event_row').click(function () {
     $(this).next('.fxs_ecocal_event_collapsible').toggleClass('fxs_hideElements')
@@ -161,4 +163,5 @@ var renderEcocal = function () {
     renderData()
   })
 }
+
 renderEcocal()

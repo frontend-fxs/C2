@@ -123,8 +123,8 @@ randomEcocalService()
 var addEvents = function () {
   $('.fxs_ecocal_event_row').click(function () {
     $(this).next('.fxs_ecocal_event_collapsible').toggleClass('fxs_hideElements')
-    $(this).find('.fa-chevron-right').toggleClass('fa-chevron-right fa-chevron-down')
-    $(this).find('.fa-chevron-left').toggleClass('fa-chevron-left fa-chevron-down')
+    $(this).find('.fa.right').toggleClass('fa-chevron-right fa-chevron-down')
+    $(this).find('.fa.left').toggleClass('fa-chevron-left fa-chevron-down')
   })
   $('[data-toggle="tooltip"]').tooltip()
 }

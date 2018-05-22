@@ -8,8 +8,8 @@
 .fxs_ecocal_next_events,
 .fxs_ecocal_previous_events{
 	text-align: center;
-	font-size: 12px;
 	border-bottom: 3px solid #f0f0f1;
+	padding: 5px 0;
 
 }
 

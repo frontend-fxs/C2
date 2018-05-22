@@ -8,142 +8,892 @@ var translations = {
 
 
 var ecoCalEvents = {
-  Periods: []
-}
-
-var now = new Date()
-var today = new Date()
-var tomorrow = new Date()
-var afterTomorrow = new Date()
-
-var randomEcocalService = function () {
-
-  tomorrow.setDate(tomorrow.getDate() + 1)
-  afterTomorrow.setDate(afterTomorrow.getDate() + 2)
-
-  var randomPeriodService = function (endParam) {
-    var endCopy = new Date(endParam);
-    var getCountDownString = function () {
-      var countdownMilliseconds = end.getTime() - now.getTime()
-      var countdownSeconds = parseInt(countdownMilliseconds / 1000)
-      var countdownMinutes = parseInt(countdownMilliseconds / (1000 * 60))
-      var timeStampString = end.toLocaleTimeString('en-us', { hour: '2-digit', minute: '2-digit', hour12: false })
-      var countdownString = ''
-      switch (true) {
-        case countdownMilliseconds <= 0:
-          countdownString = translations.Now
-          break
-        case countdownMilliseconds < 60000:
-          countdownString = translations.In + countdownSeconds + translations.SecondsLabel
-          break
-        case countdownMilliseconds < 3600000:
-          countdownString = translations.In + countdownMinutes + translations.MinutesLabel
-          break
-        default:
-          countdownString = timeStampString
-          break
-      }
-      return countdownString
-    }
-
-    var isFuture = function () {
-      var result = now.getTime() <= end.getTime()
-      return result
-    }
-
-    var isTooLongPast = function () {
-      var result = now.getTime() - end.getTime() > 120000
-      return result
-    }
-
-    var isNow = function () {
-      var result = !isFuture() && !isTooLongPast()
-      return result
-    }
-    var randomHour = function () {
-      var hour = 0
-      var difference = Math.random()
-      if (difference < 0.1) {
-        hour = -1
-      } else if (difference > 0.9) {
-        hour = 1
-      }
-      return hour
-    }
-    var randomMinute = function () {
-      var minute = 0
-      var difference = Math.random()
-      if (difference < 0.3) {
-        minute = -1
-      } else if (difference > 0.6) {
-        minute = 1
-      }else{
-        minute = Math.floor(Math.random()*60)
-      }
-      return minute
-    }
-
-    var period = {
-      Header: endCopy.toLocaleDateString('en-EN', { weekday: 'long', month: 'short', day: '2-digit' }),
-      Rows: []
-    }
-
-    for (var i = 1; i < 10; i++) {
-      var randomNumber = Math.random()
-      end=new Date(endCopy);
-      var time = {
-        Hour: end.getHours() + randomHour(),
-        Minute: end.getMinutes() + randomMinute(),
-      }
-      end.setHours(time.Hour)
-      end.setMinutes(time.Minute)
-
-      var event = {
-        IsActive: !isTooLongPast(),
-        IsNow: isNow(),
-        Tradeable: randomNumber > 0.5,
-        CountDown: getCountDownString(),
-        Date: end,
-        VolatilityLevel: randomNumber > 0.1 && Math.floor(randomNumber * 3 + 1),
-        Flag: 'us',
-        Currency: 'EUR',
-        Title: 'CBI Distributive Trades Survey - Realized (MoM) (May)',
-        Actual: {
-          Value: '¥-9999.99B',
-          High: randomNumber > 0.66,
-          Low: randomNumber < 0.33
-        },
-        Deviation: {
-          Value: '-5.66%',
-          High: randomNumber > 0.66,
-          Low: randomNumber < 0.33
-        },
-        Consensus: '¥-9999.99B',
-        Previous: {
-          Value: '¥-9999.99B',
-          Revised: {
-            Tooltip: 'Revised From ',
-            Value: '¥-9999.99B',
-            High: randomNumber > 0.66,
-            Low: randomNumber < 0.33
+  Periods: 
+    [
+      {
+        "Header": "Tuesday, May 22",
+        "Rows": [
+          {
+            "IsActive": false,
+            "IsNow": false,
+            "Tradeable": true,
+            "CountDown": "NOW",
+            "Date": "2018-05-22T06:22:15.950Z",
+            "VolatilityLevel": 2,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": true,
+            "Tradeable": true,
+            "CountDown": "NOW",
+            "Date": "2018-05-22T07:20:15.950Z",
+            "VolatilityLevel": 3,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": true,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": true,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": true,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "in 1'",
+            "Date": "2018-05-22T07:22:15.950Z",
+            "VolatilityLevel": 2,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": true,
+            "CountDown": "in 1'",
+            "Date": "2018-05-22T07:22:15.950Z",
+            "VolatilityLevel": 2,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "in 1'",
+            "Date": "2018-05-22T07:22:15.950Z",
+            "VolatilityLevel": 1,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": true
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": true
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": true
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "in 1'",
+            "Date": "2018-05-22T07:22:15.950Z",
+            "VolatilityLevel": false,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": true
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": true
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": true
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "in 1'",
+            "Date": "2018-05-22T07:22:15.950Z",
+            "VolatilityLevel": 2,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "in 36'",
+            "Date": "2018-05-22T07:57:15.950Z",
+            "VolatilityLevel": false,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": true
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": true
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": true
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "in 59'",
+            "Date": "2018-05-22T08:20:15.950Z",
+            "VolatilityLevel": 1,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": true
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": true
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": true
+              }
+            },
+            "DashboardLink": "google.es"
           }
-        },
-        DashboardLink: 'google.es'
+        ]
+      },
+      {
+        "Header": "Wednesday, May 23",
+        "Rows": [
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "08:20",
+            "Date": "2018-05-23T06:20:15.950Z",
+            "VolatilityLevel": 2,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "09:20",
+            "Date": "2018-05-23T07:20:15.950Z",
+            "VolatilityLevel": false,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": true
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": true
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": true
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": true,
+            "CountDown": "09:20",
+            "Date": "2018-05-23T07:20:15.950Z",
+            "VolatilityLevel": 3,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": true,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": true,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": true,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": true,
+            "CountDown": "09:20",
+            "Date": "2018-05-23T07:20:15.950Z",
+            "VolatilityLevel": 3,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": true,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": true,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": true,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "09:22",
+            "Date": "2018-05-23T07:22:15.950Z",
+            "VolatilityLevel": false,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": true
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": true
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": true
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "09:27",
+            "Date": "2018-05-23T07:27:15.950Z",
+            "VolatilityLevel": 1,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": true
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": true
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": true
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": true,
+            "CountDown": "09:42",
+            "Date": "2018-05-23T07:42:15.950Z",
+            "VolatilityLevel": 3,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": true,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": true,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": true,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "10:05",
+            "Date": "2018-05-23T08:05:15.950Z",
+            "VolatilityLevel": 2,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "10:22",
+            "Date": "2018-05-23T08:22:15.950Z",
+            "VolatilityLevel": 1,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": true
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": true
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": true
+              }
+            },
+            "DashboardLink": "google.es"
+          }
+        ]
+      },
+      {
+        "Header": "Thursday, May 24",
+        "Rows": [
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": true,
+            "CountDown": "09:20",
+            "Date": "2018-05-24T07:20:15.950Z",
+            "VolatilityLevel": 2,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "09:20",
+            "Date": "2018-05-24T07:20:15.950Z",
+            "VolatilityLevel": 2,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": true,
+            "CountDown": "09:22",
+            "Date": "2018-05-24T07:22:15.950Z",
+            "VolatilityLevel": 3,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": true,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": true,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": true,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "09:22",
+            "Date": "2018-05-24T07:22:15.950Z",
+            "VolatilityLevel": 1,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": true
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": true
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": true
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "09:22",
+            "Date": "2018-05-24T07:22:15.950Z",
+            "VolatilityLevel": 2,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "09:37",
+            "Date": "2018-05-24T07:37:15.950Z",
+            "VolatilityLevel": 2,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": true,
+            "CountDown": "09:46",
+            "Date": "2018-05-24T07:46:15.950Z",
+            "VolatilityLevel": 3,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": true,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": true,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": true,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": true,
+            "CountDown": "10:20",
+            "Date": "2018-05-24T08:20:15.950Z",
+            "VolatilityLevel": 3,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": true,
+              "Low": false
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": true,
+              "Low": false
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": true,
+                "Low": false
+              }
+            },
+            "DashboardLink": "google.es"
+          },
+          {
+            "IsActive": true,
+            "IsNow": false,
+            "Tradeable": false,
+            "CountDown": "10:22",
+            "Date": "2018-05-24T08:22:15.950Z",
+            "VolatilityLevel": 1,
+            "Flag": "us",
+            "Currency": "EUR",
+            "Title": "CBI Distributive Trades Survey - Realized (MoM) (May)",
+            "Actual": {
+              "Value": "¥-9999.99B",
+              "High": false,
+              "Low": true
+            },
+            "Deviation": {
+              "Value": "-5.66%",
+              "High": false,
+              "Low": true
+            },
+            "Consensus": "¥-9999.99B",
+            "Previous": {
+              "Value": "¥-9999.99B",
+              "Revised": {
+                "Tooltip": "Revised From ",
+                "Value": "¥-9999.99B",
+                "High": false,
+                "Low": true
+              }
+            },
+            "DashboardLink": "google.es"
+          }
+        ]
       }
-      period.Rows.push(event)
-    }
-    period.Rows.sort(function (a, b) {
-      return a.Date.getTime() - b.Date.getTime()
-    })
-    return period
-  }
-
-  ecoCalEvents.Periods.push(randomPeriodService(today))
-  ecoCalEvents.Periods.push(randomPeriodService(tomorrow))
-  ecoCalEvents.Periods.push(randomPeriodService(afterTomorrow))
+    ]
+  
 }
 
-randomEcocalService();
+
 
 var addEvents = function () {
   $('.fxs_ecocal_event_row').click(function () {

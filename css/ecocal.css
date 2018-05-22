@@ -1,6 +1,5 @@
 .fxs_ecocal_data_wrapper{
 	border: 1px solid #f0f0f1;
-	border-bottom: 3px solid #f0f0f1;
 	width: 100%;
     display: block;
     float: left;
@@ -9,6 +8,9 @@
 .fxs_ecocal_next_events,
 .fxs_ecocal_previous_events{
 	text-align: center;
+	font-size: 12px;
+	border-bottom: 3px solid #f0f0f1;
+
 }
 
 .fxs_ecocal_data{

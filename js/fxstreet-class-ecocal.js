@@ -862,6 +862,9 @@ var addEvents = function () {
     $(this).find('.fa.left').toggleClass('fa-chevron-left fa-chevron-down')
   })
   $('[data-toggle="tooltip"]').tooltip()
+  $('.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o').on('click',function(){
+    
+  })
 }
 
 var renderData = function () {

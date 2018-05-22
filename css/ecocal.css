@@ -187,6 +187,9 @@ fxs_ecocal_menu label input {
 .fxs_ecocal_event_row_item.expandable {
 	width: 20px;
 }
+.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o{
+	color: #E4871B;
+}
 .fxs_ecocal_event_collapsible {
 	width: 100%;
 	clear: both;

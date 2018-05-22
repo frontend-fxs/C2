@@ -25,6 +25,8 @@
 	text-align: center;
 	font-weight: 600;
 	padding: 5px 0;
+	font-size: 12px;
+	text-transform: capitalize;
 }
 .fxs_ecocal_event_row {
 	cursor: pointer;

@@ -18,7 +18,7 @@
                 <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">{{Translations.Volatility}} <span class="fa fa-caret-down"></span></button>
                 <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">{{Translations.Country}} <span class="fa fa-caret-down"></span></button>
                 <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">{{Translations.Category}} <span class="fa fa-caret-down"></span></button>
-                <div class="fxs_checkboxGroup"><label class="fxs_txt_xsmall"><input type="checkbox"> {{Translations.Tradeable}}</label></div>
+                <label class="fxs_btn_xsmall"><input type="checkbox">{{Translations.Tradeable}}</label>
                 <button class="fxs_btn fxs_btn_phantom"><span class="fa fa-download"></span></button>
         </div>
         <div class="fxs_fRight">

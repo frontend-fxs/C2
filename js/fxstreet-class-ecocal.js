@@ -1,4 +1,8 @@
 var ecoCalEvents = {
+  Translations:{
+    PreviousEvents:"PREVIOUS EVENTS",
+    NextEvents:"NEXT EVENTS"
+  },
   Periods: [
     {
       Header: 'Tuesday, May 22',

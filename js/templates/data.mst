@@ -1,3 +1,9 @@
+<div class="fxs_ecocal_data_wrapper">
+
+<div class="fxs_ecocal_previous_events">
+<a href="#">{{Translations.PreviousEvents}} <span class="fa fa-chevron-up"></span></a>
+</div>
+
 <div class="fxs_ecocal_data">
   {{#Periods}}
   <div class="fxs_ecocal_period_header">{{Header}}</div>
@@ -66,4 +72,10 @@
     content Collapsed content
   </div>
   {{/IsActive}} {{/Rows}} {{/Periods}}
+</div>
+
+<div class="fxs_ecocal_next_events">
+    <a href="#">{{Translations.NextEvents}} <span class="fa fa-chevron-down"></span></a>
+</div>
+
 </div>

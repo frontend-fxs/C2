@@ -7,7 +7,7 @@
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.ThisWeek}}</button>
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.NextWeek}}</button>
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall"><span class="fa fa-calendar"></span></button>
-            <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall"> <span class="fa fa-clock-o"></span> {{Translations.SetGMT}} <span class="fa fa-chevron-up"></span></button>
+            <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall"><span class="fa fa-clock-o"></span>{{Translations.SetGMT}} <span class="fa fa-chevron-up"></span></button>
         </div>
         <div class="fxs_fRight">
                 <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall">{{Translations.Notifications}} <span class="fa fa-volume-off"></span></button>

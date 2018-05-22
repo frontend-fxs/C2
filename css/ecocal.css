@@ -9,9 +9,12 @@
 .fxs_ecocal_previous_events{
 	text-align: center;
 	padding: 5px 0;
+	font-size: 12px;
 
 }
-
+.fxs_ecocal_header{
+	background-color: #DDDEDF;
+}
 .fxs_ecocal_data{
 	width: 100%;
     display: block;

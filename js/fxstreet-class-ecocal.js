@@ -1,7 +1,14 @@
 var ecoCalEvents = {
-  Translations:{
-    PreviousEvents:"PREVIOUS EVENTS",
-    NextEvents:"NEXT EVENTS"
+  Translations: {
+    PreviousEvents: 'PREVIOUS EVENTS',
+    NextEvents: 'NEXT EVENTS',
+    Time: 'Time',
+    Volatility: 'Volatility',
+    Event: 'Event',
+    Actual: 'Actual',
+    Deviation: 'Deviation',
+    Consensus: 'Consensus',
+    Previous: 'Previous'
   },
   Periods: [
     {
@@ -158,7 +165,7 @@ var ecoCalEvents = {
           Flag: 'us',
           Currency: 'EUR',
           Title: 'CBI Distributive Trades Survey - Realized (MoM) (May)',
-          EventType:'SPEECH',
+          EventType: 'SPEECH',
           DashboardLink: 'google.es'
         },
         {

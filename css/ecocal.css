@@ -1,34 +1,34 @@
-.fxs_ecocal_menu{
-	padding:5px 10px;
-	
+.fxs_ecocal_menu {
+	padding: 5px 10px;
 }
-.fxs_ecocal_data_wrapper{
+
+fxs_ecocal_menu label input {
+	margin-bottom: 5px;
+}
+.fxs_ecocal_data_wrapper {
 	border: 1px solid #f0f0f1;
 	width: 100%;
-    display: block;
-    float: left;
-
+	display: block;
+	float: left;
 }
 .fxs_ecocal_next_events,
-.fxs_ecocal_previous_events{
+.fxs_ecocal_previous_events {
 	text-align: center;
 	padding: 5px 0;
 	font-size: 12px;
-
 }
-.fxs_ecocal_header{
+.fxs_ecocal_header {
 	background-color: #edecf2;
 	width: 100%;
 	display: block;
 	float: left;
 	text-transform: uppercase;
 }
-.fxs_ecocal_data{
+.fxs_ecocal_data {
 	width: 100%;
-    display: block;
+	display: block;
 	float: left;
 	border-bottom: 3px solid #f0f0f1;
-
 }
 
 .fxs_ecocal_period_header {

@@ -14,6 +14,9 @@
 }
 .fxs_ecocal_header{
 	background-color: #DDDEDF;
+	width: 100%;
+	display: block;
+	float: left;
 }
 .fxs_ecocal_data{
 	width: 100%;

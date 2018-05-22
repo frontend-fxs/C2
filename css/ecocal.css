@@ -8,7 +8,6 @@
 .fxs_ecocal_next_events,
 .fxs_ecocal_previous_events{
 	text-align: center;
-	border-bottom: 3px solid #f0f0f1;
 	padding: 5px 0;
 
 }
@@ -16,7 +15,9 @@
 .fxs_ecocal_data{
 	width: 100%;
     display: block;
-    float: left;
+	float: left;
+	border-bottom: 3px solid #f0f0f1;
+
 }
 
 .fxs_ecocal_period_header {

@@ -6,7 +6,7 @@ var ecoCalEvents = {
     Volatility: 'Volatility',
     Event: 'Event',
     Actual: 'Actual',
-    Deviation: 'Deviation',
+    Deviation: 'Dev',
     Consensus: 'Consensus',
     Previous: 'Previous'
   },
@@ -870,6 +870,25 @@ var renderData = function () {
     $('#fxs_ecocal_data').html(rendered)
     addEvents()
   })
+}
+
+var menuJson = {
+  Translations:{
+    RecentNext: "Recent & Next",
+    Today: "Today",
+    Tomorrow:"Tomorrow",
+    ThisWeek:"This week",
+    NextWeek:"Next Week",
+    SetGMT: "Set GMT",
+    Notifications: "Notifications",
+    Volatility: "Volatility",
+    Country:"Country",
+    Category:"Category",
+    Tradeable:"Tradeable",
+    MyFilters:"My Filters",
+    Defaults:"Defaults",
+    AdvancedFilters: "Advanced Filters"
+  }
 }
 
 var renderMenu = function () {

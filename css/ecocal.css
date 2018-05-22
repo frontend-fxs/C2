@@ -27,7 +27,7 @@
 }
 
 .fxs_ecocal_period_header {
-	background-color: #A3A3A8;
+	background-color: #dddedf;
 	text-align: center;
 	font-weight: 600;
 	padding: 5px 0;
@@ -135,7 +135,7 @@
 }
 
 .fxs_ecocal_event_row_item.title {
-	max-width: calc(100% - 485px);
+	width: calc(100% - 485px);
 }
 
 .fxs_ecocal_event_row_item.actual {

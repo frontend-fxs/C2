@@ -6,16 +6,19 @@ var translations = {
   TimeStampSeparator: ':'
 }
 
+
 var ecoCalEvents = {
   Periods: []
 }
 
+var now = new Date()
+var today = new Date()
+var tomorrow = new Date()
+var afterTomorrow = new Date()
+
 var randomEcocalService = function () {
-  var now = new Date()
-  var today = new Date()
-  var tomorrow = new Date()
+
   tomorrow.setDate(tomorrow.getDate() + 1)
-  var afterTomorrow = new Date()
   afterTomorrow.setDate(afterTomorrow.getDate() + 2)
 
   var randomPeriodService = function (endParam) {
@@ -140,7 +143,7 @@ var randomEcocalService = function () {
   ecoCalEvents.Periods.push(randomPeriodService(afterTomorrow))
 }
 
-randomEcocalService()
+randomEcocalService();
 
 var addEvents = function () {
   $('.fxs_ecocal_event_row').click(function () {

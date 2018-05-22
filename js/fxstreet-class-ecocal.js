@@ -893,7 +893,7 @@ var menuJson = {
 
 var renderMenu = function () {
   $.get('https://frontend-fxs.github.io/C2/js/templates/menu.mst', function (template) {
-    var rendered = Mustache.render(template, {})
+    var rendered = Mustache.render(template, menuJson)
     $('#fxs_ecocal_menu').html(rendered)
   })
 }

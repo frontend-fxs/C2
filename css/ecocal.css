@@ -2,7 +2,10 @@
 	padding: 5px 10px;
 }
 .fxs_ecocal_menu_tradeable span{
-line-height:10px;
+line-height:22px;
+}
+.fxs_ecocal_menu .fa-download{
+	font-size: 18px;
 }
 fxs_ecocal_menu label input {
 	vertical-align: middle;

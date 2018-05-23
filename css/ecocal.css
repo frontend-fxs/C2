@@ -23,6 +23,10 @@ fxs_ecocal_menu label input {
 	display: block;
 	float: left;
 	text-transform: uppercase;
+	padding: 2px 0;
+}
+.fxs_ecocal_header .fxs_ecocal_event_row_item {
+	font-weight: 400;
 }
 .fxs_ecocal_data {
 	width: 100%;
@@ -77,7 +81,7 @@ fxs_ecocal_menu label input {
 	padding-left: 10px;
 }
 .fxs_ecocal_event_row_item.tradeable {
-	width: 22px;
+	width: 30px;
 }
 .fxs_ecocal_event_row_item.tradeable .fa-star {
 	color: #deaf37;
@@ -123,47 +127,42 @@ fxs_ecocal_menu label input {
 }
 
 .fxs_ecocal_event_row_item.time {
-	width: 41px;
+	width: 40px;
 }
 
 .fxs_ecocal_event_row_item.volatility {
-	width: 41px;
+	width: 40px;
 }
 .fxs_ecocal_event_row_item.volatility img {
 	width: 30px;
 	height: 30px;
 }
 
-.fxs_ecocal_event_row_item.flag {
-	width: 23px;
-}
-
 .fxs_ecocal_event_row_item.currency {
-	width: 36px;
+	width: 70px;
 }
 
 .fxs_ecocal_event_row_item.title {
-	width: calc(100% - 485px);
+	width: calc(100% - 540px);
 }
 
 .fxs_ecocal_event_row_item.actual {
-	width: 73px;
+	width: 80px;
 }
 
 .fxs_ecocal_event_row_item.deviation {
-	width: 48px;
+	width: 50px;
 }
 
 .fxs_ecocal_event_row_item.consensus {
-	width: 73px;
+	width: 80px;
 }
 
 .fxs_ecocal_event_row_item.previous {
-	width: 85px;
+	width: 90px;
 }
 
 .fxs_ecocal_event_row_item.type {
-	width: 279px;
 	text-align: center;
 }
 
@@ -178,17 +177,18 @@ fxs_ecocal_menu label input {
 }
 
 .fxs_ecocal_event_row_item.dashboard {
-	width: 20px;
+	width: 40px;
 }
 .fxs_ecocal_event_row_item.dashboard a {
 	color: #304c70;
+	font-size: 24px;
 }
 
 .fxs_ecocal_event_row_item.expandable {
 	width: 20px;
 }
-.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o{
-	color: #E4871B;
+.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o {
+	color: #e4871b;
 }
 .fxs_ecocal_event_collapsible {
 	width: 100%;

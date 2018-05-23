@@ -884,7 +884,7 @@ var menuJson = {
     NextWeek:"Next Week",
     SetGMT: "Set GMT",
     Notifications: "Notifications",
-    impact: "impact",
+    impact: "Impact",
     Country:"Country",
     Category:"Category",
     Tradeable:"Tradeable",

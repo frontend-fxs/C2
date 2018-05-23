@@ -1,14 +1,16 @@
-.fxs_widget_ecocal{
+.fxs_widget_ecocal {
 	border: 1px solid #f0f0f1;
-
+	width: 100%;
+	display: block;
+	float: left;
 }
 .fxs_ecocal_menu {
 	padding: 5px 10px;
 }
-.fxs_ecocal_menu_tradeable span{
-line-height:22px;
+.fxs_ecocal_menu_tradeable span {
+	line-height: 22px;
 }
-.fxs_ecocal_menu .fa-download{
+.fxs_ecocal_menu .fa-download {
 	font-size: 18px;
 }
 fxs_ecocal_menu label input {
@@ -34,7 +36,6 @@ fxs_ecocal_menu label input {
 	float: left;
 	text-transform: uppercase;
 }
-
 .fxs_ecocal_data {
 	width: 100%;
 	display: block;
@@ -89,7 +90,6 @@ fxs_ecocal_menu label input {
 	padding: 2px 5px;
 	height: 34px;
 }
-
 .fxs_ecocal_event_row_item.tradeable {
 	width: 40px;
 }

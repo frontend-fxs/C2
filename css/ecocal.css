@@ -11,7 +11,8 @@ fxs_ecocal_menu label input {
 	vertical-align: middle;
 }
 .fxs_ecocal_data_wrapper {
-	border: 1px solid #f0f0f1;
+	border-top: 2px solid #f0f0f1;
+	border-bottom: 2px solid #f0f0f1;
 	width: 100%;
 	display: block;
 	float: left;

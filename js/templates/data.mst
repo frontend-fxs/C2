@@ -12,8 +12,8 @@
           <div class="fxs_ecocal_event_row_item time">
               <span>{{Translations.Time}}</span>
           </div>
-          <div class="fxs_ecocal_event_row_item volatility">
-              <span>{{Translations.Volatility}}</span>
+          <div class="fxs_ecocal_event_row_item impact">
+              <span>{{Translations.Impact}}</span>
           </div>
           <div class="fxs_ecocal_event_row_item currency"></div>
           <div class="fxs_ecocal_event_row_item title">
@@ -52,9 +52,9 @@
       <div class="fxs_ecocal_event_row_item time">
         <span>{{CountDown}}</span>
       </div>
-      <div class="fxs_ecocal_event_row_item volatility">
-        {{#VolatilityLevel}}
-        <img src="https://editorial.blob.core.windows.net/ico-logos/ecocal-{{.}}.svg" /> {{/VolatilityLevel}}
+      <div class="fxs_ecocal_event_row_item impact">
+        {{#ImpactLevel}}
+        <img src="https://editorial.blob.core.windows.net/ico-logos/ecocal-{{.}}.svg" /> {{/ImpactLevel}}
       </div>
       <div class="fxs_ecocal_event_row_item currency">
         <span class="fxst-flag fxst-i-{{Flag}}"></span>

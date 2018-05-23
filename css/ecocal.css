@@ -138,10 +138,10 @@ fxs_ecocal_menu label input {
 .fxs_ecocal_event_row_item.time {
 	width: 50px;
 }
-.fxs_ecocal_event_row_item.volatility {
+.fxs_ecocal_event_row_item.impact {
 	width: 80px;
 }
-.fxs_ecocal_event_row_item.volatility img {
+.fxs_ecocal_event_row_item.impact img {
 	width: 30px;
 	height: 30px;
 }

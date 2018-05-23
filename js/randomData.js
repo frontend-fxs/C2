@@ -91,7 +91,7 @@ var randomEcocalService = function () {
         Tradeable: randomNumber > 0.5,
         CountDown: getCountDownString(),
         Date: end,
-        VolatilityLevel: randomNumber > 0.1 && Math.floor(randomNumber * 3 + 1),
+        ImpactLevel: randomNumber > 0.1 && Math.floor(randomNumber * 3 + 1),
         Flag: 'us',
         Currency: 'EUR',
         Title: 'CBI Distributive Trades Survey - Realized (MoM) (May)',

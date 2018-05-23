@@ -77,13 +77,13 @@ fxs_ecocal_menu label input {
 .fxs_ecocal_event_row_item {
 	padding: 5px;
 	float: left;
-	line-height: 30px;
-	height: 40px;
 	font-size: 12px;
 	font-weight: 600;
-	white-space: nowrap;
 	overflow: hidden;
 	text-align: center;
+	line-height: 30px;
+	height: 40px;
+	white-space: nowrap;
 }
 .fxs_ecocal_header .fxs_ecocal_event_row_item {
 	font-weight: 400;
@@ -149,22 +149,48 @@ fxs_ecocal_menu label input {
 	width: 60px;
 }
 .fxs_ecocal_event_row_item.title {
-	width: calc(100% - 610px);
+	width: calc(100% - 440px);
+	line-height: 1rem;
+	white-space: normal;
+}
+@media (min-width: 1480px) {
+	.fxs_ecocal_event_row_item.title {
+		width: calc(100% - 610px);
+		line-height: 30px;
+		white-space: nowrap;
+	}
 }
 .fxs_ecocal_event_row_item.actual {
 	width: 80px;
 }
 .fxs_ecocal_event_row_item.deviation {
-	width: 50px;
+	display: none;
+}
+@media (min-width: 1480px) {
+	.fxs_ecocal_event_row_item.deviation {
+		display: inline-block;
+		width: 50px;
+	}
 }
 .fxs_ecocal_event_row_item.consensus {
 	width: 90px;
 }
 .fxs_ecocal_event_row_item.previous {
-	width: 90px;
+	display: none;
+}
+@media (min-width: 1480px) {
+	.fxs_ecocal_event_row_item.previous {
+		display: inline-block;
+		width: 90px;
+	}
 }
 .fxs_ecocal_event_row_item.type {
-	width: 310px;
+	width: 170px;
+}
+@media (min-width: 1480px) {
+	.fxs_ecocal_event_row_item.type {
+		width: 310px;
+	}
 }
 .fxs_ecocal_event_row_item.type .fxs_event_type_label {
 	background-color: #6289ac;
@@ -183,7 +209,13 @@ fxs_ecocal_menu label input {
 	font-size: 24px;
 }
 .fxs_ecocal_event_row_item.expandable {
-	width: 30px;
+	display: none;
+}
+@media (min-width: 1480px) {
+	.fxs_ecocal_event_row_item.expandable {
+		display: inline-block;
+		width: 30px;
+	}
 }
 .fxs_ecocal_event_row_item.expandable .fa-pencil-square-o {
 	color: #e4871b;

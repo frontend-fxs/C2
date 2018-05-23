@@ -15,9 +15,9 @@
     </div>
     <div class="fxs_col_100">
         <div class="fxs_fLeft">
-                <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">{{Translations.impact}} <span class="fa fa-caret-down"></span></button>
-                <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">{{Translations.Country}} <span class="fa fa-caret-down"></span></button>
-                <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">{{Translations.Category}} <span class="fa fa-caret-down"></span></button>
+                <button class="fxs_btn fxs_btn_line fxs_btn_icon fxs_btn_xsmall"><span>{{Translations.impact}}</span> <span class="fa fa-caret-down"></span></button>
+                <button class="fxs_btn fxs_btn_line fxs_btn_icon fxs_btn_xsmall"><span>{{Translations.Country}}</span> <span class="fa fa-caret-down"></span></button>
+                <button class="fxs_btn fxs_btn_line fxs_btn_icon fxs_btn_xsmall"><span>{{Translations.Category}}</span> <span class="fa fa-caret-down"></span></button>
                 <label class="fxs_btn fxs_btn_xsmall fxs_ecocal_menu_tradeable"><input type="checkbox"><span>Tradeable</span></label>
                 <button class="fxs_btn fxs_btn_phantom"><span class="fa fa-download"></span></button>
         </div>

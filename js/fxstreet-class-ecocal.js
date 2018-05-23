@@ -23,7 +23,7 @@ var ecoCalEvents = {
           ImpactLevel: 2,
           Flag: 'us',
           Currency: 'EUR',
-          Title: 'CBI Distributive Trades Survey - Realized (MoM) (May)',
+          Title: 'Core Personal Consumption Expenditure - Price Index (MoM)',
           Actual: {
             Value: '¥-9999.99B',
             High: false,

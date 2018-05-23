@@ -1,7 +1,9 @@
 .fxs_ecocal_menu {
 	padding: 5px 10px;
 }
-
+.fxs_ecocal_menu_tradeable span{
+line-height:10px;
+}
 fxs_ecocal_menu label input {
 	vertical-align: middle;
 }
@@ -23,18 +25,14 @@ fxs_ecocal_menu label input {
 	display: block;
 	float: left;
 	text-transform: uppercase;
-	padding: 2px 0;
 }
-.fxs_ecocal_header .fxs_ecocal_event_row_item {
-	font-weight: 400;
-}
+
 .fxs_ecocal_data {
 	width: 100%;
 	display: block;
 	float: left;
 	border-bottom: 3px solid #f0f0f1;
 }
-
 .fxs_ecocal_period_header {
 	background-color: #dddee0;
 	text-align: center;
@@ -76,15 +74,20 @@ fxs_ecocal_menu label input {
 	font-weight: 600;
 	white-space: nowrap;
 	overflow: hidden;
+	text-align: center;
 }
-.fxs_ecocal_event_row_item:first-child {
-	padding-left: 10px;
+.fxs_ecocal_header .fxs_ecocal_event_row_item {
+	font-weight: 400;
+	padding: 2px 5px;
+	height: 34px;
 }
+
 .fxs_ecocal_event_row_item.tradeable {
-	width: 30px;
+	width: 40px;
 }
 .fxs_ecocal_event_row_item.tradeable .fa-star {
 	color: #deaf37;
+	font-size: 18px;
 }
 .fxs_ecocal_event_row_item.tradeable.triggered .fa-star {
 	-webkit-animation: colorchange 1s infinite;
@@ -92,7 +95,6 @@ fxs_ecocal_menu label input {
 	-o-animation: colorchange 1s infinite;
 	animation: colorchange 1s infinite;
 }
-
 @-webkit-keyframes colorchange {
 	0% {
 		color: #deaf37;
@@ -125,47 +127,37 @@ fxs_ecocal_menu label input {
 		color: #cf4836;
 	}
 }
-
 .fxs_ecocal_event_row_item.time {
-	width: 40px;
+	width: 50px;
 }
-
 .fxs_ecocal_event_row_item.volatility {
-	width: 40px;
+	width: 80px;
 }
 .fxs_ecocal_event_row_item.volatility img {
 	width: 30px;
 	height: 30px;
 }
-
 .fxs_ecocal_event_row_item.currency {
-	width: 70px;
+	width: 60px;
 }
-
 .fxs_ecocal_event_row_item.title {
-	width: calc(100% - 540px);
+	width: calc(100% - 610px);
 }
-
 .fxs_ecocal_event_row_item.actual {
 	width: 80px;
 }
-
 .fxs_ecocal_event_row_item.deviation {
 	width: 50px;
 }
-
 .fxs_ecocal_event_row_item.consensus {
-	width: 80px;
+	width: 90px;
 }
-
 .fxs_ecocal_event_row_item.previous {
 	width: 90px;
 }
-
 .fxs_ecocal_event_row_item.type {
-	text-align: center;
+	width: 310px;
 }
-
 .fxs_ecocal_event_row_item.type .fxs_event_type_label {
 	background-color: #6289ac;
 	color: #fff;
@@ -175,7 +167,6 @@ fxs_ecocal_menu label input {
 	font-size: 10px;
 	padding: 5px 10px;
 }
-
 .fxs_ecocal_event_row_item.dashboard {
 	width: 40px;
 }
@@ -183,9 +174,8 @@ fxs_ecocal_menu label input {
 	color: #304c70;
 	font-size: 24px;
 }
-
 .fxs_ecocal_event_row_item.expandable {
-	width: 20px;
+	width: 30px;
 }
 .fxs_ecocal_event_row_item.expandable .fa-pencil-square-o {
 	color: #e4871b;

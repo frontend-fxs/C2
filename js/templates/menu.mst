@@ -24,7 +24,7 @@
         <div class="fxs_fRight">
                 <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.MyFilters}}</button>
                 <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Defaults}}</button>
-                <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.AdvancedFilters}}</button>
+                <button class="fxs_btn fxs_btn_default fxs_btn_xsmall">{{Translations.AdvancedFilters}}</button>
         </div>
     </div>
 </div>

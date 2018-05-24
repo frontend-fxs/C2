@@ -1,4 +1,32 @@
-<div class="fxs_ecocal_filter">
+<div class="fxs_ecocal_advanced_filter">
+                <div class="fxs_col_100">
+                                <div class="fxs_fLeft">
+                                    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active">{{Translations.RecentNext}}</button>
+                                    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Today}}</button>
+                                    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Tomorrow}}</button>
+                                    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.ThisWeek}}</button>
+                                    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.NextWeek}}</button>
+                                    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall"><span class="fa fa-calendar"></span></button>
+                                    <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall"><span class="fa fa-clock-o"></span>{{Translations.SetGMT}} <span class="fa fa-chevron-up"></span></button>
+                                </div>
+                                <div class="fxs_fRight">
+                                        <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall">{{Translations.Notifications}} <span class="fa fa-volume-off"></span></button>
+                                </div>
+                            </div>
+                            <div class="fxs_col_100">
+                                <div class="fxs_fLeft">
+                                        <button class="fxs_btn fxs_btn_line fxs_btn_xsmall"><span>{{Translations.impact}}</span> <span class="fa fa-caret-down"></span></button>
+                                        <button class="fxs_btn fxs_btn_line fxs_btn_xsmall"><span>{{Translations.Country}}</span> <span class="fa fa-caret-down"></span></button>
+                                        <button class="fxs_btn fxs_btn_line fxs_btn_xsmall"><span>{{Translations.Category}}</span> <span class="fa fa-caret-down"></span></button>
+                                        <label class="fxs_btn fxs_btn_xsmall fxs_ecocal_menu_tradeable"><input type="checkbox"><span>Tradeable</span></label>
+                                        <button class="fxs_btn fxs_btn_phantom"><span class="fa fa-download"></span></button>
+                                </div>
+                                <div class="fxs_fRight">
+                                        <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.MyFilters}}</button>
+                                        <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Defaults}}</button>
+                                        <button class="fxs_btn fxs_btn_default fxs_btn_xsmall">{{Translations.AdvancedFilters}}</button>
+                                </div>
+                            </div>
         <p>
                 <i class="fa fa-filter" aria-hidden="true"> </i>
                 <strong> FILTER BY...</strong>
@@ -148,8 +176,10 @@
         <input type="checkbox">
         <span class="fxst-flag fxst-i-us" title="United States"> US</span>
         <label> United States</label>
-        <a href="#" class="fxst-selectall" data-name="fxst-country"> All</a> /
-        <a href="#" class="fxst-selectnone" data-name="fxst-country"> None</a>
+        <button> All</button> /
+        <button> None</button>
+        <button>Show More</button>
+
         <h3> Category</h3>
         <input type="checkbox">
         <label> Central Banks</label>
@@ -184,5 +214,6 @@
         <label>
                 <input type="checkbox"> Save settings
         </label>
-        <button> Reset defaults</button>
+        <button> Apply </button>
+        <button> Cancel </button>
 </div>

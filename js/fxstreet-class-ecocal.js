@@ -1,7 +1,7 @@
 var templates = {
   data: 'https://frontend-fxs.github.io/C2/js/templates/data.mst',
-  menu: 'https://frontend-fxs.github.io/C2/js/templates/menu.mst',
-  filter: 'https://frontend-fxs.github.io/C2/js/templates/filter.mst',
+  menu: 'https://frontend-fxs.github.io/C2/js/templates/simple-filter.mst',
+  filter: 'https://frontend-fxs.github.io/C2/js/templates/advanced-filter.mst',
   ecocal: 'https://frontend-fxs.github.io/C2/js/templates/ecocal.mst'
 }
 

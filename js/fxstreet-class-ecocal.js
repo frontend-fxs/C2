@@ -895,7 +895,7 @@ var simpleFiltersJson = {
   Translations: translations
 }
 var renderSimpleFilters = function () {
-  $.get(templates.menu, function (template) {
+  $.get(templates.simpleFilters, function (template) {
     var rendered = Mustache.render(template, simpleFiltersJson)
     $('#fxs_ecocal_menu').html(rendered)
   })
@@ -904,7 +904,7 @@ var advancedFiltersJson = {
   Translations: translations
 }
 var renderAdvancedFilters = function () {
-  $.get(templates.filter, function (template) {
+  $.get(templates.advancedFilters, function (template) {
     var rendered = Mustache.render(template, advancedFiltersJson)
     $('#fxs_ecocal_filter').html(rendered)
   })

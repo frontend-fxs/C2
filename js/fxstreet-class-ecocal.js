@@ -1,3 +1,20 @@
+if (window.location.host == 'frontend-fxs.github.io') {
+  var templates = {
+    data: 'https://frontend-fxs.github.io/C2/js/templates/data.mst',
+    menu: 'https://frontend-fxs.github.io/C2/js/templates/menu.mst',
+    filter: 'https://frontend-fxs.github.io/C2/js/templates/filter.mst',
+    ecocal: 'https://frontend-fxs.github.io/C2/js/templates/ecocal.mst'
+  }
+} else {
+  var templates = {
+    data: 'http://192.168.101.48:8080/js/templates/data.mst',
+    menu: 'http://192.168.101.48:8080/js/templates/menu.mst',
+    filter: 'http://192.168.101.48:8080/js/templates/filter.mst',
+    ecocal: 'http://192.168.101.48:8080/js/templates/ecocal.mst'
+  }
+
+}
+
 var ecoCalEvents = {
   Translations: {
     PreviousEvents: 'PREVIOUS EVENTS',
@@ -862,13 +879,11 @@ var addEvents = function () {
     $(this).find('.fa.left').toggleClass('fa-chevron-left fa-chevron-down')
   })
   $('[data-toggle="tooltip"]').tooltip()
-  $('.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o').on('click',function(){
-    
-  })
+  $('.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o').on('click', function () {})
 }
 
 var renderData = function () {
-  $.get('https://frontend-fxs.github.io/C2/js/templates/data.mst', function (template) {
+  $.get(templates.data, function (template) {
     var rendered = Mustache.render(template, ecoCalEvents)
     $('#fxs_ecocal_data').html(rendered)
     addEvents()
@@ -876,40 +891,40 @@ var renderData = function () {
 }
 
 var menuJson = {
-  Translations:{
-    RecentNext: "Recent & Next",
-    Today: "Today",
-    Tomorrow:"Tomorrow",
-    ThisWeek:"This week",
-    NextWeek:"Next Week",
-    SetGMT: "Set GMT",
-    Notifications: "Notifications",
-    impact: "Impact",
-    Country:"Country",
-    Category:"Category",
-    Tradeable:"Tradeable",
-    MyFilters:"My Filters",
-    Defaults:"Defaults",
-    AdvancedFilters: "Advanced Filters"
+  Translations: {
+    RecentNext: 'Recent & Next',
+    Today: 'Today',
+    Tomorrow: 'Tomorrow',
+    ThisWeek: 'This week',
+    NextWeek: 'Next Week',
+    SetGMT: 'Set GMT',
+    Notifications: 'Notifications',
+    impact: 'Impact',
+    Country: 'Country',
+    Category: 'Category',
+    Tradeable: 'Tradeable',
+    MyFilters: 'My Filters',
+    Defaults: 'Defaults',
+    AdvancedFilters: 'Advanced Filters'
   }
 }
 
 var renderMenu = function () {
-  $.get('https://frontend-fxs.github.io/C2/js/templates/menu.mst', function (template) {
+  $.get(templates.menu, function (template) {
     var rendered = Mustache.render(template, menuJson)
     $('#fxs_ecocal_menu').html(rendered)
   })
 }
 
 var renderFilter = function () {
-  $.get('https://frontend-fxs.github.io/C2/js/templates/filter.mst', function (template) {
+  $.get(templates.filter, function (template) {
     var rendered = Mustache.render(template, {})
     $('#fxs_ecocal_filter').html(rendered)
   })
 }
 
 var renderEcocal = function () {
-  $.get('https://frontend-fxs.github.io/C2/js/templates/ecocal.mst', function (template) {
+  $.get(templates.ecocal, function (template) {
     var rendered = Mustache.render(template, {})
     $('#fxs_ecocal').html(rendered)
     renderFilter()

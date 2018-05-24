@@ -1,22 +1,47 @@
-var templates = {
-  data: 'https://frontend-fxs.github.io/C2/js/templates/data.mst',
-  menu: 'https://frontend-fxs.github.io/C2/js/templates/simple-filter.mst',
-  filter: 'https://frontend-fxs.github.io/C2/js/templates/advanced-filter.mst',
-  ecocal: 'https://frontend-fxs.github.io/C2/js/templates/ecocal.mst'
+var templates = {}
+if (document.domain == 'frontend-fxs.github.io') {
+  templates = {
+    data: 'https://frontend-fxs.github.io/C2/js/templates/data.mst',
+    simpleFilters: 'https://frontend-fxs.github.io/C2/js/templates/simple-filter.mst',
+    advancedFilters: 'https://frontend-fxs.github.io/C2/js/templates/advanced-filter.mst',
+    ecocal: 'https://frontend-fxs.github.io/C2/js/templates/ecocal.mst'
+  }
+} else {
+  templates = {
+    data: '/js/templates/data.mst',
+    simpleFilters: '/js/templates/simple-filter.mst',
+    advancedFilters: '/js/templates/advanced-filter.mst',
+    ecocal: '/js/templates/ecocal.mst'
+  }
+}
+var translations = {
+  PreviousEvents: 'PREVIOUS EVENTS',
+  NextEvents: 'NEXT EVENTS',
+  Time: 'Time',
+  Impact: 'Impact',
+  Event: 'Event',
+  Actual: 'Actual',
+  Deviation: 'Dev',
+  Consensus: 'Consensus',
+  Previous: 'Previous',
+  RecentNext: 'Recent & Next',
+  Today: 'Today',
+  Tomorrow: 'Tomorrow',
+  ThisWeek: 'This week',
+  NextWeek: 'Next Week',
+  SetGMT: 'Set GMT',
+  Notifications: 'Notifications',
+  impact: 'Impact',
+  Country: 'Country',
+  Category: 'Category',
+  Tradeable: 'Tradeable',
+  MyFilters: 'My Filters',
+  Defaults: 'Defaults',
+  AdvancedFilters: 'Advanced Filters'
 }
 
-var ecoCalEvents = {
-  Translations: {
-    PreviousEvents: 'PREVIOUS EVENTS',
-    NextEvents: 'NEXT EVENTS',
-    Time: 'Time',
-    Impact: 'Impact',
-    Event: 'Event',
-    Actual: 'Actual',
-    Deviation: 'Dev',
-    Consensus: 'Consensus',
-    Previous: 'Previous'
-  },
+var dataJson = {
+  Translations: translations,
   Periods: [
     {
       Header: 'Tuesday, May 22',
@@ -874,51 +899,43 @@ var addEvents = function () {
 
 var renderData = function () {
   $.get(templates.data, function (template) {
-    var rendered = Mustache.render(template, ecoCalEvents)
+    var rendered = Mustache.render(template, dataJson)
     $('#fxs_ecocal_data').html(rendered)
     addEvents()
   })
 }
 
-var menuJson = {
-  Translations: {
-    RecentNext: 'Recent & Next',
-    Today: 'Today',
-    Tomorrow: 'Tomorrow',
-    ThisWeek: 'This week',
-    NextWeek: 'Next Week',
-    SetGMT: 'Set GMT',
-    Notifications: 'Notifications',
-    impact: 'Impact',
-    Country: 'Country',
-    Category: 'Category',
-    Tradeable: 'Tradeable',
-    MyFilters: 'My Filters',
-    Defaults: 'Defaults',
-    AdvancedFilters: 'Advanced Filters'
-  }
+var simpleFiltersJson = {
+  Translations: translations
 }
 
-var renderMenu = function () {
+var renderSimpleFilters = function () {
   $.get(templates.menu, function (template) {
-    var rendered = Mustache.render(template, menuJson)
+    var rendered = Mustache.render(template, simpleFiltersJson)
     $('#fxs_ecocal_menu').html(rendered)
   })
 }
 
-var renderFilter = function () {
+var advancedFiltersJson = {
+  Translations: translations
+}
+
+var renderAdvancedFilters = function () {
   $.get(templates.filter, function (template) {
-    var rendered = Mustache.render(template, {})
+    var rendered = Mustache.render(template, advancedFiltersJson)
     $('#fxs_ecocal_filter').html(rendered)
   })
+}
+var ecoCalJson = {
+  Translations: translations
 }
 
 var renderEcocal = function () {
   $.get(templates.ecocal, function (template) {
-    var rendered = Mustache.render(template, {})
+    var rendered = Mustache.render(template, ecoCalJson)
     $('#fxs_ecocal').html(rendered)
-    renderFilter()
-    renderMenu()
+    renderAdvancedFilters()
+    renderSimpleFilters()
     renderData()
   })
 }

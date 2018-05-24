@@ -1,19 +1,10 @@
-var templates = {}
-if (document.domain == 'frontend-fxs.github.io') {
-  templates = {
-    data: 'https://frontend-fxs.github.io/C2/js/templates/data.mst',
-    simpleFilters: 'https://frontend-fxs.github.io/C2/js/templates/simple-filter.mst',
-    advancedFilters: 'https://frontend-fxs.github.io/C2/js/templates/advanced-filter.mst',
-    ecocal: 'https://frontend-fxs.github.io/C2/js/templates/ecocal.mst'
-  }
-} else {
-  templates = {
-    data: '/js/templates/data.mst',
-    simpleFilters: '/js/templates/simple-filter.mst',
-    advancedFilters: '/js/templates/advanced-filter.mst',
-    ecocal: '/js/templates/ecocal.mst'
-  }
+var templates = {
+  data: 'https://frontend-fxs.github.io/C2/js/templates/data.mst',
+  simpleFilters: 'https://frontend-fxs.github.io/C2/js/templates/simple-filter.mst',
+  advancedFilters: 'https://frontend-fxs.github.io/C2/js/templates/advanced-filter.mst',
+  ecocal: 'https://frontend-fxs.github.io/C2/js/templates/ecocal.mst'
 }
+
 var translations = {
   PreviousEvents: 'PREVIOUS EVENTS',
   NextEvents: 'NEXT EVENTS',

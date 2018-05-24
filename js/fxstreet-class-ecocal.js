@@ -4,7 +4,6 @@ var templates = {
   advancedFilters: 'https://frontend-fxs.github.io/C2/js/templates/advanced-filter.mst',
   ecocal: 'https://frontend-fxs.github.io/C2/js/templates/ecocal.mst'
 }
-
 var translations = {
   PreviousEvents: 'PREVIOUS EVENTS',
   NextEvents: 'NEXT EVENTS',
@@ -30,7 +29,6 @@ var translations = {
   Defaults: 'Defaults',
   AdvancedFilters: 'Advanced Filters'
 }
-
 var dataJson = {
   Translations: translations,
   Periods: [
@@ -877,7 +875,6 @@ var dataJson = {
     }
   ]
 }
-
 var addEvents = function () {
   $('.fxs_ecocal_event_row').click(function () {
     $(this).next('.fxs_ecocal_event_collapsible').toggleClass('fxs_hideElements')
@@ -887,7 +884,6 @@ var addEvents = function () {
   $('[data-toggle="tooltip"]').tooltip()
   $('.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o').on('click', function () {})
 }
-
 var renderData = function () {
   $.get(templates.data, function (template) {
     var rendered = Mustache.render(template, dataJson)
@@ -895,22 +891,18 @@ var renderData = function () {
     addEvents()
   })
 }
-
 var simpleFiltersJson = {
   Translations: translations
 }
-
 var renderSimpleFilters = function () {
   $.get(templates.menu, function (template) {
     var rendered = Mustache.render(template, simpleFiltersJson)
     $('#fxs_ecocal_menu').html(rendered)
   })
 }
-
 var advancedFiltersJson = {
   Translations: translations
 }
-
 var renderAdvancedFilters = function () {
   $.get(templates.filter, function (template) {
     var rendered = Mustache.render(template, advancedFiltersJson)
@@ -920,7 +912,6 @@ var renderAdvancedFilters = function () {
 var ecoCalJson = {
   Translations: translations
 }
-
 var renderEcocal = function () {
   $.get(templates.ecocal, function (template) {
     var rendered = Mustache.render(template, ecoCalJson)
@@ -930,5 +921,4 @@ var renderEcocal = function () {
     renderData()
   })
 }
-
 renderEcocal()

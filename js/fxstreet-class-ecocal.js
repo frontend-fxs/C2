@@ -1,18 +1,8 @@
-if (window.location.host == 'frontend-fxs.github.io') {
-  var templates = {
-    data: 'https://frontend-fxs.github.io/C2/js/templates/data.mst',
-    menu: 'https://frontend-fxs.github.io/C2/js/templates/menu.mst',
-    filter: 'https://frontend-fxs.github.io/C2/js/templates/filter.mst',
-    ecocal: 'https://frontend-fxs.github.io/C2/js/templates/ecocal.mst'
-  }
-} else {
-  var templates = {
-    data: 'http://192.168.101.48:8080/js/templates/data.mst',
-    menu: 'http://192.168.101.48:8080/js/templates/menu.mst',
-    filter: 'http://192.168.101.48:8080/js/templates/filter.mst',
-    ecocal: 'http://192.168.101.48:8080/js/templates/ecocal.mst'
-  }
-
+var templates = {
+  data: 'https://frontend-fxs.github.io/C2/js/templates/data.mst',
+  menu: 'https://frontend-fxs.github.io/C2/js/templates/menu.mst',
+  filter: 'https://frontend-fxs.github.io/C2/js/templates/filter.mst',
+  ecocal: 'https://frontend-fxs.github.io/C2/js/templates/ecocal.mst'
 }
 
 var ecoCalEvents = {

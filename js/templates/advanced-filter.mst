@@ -14,6 +14,14 @@
 		<button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">
 			<span class="fa fa-calendar"></span>
 		</button>
+		<div class="fxs_ecocal_advanced_filter_date_picker">
+			<h4>Custom Dates</h4>
+			<label>Start date:
+				<input type="date"> </label>
+			<label>End date:
+				<input type="date"> </label>
+			<button>Apply</button>
+		</div>	
 		<input type="date" id="fxs_ecocal_filter_date_range_from">
 		<input type="date" id="fxs_ecocal_filter_date_range_to">
 		<button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall">
@@ -43,10 +51,6 @@
 			<input type="search" id="fxs_ecocal_filter_advanced_event_name_search" class="fxs_ecocal_filter_advanced_event_name_search">
 		</label>
 </p>
-
-
-
-
 		<h3> {{Translations.Countries}}</h3>
 		<input type="checkbox">
 		<span class="fxst-flag fxst-i-ar" title="Argentina"> AR</span>

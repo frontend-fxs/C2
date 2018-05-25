@@ -28,10 +28,10 @@ var translations = {
   MyFilters: 'My Filters',
   Defaults: 'Defaults',
   AdvancedFilters: 'Advanced Filters',
-  Tradeable:"Tradeable",
-  Filters:"FILTERS",
-  EventName:"Event Name",
-  Countries:"Countries"
+  Tradeable: 'Tradeable',
+  Filters: 'FILTERS',
+  EventName: 'Event Name',
+  Countries: 'Countries'
 }
 var dataJson = {
   Translations: translations,
@@ -887,9 +887,9 @@ var addEvents = function () {
   })
   $('[data-toggle="tooltip"]').tooltip()
   $('.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o').on('click', function () {})
-  $('#fxs_ecocal_advanced_filter_date_picker_toggle').on('click',function(){
+  $('#fxs_ecocal_advanced_filter_date_picker_toggle').on('click', function () {
     $('#fxs_ecocal_advanced_filter_date_picker').toggleClass('fxs_hideElements')
-  });
+  })
 }
 var renderData = function () {
   $.get(templates.data, function (template) {
@@ -905,6 +905,7 @@ var renderSimpleFilters = function () {
   $.get(templates.simpleFilters, function (template) {
     var rendered = Mustache.render(template, simpleFiltersJson)
     $('#fxs_ecocal_menu').html(rendered)
+    renderData()
   })
 }
 var advancedFiltersJson = {
@@ -914,6 +915,7 @@ var renderAdvancedFilters = function () {
   $.get(templates.advancedFilters, function (template) {
     var rendered = Mustache.render(template, advancedFiltersJson)
     $('#fxs_ecocal_filter').html(rendered)
+    renderSimpleFilters()
   })
 }
 var ecoCalJson = {
@@ -924,8 +926,6 @@ var renderEcocal = function () {
     var rendered = Mustache.render(template, ecoCalJson)
     $('#fxs_ecocal').html(rendered)
     renderAdvancedFilters()
-    renderSimpleFilters()
-    renderData()
   })
 }
 renderEcocal()

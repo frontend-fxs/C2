@@ -887,6 +887,9 @@ var addEvents = function () {
   })
   $('[data-toggle="tooltip"]').tooltip()
   $('.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o').on('click', function () {})
+  $('#fxs_ecocal_advanced_filter_date_picker_toggle').on('click',function(){
+    $('#fxs_ecocal_advanced_filter_date_picker').toggleClass('fxs_hideElements')
+  });
 }
 var renderData = function () {
   $.get(templates.data, function (template) {

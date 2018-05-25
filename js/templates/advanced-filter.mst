@@ -14,7 +14,7 @@
 		<button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">
 			<span class="fa fa-calendar"></span>
 		</button>
-		<div class="fxs_ecocal_advanced_filter_date_picker">
+		<div class="fxs_ecocal_advanced_filter_date_picker" class="fxs_hideElements">
 			<h4>Custom Dates</h4>
 			<label>Start date:
 				<input type="date"> </label>

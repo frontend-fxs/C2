@@ -7,7 +7,7 @@
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Tomorrow}}</button>
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.ThisWeek}}</button>
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.NextWeek}}</button>
-            <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">
+            <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall"  id="fxs_ecocal_simple_filter_date_picker_toggle">
                 <span class="fa fa-calendar"></span>
             </button>
             <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall">
@@ -58,7 +58,7 @@
             <button class="fxs_btn fxs_btn_default fxs_btn_xsmall">{{Translations.AdvancedFilters}}</button>
         </div>
     </div>
-    <div class="fxs_ecocal_simple_filter_date_picker">
+    <div id="fxs_ecocal_simple_filter_date_picker fxs_hideElements">
         <h4>Custom Dates</h4>
         <label>Start date:
             <input type="date"> </label>

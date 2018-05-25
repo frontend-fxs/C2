@@ -887,12 +887,6 @@ var addEvents = function () {
   })
   $('[data-toggle="tooltip"]').tooltip()
   $('.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o').on('click', function () {})
-  $('#fxs_ecocal_advanced_filter_date_picker_toggle').on('click', function () {
-    $('#fxs_ecocal_advanced_filter_date_picker').toggleClass('fxs_hideElements')
-  })  
-  $('#fxs_ecocal_simple_filter_date_picker_toggle').on('click', function () {
-    $('#fxs_ecocal_simple_filter_date_picker').toggleClass('fxs_hideElements')
-  })
   $('#fxs_ecocal_sinple_filter_date_picker_toggle').daterangepicker();
   $('#fxs_ecocal_advanced_filter_date_picker_toggle').daterangepicker();
 }

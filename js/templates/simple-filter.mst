@@ -62,7 +62,7 @@
             <button class="fxs_btn fxs_btn_default fxs_btn_xsmall">{{Translations.AdvancedFilters}}</button>
         </div>
     </div>
-    <div id="fxs_ecocal_simple_filter_date_picker fxs_hideElements">
+    <div id="fxs_ecocal_simple_filter_date_picker" class="fxs_hideElements">
         <h4>Custom Dates</h4>
         <label>Start date:
             <input type="date"> </label>

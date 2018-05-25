@@ -1,5 +1,4 @@
 <div class="fxs_ecocal_advanced_filter">
-	<h1>ADVANCED FILTERS</h1>
 	<p>
 		<button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active">{{Translations.RecentNext}}</button>
 		<button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Today}}</button>

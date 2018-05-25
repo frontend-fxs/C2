@@ -1,4 +1,6 @@
-<div class="fxs_ecocal_menu">
+<div class="fxs_ecocal_simple_filter">
+    <h1>SIMPLE FILTERS SIMPLE FILTERS SIMPLE FILTERS SIMPLE FILTERS SIMPLE FILTERS SIMPLE FILTERS SIMPLE FILTERS SIMPLE FILTERS
+        SIMPLE FILTERS SIMPLE FILTERS </h1>
     <div class="fxs_col_100">
         <div class="fxs_fLeft">
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active">{{Translations.RecentNext}}</button>
@@ -6,25 +8,63 @@
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Tomorrow}}</button>
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.ThisWeek}}</button>
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.NextWeek}}</button>
-            <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall"><span class="fa fa-calendar"></span></button>
-            <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall"><span class="fa fa-clock-o"></span>{{Translations.SetGMT}} <span class="fa fa-chevron-up"></span></button>
+            <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">
+                <span class="fa fa-calendar"></span>
+            </button>
+            <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall">
+                <span class="fa fa-clock-o"></span>{{Translations.SetGMT}}
+                <span class="fa fa-chevron-up"></span>
+            </button>
         </div>
         <div class="fxs_fRight">
-                <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall">{{Translations.Notifications}} <span class="fa fa-volume-off"></span></button>
+            <span class="fa fa-sliders" aria-hidden="true" id="fxs_ecocal_open_filters"></span>
+            <input type="text" class="form-control ais-search-box--input" id="q" autocapitalize="off" autocomplete="off"
+                autocorrect="off" placeholder="Search" role="textbox" spellcheck="false" value="">
+            <svg xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-13" viewBox="0 0 40 40" width="15px" height="15px">
+                <path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"
+                    fill-rule="evenodd"> </path>
+            </svg>
+            <span id="fxs_ecocal_volume_element" class="fxs_volume_element">
+                <strong class="fxs_txt_highlight fxs_hidden_s_iBlock"> {{Translations.Notifications}} </strong>
+                <span class="fa fa-volume-off fxs_txt_dark_4" id="fxs_ecocal_volume_icon">
+                </span>
+            </span>
         </div>
     </div>
     <div class="fxs_col_100">
         <div class="fxs_fLeft">
-                <button class="fxs_btn fxs_btn_line fxs_btn_xsmall"><span>{{Translations.impact}}</span> <span class="fa fa-caret-down"></span></button>
-                <button class="fxs_btn fxs_btn_line fxs_btn_xsmall"><span>{{Translations.Country}}</span> <span class="fa fa-caret-down"></span></button>
-                <button class="fxs_btn fxs_btn_line fxs_btn_xsmall"><span>{{Translations.Category}}</span> <span class="fa fa-caret-down"></span></button>
-                <label class="fxs_btn fxs_btn_xsmall fxs_ecocal_menu_tradeable"><input type="checkbox"><span>Tradeable</span></label>
-                <button class="fxs_btn fxs_btn_phantom"><span class="fa fa-download"></span></button>
+            <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">
+                <span>{{Translations.impact}}</span>
+                <span class="fa fa-caret-down"></span>
+            </button>
+            <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">
+                <span>{{Translations.Country}}</span>
+                <span class="fa fa-caret-down"></span>
+            </button>
+            <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">
+                <span>{{Translations.Category}}</span>
+                <span class="fa fa-caret-down"></span>
+            </button>
+            <label class="fxs_btn fxs_btn_xsmall fxs_ecocal_menu_tradeable">
+                <input type="checkbox">
+                <span>{{Translations.Tradeable}}</span>
+            </label>
+            <button class="fxs_btn fxs_btn_phantom">
+                <span class="fa fa-download"></span>
+            </button>
         </div>
         <div class="fxs_fRight">
-                <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.MyFilters}}</button>
-                <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Defaults}}</button>
-                <button class="fxs_btn fxs_btn_default fxs_btn_xsmall">{{Translations.AdvancedFilters}}</button>
+            <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.MyFilters}}</button>
+            <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Defaults}}</button>
+            <button class="fxs_btn fxs_btn_default fxs_btn_xsmall">{{Translations.AdvancedFilters}}</button>
         </div>
+    </div>
+    <div class="fxs_ecocal_simple_filter_date_picker">
+        <h4>Custom Dates</h4>
+        <label>Start date:
+            <input type="date"> </label>
+        <label>End date:
+            <input type="date"> </label>
+        <butoon>Apply</button>
     </div>
 </div>

@@ -27,7 +27,11 @@ var translations = {
   Tradeable: 'Tradeable',
   MyFilters: 'My Filters',
   Defaults: 'Defaults',
-  AdvancedFilters: 'Advanced Filters'
+  AdvancedFilters: 'Advanced Filters',
+  Tradeable:"Tradeable",
+  Filters:"FILTERS",
+  EventName:"Event Name",
+  Countries:"Countries"
 }
 var dataJson = {
   Translations: translations,

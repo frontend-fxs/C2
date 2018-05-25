@@ -1,6 +1,5 @@
 <div class="fxs_ecocal_simple_filter">
-    <h1>SIMPLE FILTERS SIMPLE FILTERS SIMPLE FILTERS SIMPLE FILTERS SIMPLE FILTERS SIMPLE FILTERS SIMPLE FILTERS SIMPLE FILTERS
-        SIMPLE FILTERS SIMPLE FILTERS </h1>
+    <h1>SIMPLE FILTERS</h1>
     <div class="fxs_col_100">
         <div class="fxs_fLeft">
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active">{{Translations.RecentNext}}</button>

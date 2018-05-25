@@ -893,6 +893,8 @@ var addEvents = function () {
   $('#fxs_ecocal_simple_filter_date_picker_toggle').on('click', function () {
     $('#fxs_ecocal_simple_filter_date_picker').toggleClass('fxs_hideElements')
   })
+  $('#fxs_ecocal_sinple_filter_date_picker_toggle').daterangepicker();
+  $('#fxs_ecocal_advanced_filter_date_picker_toggle').daterangepicker();
 }
 var renderData = function () {
   $.get(templates.data, function (template) {

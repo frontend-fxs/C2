@@ -8,14 +8,6 @@
 		<button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall" id="fxs_ecocal_advanced_filter_date_picker_toggle">
 			<span class="fa fa-calendar"></span>
 		</button>
-		<div id="fxs_ecocal_advanced_filter_date_picker" class="fxs_hideElements">
-			<h4>Custom Dates</h4>
-			<label>Start date:
-				<input type="date"> </label>
-			<label>End date:
-				<input type="date"> </label>
-			<button>Apply</button>
-		</div>
 		<button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall">
 			<span class="fa fa-clock-o"></span>{{Translations.SetGMT}}
 			<span class="fa fa-chevron-up"></span>

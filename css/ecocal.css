@@ -244,3 +244,33 @@ fxs_ecocal_menu label input {
 	clear: both;
 	float: left;
 }
+fxs_simple_filter_mobile_toggle {
+	display: block;
+}
+@media (min-width: 1024px) {
+	fxs_simple_filter_mobile_toggle {
+		display: none;
+	}
+}
+
+.fxs_simple_filter_mobile_toggle .fxs_search_box,
+.fxs_simple_filter_mobile_toggle .fxs_btn_icon {
+	font-size: 28px;
+	line-height: 35px;
+	display: inline-block;
+}
+.fxs_simple_filter_mobile_toggle .fxs_search_box {
+	width: calc(100% - 100px);
+	position: relative;
+	display: inline-block;
+}
+.fxs_simple_filter_mobile_toggle .fxs_search_box .fxs_search_input {
+	width:100%;
+}
+.fxs_simple_filter_mobile_toggle .fxs_search_box svg{
+	position: absolute;
+	left:10px;
+	top:50%;
+	transform: translateY(-46%);
+}
+

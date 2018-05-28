@@ -1,8 +1,14 @@
-var templates = {
+/*var templates = {
   data: 'https://frontend-fxs.github.io/C2/js/templates/data.mst',
   simpleFilters: 'https://frontend-fxs.github.io/C2/js/templates/simple-filter.mst',
   advancedFilters: 'https://frontend-fxs.github.io/C2/js/templates/advanced-filter.mst',
   ecocal: 'https://frontend-fxs.github.io/C2/js/templates/ecocal.mst'
+}*/
+var templates = {
+  data: 'js/templates/data.mst',
+  simpleFilters: 'js/templates/simple-filter.mst',
+  advancedFilters: 'js/templates/advanced-filter.mst',
+  ecocal: 'js/templates/ecocal.mst'
 }
 var translations = {
   PreviousEvents: 'PREVIOUS EVENTS',
@@ -889,6 +895,12 @@ var addEvents = function () {
   $('.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o').on('click', function () {})
   $('#fxs_ecocal_simple_filter_date_picker_toggle').daterangepicker();
   $('#fxs_ecocal_advanced_filter_date_picker_toggle').daterangepicker();
+  $('#fxs_simple_filter_mobile_toggle_volume').click(function(){
+    $(this).toggleClass('fa-volume-off fa-volume-up');
+  })
+  $('.fa-pencil-square-o').click(function(){
+    $('.fxs_ecocal_header input').toggleClass('fxs_hideElements');
+  });
 }
 var renderData = function () {
   $.get(templates.data, function (template) {

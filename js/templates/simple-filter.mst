@@ -45,11 +45,11 @@
         <div class="fxs_fRight">
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.MyFilters}}</button>
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Defaults}}</button>
-            <button class="fxs_btn fxs_btn_default fxs_btn_xsmall">{{Translations.AdvancedFilters}}</button>
+            <button class="fxs_btn fxs_btn_default fxs_btn_xsmall" id="fxs_ecocal_advanced_filters_toggle">{{Translations.AdvancedFilters}}</button>
         </div>
     </div>
 </div>
-<div class="fxs_simple_filter_mobile_toggle">
+<div class="fxs_simple_filter_mobile_toggle fxs_visible_st">
     <button class="fa fa-sliders fxs_btn fxs_btn_icon fxs_txt_dark_4" aria-hidden="true" id="fxs_ecocal_open_filters"></button>
     <div class="fxs_search_box">
         <input type="search" class="fxs_search_input" placeholder="Search">

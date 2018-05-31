@@ -1,9 +1,9 @@
-/*var templates = {
+/* var templates = {
   data: 'https://frontend-fxs.github.io/C2/js/templates/data.mst',
   simpleFilters: 'https://frontend-fxs.github.io/C2/js/templates/simple-filter.mst',
   advancedFilters: 'https://frontend-fxs.github.io/C2/js/templates/advanced-filter.mst',
   ecocal: 'https://frontend-fxs.github.io/C2/js/templates/ecocal.mst'
-}*/
+} */
 var templates = {
   data: 'js/templates/data.mst',
   simpleFilters: 'js/templates/simple-filter.mst',
@@ -37,7 +37,11 @@ var translations = {
   Tradeable: 'Tradeable',
   Filters: 'FILTERS',
   EventName: 'Event Name',
-  Countries: 'Countries'
+  Countries: 'Countries',
+  Volatility: 'Volatility',
+  SaveSettings: 'Save settings',
+  Apply: 'Apply',
+  Cancel: 'Cancel'
 }
 var dataJson = {
   Translations: translations,
@@ -893,14 +897,26 @@ var addEvents = function () {
   })
   $('[data-toggle="tooltip"]').tooltip()
   $('.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o').on('click', function () {})
-  $('#fxs_ecocal_simple_filter_date_picker_toggle').daterangepicker();
-  $('#fxs_ecocal_advanced_filter_date_picker_toggle').daterangepicker();
-  $('#fxs_simple_filter_mobile_toggle_volume').click(function(){
-    $(this).toggleClass('fa-volume-off fa-volume-up');
+  $('#fxs_ecocal_simple_filter_date_picker_toggle').daterangepicker()
+  $('#fxs_ecocal_advanced_filter_date_picker_toggle').daterangepicker()
+  $('#fxs_simple_filter_mobile_toggle_volume').click(function () {
+    $(this).toggleClass('fa-volume-off fa-volume-up')
   })
-  $('.fa-pencil-square-o').click(function(){
-    $('.fxs_ecocal_header input').toggleClass('fxs_hideElements');
-  });
+  $('.fa-pencil-square-o').click(function () {
+    $('.fxs_ecocal_header input').toggleClass('fxs_hideElements')
+  })
+  $('#fxs_ecocal_advanced_filters_toggle').click(function () {
+    $('.fxs_ecocal_advanced_filter').toggleClass('fxs_hideElements')
+  })
+  $('#fxs_ecocal_advanced_filter_close').click(function () {
+    $('.fxs_ecocal_advanced_filter').toggleClass('fxs_hideElements')
+  })
+  $('#fxs_ecocal_advanced_filter_apply').click(function () {
+    $('.fxs_ecocal_advanced_filter').toggleClass('fxs_hideElements')
+  })
+  $('#fxs_ecocal_advanced_filter_cancel').click(function () {
+    $('.fxs_ecocal_advanced_filter').toggleClass('fxs_hideElements')
+  })
 }
 var renderData = function () {
   $.get(templates.data, function (template) {

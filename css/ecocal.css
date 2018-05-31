@@ -89,6 +89,14 @@ fxs_ecocal_menu label input {
 	font-weight: 400;
 	padding: 2px 5px;
 	height: 34px;
+	position: relative;
+}
+.fxs_ecocal_header .fxs_ecocal_event_row_item input[type='checkbox'] {
+	position: absolute;
+	left:50%;
+	top:100%;
+	transform: translateX(-50%);
+	z-index:2;
 }
 .fxs_ecocal_event_row_item.tradeable {
 	width: 40px;
@@ -265,12 +273,63 @@ fxs_simple_filter_mobile_toggle {
 	display: inline-block;
 }
 .fxs_simple_filter_mobile_toggle .fxs_search_box .fxs_search_input {
-	width:100%;
+	width: 100%;
 }
-.fxs_simple_filter_mobile_toggle .fxs_search_box svg{
+.fxs_simple_filter_mobile_toggle .fxs_search_box svg {
 	position: absolute;
-	left:10px;
-	top:50%;
+	left: 10px;
+	top: 50%;
 	transform: translateY(-46%);
 }
 
+.fxs_ecocal_advanced_filter {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 20000;
+}
+.fxs_ecocal_advanced_filter_inner {
+	background-color: #fff;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	right: 100px;
+	z-index: 19999;
+	padding: 15px;
+	max-height: calc(100% - 200px);
+	overflow-y: scroll;
+}
+.fxs_ecocal_advanced_filter_inner .fxs_btn_close_dropdown {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+label {
+	padding: 0 5px;
+}
+label span {
+	font-size: 0.8rem;
+	line-height: 0.8rem;
+}
+label input[type='checkbox'] {
+	margin: 5px 0;
+}
+label input[type='search'] {
+	margin: 0;
+	padding:0;
+	height: 20px;
+	width: 100px;
+}
+
+label.fxs_seventh {
+	width: calc(100% / 7.2);
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+label.fxs_seventh .fxst-flag {
+	margin-top: 6px;
+}

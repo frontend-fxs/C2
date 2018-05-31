@@ -18,7 +18,7 @@
 				<span class="fa fa-chevron-up"></span>
 			</button>
 			<label>
-				<span>{{Translations.Volatility}}</span>
+				<span>{{Translations.Impact}}</span>
 				<input type="checkbox">
 				<span>0</span>
 				<input type="checkbox">
@@ -259,14 +259,14 @@
 			<span>United States</span>
 		</label>
 		<label class="fxs_seventh">
-			<button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall"> All</button> /
-			<button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall"> None</button>
+			<button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall"> {{Translations.All}}</button> /
+			<button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall"> {{Translations.None}}</button>
 		</label>
 		<div class="fxs_clearfix"></div>
 		<hr class="fxs_divider_third"/>
 
 		<label class="fxs_seventh">
-			<strong> Category</strong>
+			<strong> {{Translations.Category}}</strong>
 		</label>
 		<label class="fxs_seventh">
 			<input type="checkbox">

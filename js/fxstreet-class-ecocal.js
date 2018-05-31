@@ -27,7 +27,6 @@ var translations = {
   NextWeek: 'Next Week',
   SetGMT: 'Set GMT',
   Notifications: 'Notifications',
-  impact: 'Impact',
   Country: 'Country',
   Category: 'Category',
   Tradeable: 'Tradeable',
@@ -38,10 +37,11 @@ var translations = {
   Filters: 'FILTERS',
   EventName: 'Event Name',
   Countries: 'Countries',
-  Volatility: 'Volatility',
   SaveSettings: 'Save settings',
   Apply: 'Apply',
-  Cancel: 'Cancel'
+  Cancel: 'Cancel',
+  All: 'All',
+  None: 'None'
 }
 var dataJson = {
   Translations: translations,
@@ -917,9 +917,9 @@ var addEvents = function () {
   $('#fxs_ecocal_advanced_filter_cancel').click(function () {
     $('.fxs_ecocal_advanced_filter').toggleClass('fxs_hideElements')
   })
-  $('#fxs_ecocal_open_filters').click(function(){
-    $('#fxs_ecocal_simple_filter').toggleClass('fxs_hideElements');
-  });
+  $('#fxs_ecocal_open_filters').click(function () {
+    $('#fxs_ecocal_simple_filter').toggleClass('fxs_opened_mobile')
+  })
 }
 var renderData = function () {
   $.get(templates.data, function (template) {

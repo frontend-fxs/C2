@@ -1,27 +1,26 @@
-.fxs_row.fxs_col_dismissible .fxs_col_dismissible{
-	display:none;
+.fxs_row.fxs_col_dismissible .fxs_col_dismissible {
+	display: none;
 }
-.fxs_row.fxs_col_dismissible .fxs_flex_col{
+.fxs_row.fxs_col_dismissible .fxs_flex_col {
 	width: 100%;
 }
-@media(min-width:1024px){
-	.fxs_row.fxs_col_dismissible .fxs_flex_col{
+@media (min-width: 1024px) {
+	.fxs_row.fxs_col_dismissible .fxs_flex_col {
 		float: left;
 		-lh-property: 0;
 		width: -webkit-calc(100% - ((320px) - 5px));
 		width: -moz-calc(100% - ((320px) - 5px));
-		width: calc(100% - ((320px) - 5px));	
+		width: calc(100% - ((320px) - 5px));
 	}
-	.fxs_row.fxs_col_dismissible .fxs_flex_col.fxs_flex_ad_col{
+	.fxs_row.fxs_col_dismissible .fxs_flex_col.fxs_flex_ad_col {
 		z-index: 1;
 		width: 315px;
 		position: static;
 	}
-	
-	.fxs_row.fxs_col_dismissible .fxs_col_dismissible{
-		display:block;
-	}
 
+	.fxs_row.fxs_col_dismissible .fxs_col_dismissible {
+		display: block;
+	}
 }
 .fxs_widget_ecocal {
 	border: 1px solid #f0f0f1;
@@ -118,10 +117,10 @@ fxs_ecocal_menu label input {
 }
 .fxs_ecocal_header .fxs_ecocal_event_row_item input[type='checkbox'] {
 	position: absolute;
-	left:50%;
-	top:100%;
+	left: 50%;
+	top: 100%;
 	transform: translateX(-50%);
-	z-index:2;
+	z-index: 2;
 }
 .fxs_ecocal_event_row_item.tradeable {
 	width: 40px;
@@ -277,11 +276,16 @@ fxs_ecocal_menu label input {
 	clear: both;
 	float: left;
 }
-fxs_simple_filter_mobile_toggle {
+.fxs_simple_filter_mobile_toggle {
 	display: block;
+	position: fixed;
+	top:51px;
+	left:0;
+	right:0;
+	background-color: #fff;
 }
 @media (min-width: 1024px) {
-	fxs_simple_filter_mobile_toggle {
+	.fxs_simple_filter_mobile_toggle {
 		display: none;
 	}
 }
@@ -307,6 +311,15 @@ fxs_simple_filter_mobile_toggle {
 	transform: translateY(-46%);
 }
 
+.fxs_ecocal_simple_filter.fxs_hidden_s.fxs_opened_mobile{
+	display:block !important;
+	background-color: #dddee0;
+	position:absolute;
+	top:51px;
+	left:0;
+	right:0;
+}
+
 .fxs_ecocal_advanced_filter {
 	background-color: rgba(0, 0, 0, 0.5);
 	position: fixed;
@@ -318,15 +331,21 @@ fxs_simple_filter_mobile_toggle {
 }
 .fxs_ecocal_advanced_filter_inner {
 	background-color: #fff;
-	position: absolute;
-	top: 100px;
-	left: 100px;
-	right: 100px;
+	position: relative;
 	z-index: 19999;
 	padding: 15px;
-	max-height: calc(100% - 200px);
-	overflow-y: scroll;
+	display: table;
+	width: auto%;
+	margin: 0;
+	margin-top:51px;
+	height: auto;
 }
+@media (min-height: 600px) {
+	.fxs_ecocal_advanced_filter_inner {
+		margin:5%;
+	}
+}
+
 .fxs_ecocal_advanced_filter_inner .fxs_btn_close_dropdown {
 	position: absolute;
 	right: 0;
@@ -344,7 +363,7 @@ label input[type='checkbox'] {
 }
 label input[type='search'] {
 	margin: 0;
-	padding:0;
+	padding: 0;
 	height: 20px;
 	width: 100px;
 }

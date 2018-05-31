@@ -1,8 +1,10 @@
-<div class="fxs_ecocal_simple_filter fxs_hidden_s">
+<div class="fxs_ecocal_simple_filter fxs_hidden_s" id="fxs_ecocal_simple_filter">
     <p class="fxs_visible_st">
         <span class="fa fa-filter" aria-hidden="true"></span>
         <strong>{{Translations.Filters}}</strong>
-        <span class="fa fa-times" id="fxs_ecocal_close_filter"></span>
+        <button id="fxs_ecocal_simple_filter_close" class="fxs_btn fxs_btn_close_dropdown">
+            <i class="fa fa-times"></i>
+        </button>
     </p>
     <div class="fxs_col_100">
         <div class="fxs_fLeft">
@@ -29,7 +31,7 @@
     <div class="fxs_col_100">
         <div class="fxs_fLeft">
             <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">
-                <span>{{Translations.impact}}</span>
+                <span>{{Translations.Impact}}</span>
                 <span class="fa fa-caret-down"></span>
             </button>
             <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">

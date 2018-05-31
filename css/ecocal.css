@@ -1,3 +1,28 @@
+.fxs_row.fxs_col_dismissible .fxs_col_dismissible{
+	display:none;
+}
+.fxs_row.fxs_col_dismissible .fxs_flex_col{
+	width: 100%;
+}
+@media(min-width:1024px){
+	.fxs_row.fxs_col_dismissible .fxs_flex_col{
+		float: left;
+		-lh-property: 0;
+		width: -webkit-calc(100% - ((320px) - 5px));
+		width: -moz-calc(100% - ((320px) - 5px));
+		width: calc(100% - ((320px) - 5px));	
+	}
+	.fxs_row.fxs_col_dismissible .fxs_flex_col.fxs_flex_ad_col{
+		z-index: 1;
+		width: 315px;
+		position: static;
+	}
+	
+	.fxs_row.fxs_col_dismissible .fxs_col_dismissible{
+		display:block;
+	}
+
+}
 .fxs_widget_ecocal {
 	border: 1px solid #f0f0f1;
 	width: 100%;

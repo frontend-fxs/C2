@@ -1,4 +1,4 @@
-<div class="fxs_ecocal_simple_filter">
+<div class="fxs_ecocal_simple_filter fxs_hidden_s">
     <p class="fxs_visible_st">
         <span class="fa fa-filter" aria-hidden="true"></span>
         <strong>{{Translations.Filters}}</strong>
@@ -18,6 +18,12 @@
                 <span class="fa fa-clock-o"></span> {{Translations.SetGMT}}
                 <span class="fa fa-chevron-up"></span>
             </button>
+        </div>
+        <div class="fxs_fRight">
+                <button class="fxs_btn fxs_btn_xsmall fxs_notify_btn">
+                    <span>{{Translations.Notifications}} </span>
+                    <i class="fa fa-volume-up"></i>
+                </button>
         </div>
     </div>
     <div class="fxs_col_100">

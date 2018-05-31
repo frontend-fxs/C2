@@ -917,6 +917,9 @@ var addEvents = function () {
   $('#fxs_ecocal_advanced_filter_cancel').click(function () {
     $('.fxs_ecocal_advanced_filter').toggleClass('fxs_hideElements')
   })
+  $('#fxs_ecocal_open_filters').click(function(){
+    $('#fxs_ecocal_simple_filter').toggleClass('fxs_hideElements');
+  });
 }
 var renderData = function () {
   $.get(templates.data, function (template) {

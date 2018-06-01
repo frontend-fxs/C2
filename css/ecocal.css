@@ -328,10 +328,6 @@ fxs_ecocal_menu label input {
 
 .fxs_simple_filter_mobile_toggle {
 	display: block;
-	position: fixed;
-	top: 51px;
-	left: 0;
-	right: 0;
 	background-color: #fff;
 }
 

@@ -326,7 +326,7 @@ fxs_ecocal_menu label input {
 
 @media(min-width:1024px){
 	.fxs_ecocal_advanced_filter {
-		display: table;
+		display: block;
 		background-color: rgba(0, 0, 0, 0.5);
 		position: fixed;
 		top: 0;
@@ -342,16 +342,14 @@ fxs_ecocal_menu label input {
 	z-index: 19999;
 	padding: 15px;
 	display: table;
-	width: auto%;
-	margin: 0;
+	width: auto;
+	margin: 150px 5%;
 	margin-top:51px;
 	height: auto;
+	max-height: calc(100% - 300px);
 }
-@media (min-height: 600px) {
-	.fxs_ecocal_advanced_filter_inner {
-		margin:5%;
-	}
-}
+
+
 
 .fxs_ecocal_advanced_filter_inner .fxs_btn_close_dropdown {
 	position: absolute;

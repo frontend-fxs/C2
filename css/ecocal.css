@@ -321,13 +321,20 @@ fxs_ecocal_menu label input {
 }
 
 .fxs_ecocal_advanced_filter {
-	background-color: rgba(0, 0, 0, 0.5);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 20000;
+	display: none;
+}
+
+@media(min-width:1024px){
+	.fxs_ecocal_advanced_filter {
+		display: table;
+		background-color: rgba(0, 0, 0, 0.5);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 20000;
+	}
 }
 .fxs_ecocal_advanced_filter_inner {
 	background-color: #fff;
@@ -368,11 +375,33 @@ label input[type='search'] {
 	width: 100px;
 }
 
-label.fxs_seventh {
-	width: calc(100% / 7.2);
-	white-space: nowrap;
-	overflow: hidden;
+
+@media(min-width:1024px){
+	label.fxs_seventh {
+		width: calc(100% / 7.2);
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}@media(min-width:1150px){
+	label.fxs_seventh {
+		width: calc(100% / 7.2);
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}@media(min-width:1280px){
+	label.fxs_seventh {
+		width: calc(100% / 7.2);
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}@media(min-width:1480px){
+	label.fxs_seventh {
+		width: calc(100% / 7.2);
+		white-space: nowrap;
+		overflow: hidden;
+	}
 }
+
 
 label.fxs_seventh .fxst-flag {
 	margin-top: 6px;

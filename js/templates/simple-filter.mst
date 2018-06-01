@@ -6,6 +6,7 @@
             <i class="fa fa-times"></i>
         </button>
     </p>
+    <hr class="fxs_divider_third"/>
     <div class="fxs_col_100">
         <div class="fxs_fLeft">
             <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active fxs_hidden_s">{{Translations.RecentNext}}</button>

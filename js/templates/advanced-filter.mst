@@ -1,320 +1,331 @@
 <div class="fxs_ecocal_advanced_filter fxs_hideElements">
-	<div class="fxs_ecocal_advanced_filter_inner">
-			<button id="fxs_ecocal_advanced_filter_close" class="fxs_btn fxs_btn_close_dropdown">
-				<i class="fa fa-times"></i>
-			</button>
-		<p>
-			<button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active">{{Translations.RecentNext}}</button>
-			<button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Today}}</button>
-			<button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Tomorrow}}</button>
-			<button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.ThisWeek}}</button>
-			<button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.NextWeek}}</button>
-			<button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall" id="fxs_ecocal_advanced_filter_date_picker_toggle">
-				<span class="fa fa-calendar"></span>
-			</button>
-			<button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall">
-				<span class="fa fa-clock-o"></span>
-				<span>{{Translations.SetGMT}}</span>
-				<span class="fa fa-chevron-up"></span>
-			</button>
-			<label>
-				<span>{{Translations.Impact}}</span>
-				<input type="checkbox">
-				<span>0</span>
-				<input type="checkbox">
-				<span>1</span>
-				<input type="checkbox">
-				<span>2</span>
-				<input type="checkbox">
-				<span>3</span>
-			</label>
-			<label class="fxs_btn fxs_btn_xsmall fxs_ecocal_menu_tradeable">
-				<input type="checkbox">
-				<span>{{Translations.Tradeable}}</span>
-			</label>
-			<label>
-				<span>{{Translations.EventName}}</span>
-				<input type="search" id="fxs_ecocal_filter_advanced_event_name_search" class="fxs_ecocal_filter_advanced_event_name_search">
-			</label>
-		</p>
-		<div class="fxs_clearfix"></div>
-		<hr class="fxs_divider_third"/>
-		<label class="fxs_seventh">
-			<strong> {{Translations.Countries}}</strong>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-ar" title="Argentina"> AR</span>
-			<span> Argentina</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-ar" title="Argentina">AR</span>
-			<span>Argentina</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-au" title="Australia">AU</span>
-			<span>Australia</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-at" title="Austria">AT</span>
-			<span>Austria</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-be" title="Belgium">BE</span>
-			<span>Belgium</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-br" title="Brazil">BR</span>
-			<span>Brazil</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-ca" title="Canada">CA</span>
-			<span>Canada</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-cl" title="Chile">CL</span>
-			<span>Chile</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-cn" title="China">CN</span>
-			<span>China</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-co" title="Colombia">CO</span>
-			<span>Colombia</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-cz" title="Czech Republic">CZ</span>
-			<span>Czech Republic</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-dk" title="Denmark">DK</span>
-			<span>Denmark</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-emu" title="European Monetary Union">EMU</span>
-			<span>European Monetary Union</span>
-		</label>
-		<hr class="fxs_divider_third"/>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-fi" title="Finland">FI</span>
-			<span>Finland</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-fr" title="France">FR</span>
-			<span>France</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-de" title="Germany">DE</span>
-			<span>Germany</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-gr" title="Greece">GR</span>
-			<span>Greece</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-hk" title="Hong Kong SAR">HK</span>
-			<span>Hong Kong SAR</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-hu" title="Hungary">HU</span>
-			<span>Hungary</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-is" title="Iceland">IS</span>
-			<span>Iceland</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-in" title="India">IN</span>
-			<span>India</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-id" title="Indonesia">ID</span>
-			<span>Indonesia</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-ie" title="Ireland">IE</span>
-			<span>Ireland</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-it" title="Italy">IT</span>
-			<span>Italy</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-jp" title="Japan">JP</span>
-			<span>Japan</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-mx" title="Mexico">MX</span>
-			<span>Mexico</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-nl" title="Netherlands, The">NL</span>
-			<span>Netherlands, The</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-nz" title="New Zealand">NZ</span>
-			<span>New Zealand</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-no" title="Norway">NO</span>
-			<span>Norway</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-pl" title="Poland">PL</span>
-			<span>Poland</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-pt" title="Portugal">PT</span>
-			<span>Portugal</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-ro" title="Romania">RO</span>
-			<span>Romania</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-ru" title="Russia">RU</span>
-			<span>Russia</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-sg" title="Singapore">SG</span>
-			<span>Singapore</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-sk" title="Slovakia">SK</span>
-			<span>Slovakia</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-za" title="South Africa">ZA</span>
-			<span>South Africa</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-kr" title="South Korea">KR</span>
-			<span>South Korea</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-es" title="Spain">ES</span>
-			<span>Spain</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-se" title="Sweden">SE</span>
-			<span>Sweden</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-ch" title="Switzerland">CH</span>
-			<span>Switzerland</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-tr" title="Turkey">TR</span>
-			<span>Turkey</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-uk" title="United Kingdom">UK</span>
-			<span>United Kingdom</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span class="fxst-flag fxst-i-us" title="United States">US</span>
-			<span>United States</span>
-		</label>
-		<label class="fxs_seventh">
-			<button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall"> {{Translations.All}}</button> /
-			<button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall"> {{Translations.None}}</button>
-		</label>
-		<div class="fxs_clearfix"></div>
-		<hr class="fxs_divider_third"/>
+    <div class="fxs_ecocal_advanced_filter_inner">
+        <div class="fxs_ecocal_advanced_filter_inner_scrollable_area">
+            <button id="fxs_ecocal_advanced_filter_close" class="fxs_btn fxs_btn_close_dropdown">
+                <i class="fa fa-times">
+                </i>
+            </button>
+            <p>
+                <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active"> {{Translations.RecentNext}} </button>
+                <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall"> {{Translations.Today}} </button>
+                <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall"> {{Translations.Tomorrow}} </button>
+                <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall"> {{Translations.ThisWeek}} </button>
+                <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall"> {{Translations.NextWeek}} </button>
+                <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall" id="fxs_ecocal_advanced_filter_date_picker_toggle">
+                    <span class="fa fa-calendar">
+                    </span>
+                </button>
+                <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall">
+                    <span class="fa fa-clock-o">
+                    </span>
+                    <span> {{Translations.SetGMT}} </span>
+                    <span class="fa fa-chevron-up">
+                    </span>
+                </button>
+                <label>
+                    <span> {{Translations.Impact}} </span>
+                    <input type="checkbox">
+                    <span> 0 </span>
+                    <input type="checkbox">
+                    <span> 1 </span>
+                    <input type="checkbox">
+                    <span> 2 </span>
+                    <input type="checkbox">
+                    <span> 3 </span>
+                </label>
+                <label class="fxs_btn fxs_btn_xsmall fxs_ecocal_menu_tradeable">
+                    <input type="checkbox">
+                    <span> {{Translations.Tradeable}} </span>
+                </label>
+                <label>
+                    <span> {{Translations.EventName}} </span>
+                    <input type="search" id="fxs_ecocal_filter_advanced_event_name_search" class="fxs_ecocal_filter_advanced_event_name_search">
+                </label>
+            </p>
+            <div class="fxs_clearfix">
 
-		<label class="fxs_seventh">
-			<strong> {{Translations.Category}}</strong>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span> Central Banks</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span> Liquidity &amp; Balance</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span> Industrial &amp; Non-Industrial Activity</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span> Holidays</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span> Consumption &amp; Inflation</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span> Confidence Indices</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span> Employment</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span> Interest Rates</span>
-		</label>
-		<label class="fxs_seventh">
-			<input type="checkbox">
-			<span> Government</span>
-		</label>
-		<div class="fxs_clearfix"></div>
-		<hr class="fxs_divider_third"/>
-		<p>
-			<span class="fxs_fRight">
-				<label>
-					<input type="checkbox">
-					<span>{{Translations.SaveSettings}}</span>
-				</label>
-				<button class="fxs_btn fxs_btn_cta fxs_btn_xsmall" id="fxs_ecocal_advanced_filter_apply"> {{Translations.Apply}} </button>
-				<button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall" id="fxs_ecocal_advanced_filter_cancel"> {{Translations.Cancel}} </button>
-			</span>
-		</p>
-	</div>
+            </div>
+            <hr class="fxs_divider_third" />
+            <label class="fxs_seventh">
+                <strong> {{Translations.Countries}} </strong>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-ar" title="Argentina"> AR </span>
+                <span> Argentina </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-ar" title="Argentina"> AR </span>
+                <span> Argentina </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-au" title="Australia"> AU </span>
+                <span> Australia </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-at" title="Austria"> AT </span>
+                <span> Austria </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-be" title="Belgium"> BE </span>
+                <span> Belgium </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-br" title="Brazil"> BR </span>
+                <span> Brazil </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-ca" title="Canada"> CA </span>
+                <span> Canada </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-cl" title="Chile"> CL </span>
+                <span> Chile </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-cn" title="China"> CN </span>
+                <span> China </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-co" title="Colombia"> CO </span>
+                <span> Colombia </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-cz" title="Czech Republic"> CZ </span>
+                <span> Czech Republic </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-dk" title="Denmark"> DK </span>
+                <span> Denmark </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-emu" title="European Monetary Union"> EMU </span>
+                <span> European Monetary Union </span>
+            </label>
+            <hr class="fxs_divider_third" />
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-fi" title="Finland"> FI </span>
+                <span> Finland </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-fr" title="France"> FR </span>
+                <span> France </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-de" title="Germany"> DE </span>
+                <span> Germany </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-gr" title="Greece"> GR </span>
+                <span> Greece </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-hk" title="Hong Kong SAR"> HK </span>
+                <span> Hong Kong SAR </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-hu" title="Hungary"> HU </span>
+                <span> Hungary </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-is" title="Iceland"> IS </span>
+                <span> Iceland </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-in" title="India"> IN </span>
+                <span> India </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-id" title="Indonesia"> ID </span>
+                <span> Indonesia </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-ie" title="Ireland"> IE </span>
+                <span> Ireland </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-it" title="Italy"> IT </span>
+                <span> Italy </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-jp" title="Japan"> JP </span>
+                <span> Japan </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-mx" title="Mexico"> MX </span>
+                <span> Mexico </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-nl" title="Netherlands, The"> NL </span>
+                <span> Netherlands, The </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-nz" title="New Zealand"> NZ </span>
+                <span> New Zealand </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-no" title="Norway"> NO </span>
+                <span> Norway </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-pl" title="Poland"> PL </span>
+                <span> Poland </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-pt" title="Portugal"> PT </span>
+                <span> Portugal </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-ro" title="Romania"> RO </span>
+                <span> Romania </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-ru" title="Russia"> RU </span>
+                <span> Russia </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-sg" title="Singapore"> SG </span>
+                <span> Singapore </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-sk" title="Slovakia"> SK </span>
+                <span> Slovakia </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-za" title="South Africa"> ZA </span>
+                <span> South Africa </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-kr" title="South Korea"> KR </span>
+                <span> South Korea </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-es" title="Spain"> ES </span>
+                <span> Spain </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-se" title="Sweden"> SE </span>
+                <span> Sweden </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-ch" title="Switzerland"> CH </span>
+                <span> Switzerland </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-tr" title="Turkey"> TR </span>
+                <span> Turkey </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-uk" title="United Kingdom"> UK </span>
+                <span> United Kingdom </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span class="fxst-flag fxst-i-us" title="United States"> US </span>
+                <span> United States </span>
+            </label>
+            <label class="fxs_seventh">
+                <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall"> {{Translations.All}} </button> /
+                <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall"> {{Translations.None}} </button>
+            </label>
+            <div class="fxs_clearfix">
+
+            </div>
+            <hr class="fxs_divider_third" />
+            <label class="fxs_seventh">
+                <strong> {{Translations.Category}} </strong>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span> Central Banks </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span> Liquidity & amp; Balance </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span> Industrial & amp; Non - Industrial Activity </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span> Holidays </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span> Consumption & amp; Inflation </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span> Confidence Indices </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span> Employment </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span> Interest Rates </span>
+            </label>
+            <label class="fxs_seventh">
+                <input type="checkbox">
+                <span> Government </span>
+            </label>
+            <div class="fxs_clearfix">
+
+            </div>
+            <hr class="fxs_divider_third" />
+            <p>
+                <span class="fxs_fRight">
+                    <label>
+                        <input type="checkbox">
+                        <span> {{Translations.SaveSettings}} </span>
+                    </label>
+                    <button class="fxs_btn fxs_btn_cta fxs_btn_xsmall" id="fxs_ecocal_advanced_filter_apply"> {{Translations.Apply}} </button>
+                    <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall" id="fxs_ecocal_advanced_filter_cancel"> {{Translations.Cancel}} </button>
+                </span>
+            </p>
+        </div>
+    </div>
 </div>

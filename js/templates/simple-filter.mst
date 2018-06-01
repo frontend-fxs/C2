@@ -8,13 +8,13 @@
     </p>
     <hr class="fxs_divider_third fxs_visible_st" />
     <div class=" fxs_clearfix"></div>
-    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_fLeft">{{Translations.Defaults}}</button>
-    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_fLeft">{{Translations.MyFilters}}</button>
-    <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall fxs_fLeft">
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Defaults}}</button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.MyFilters}}</button>
+    <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall">
         <span class="fa fa-clock-o"></span> {{Translations.SetGMT}}
         <span class="fa fa-chevron-up"></span>
     </button>
-    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_fLeft" id="fxs_ecocal_simple_filter_date_picker_toggle">
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall" id="fxs_ecocal_simple_filter_date_picker_toggle">
         <span class="fa fa-calendar"></span>
     </button>
     <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active fxs_hidden_s_iBlock">{{Translations.RecentNext}}</button>

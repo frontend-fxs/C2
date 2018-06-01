@@ -311,7 +311,9 @@ fxs_ecocal_menu label input {
 	color: #304c70;
 	font-size: 24px;
 }
-
+.fxs_ecocal_event_row_item.dashboard a:hover {
+	color: #e4871b;
+}
 .fxs_ecocal_event_row_item.expandable {
 	width: 30px;
 }

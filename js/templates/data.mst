@@ -89,7 +89,7 @@
         {{/Previous.Revised}} </div>
       {{/EventType}}
       <div class="fxs_ecocal_event_row_item dashboard">
-        <a href="{{DashboardLink}}" onclick="return event.stopImmediatePropagation();">
+        <a href="{{DashboardLink}}" target="_blank" onclick="return event.stopImmediatePropagation();">
           <span class="fa fa-bar-chart" aria-hidden="true"></span>
         </a>
       </div>

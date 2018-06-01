@@ -6,7 +6,7 @@
             <i class="fa fa-times"></i>
         </button>
     </p>
-    <hr class="fxs_divider_third" />
+    <hr class="fxs_divider_third fxs_visible_st" />
     <div class="fxs_col_100">
         <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_fLeft">{{Translations.Defaults}}</button>
         <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_fLeft">{{Translations.MyFilters}}</button>
@@ -27,6 +27,7 @@
             <i class="fa fa-volume-up"></i>
         </button>
     </div>
+    <hr class="fxs_divider_third fxs_visible_st" />
     <div class="fxs_col_100">
             <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">
                 <span>{{Translations.Impact}}</span>

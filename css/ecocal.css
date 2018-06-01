@@ -368,8 +368,8 @@ fxs_ecocal_menu label input {
 	transform: translateY(-46%);
 }
 
-.fxs_ecocal_simple_filter.fxs_hidden_s.fxs_opened_mobile {
-	display: block !important;
+
+.fxs_ecocal_simple_filter {
 	background-color: #dddee0;
 	position: absolute;
 	top: 0;
@@ -378,6 +378,17 @@ fxs_ecocal_menu label input {
 	bottom: 0;
 	z-index: 1;
 	padding: 1rem;
+}
+@media(min-width:1024px){
+	.fxs_ecocal_simple_filter {
+		display: block !important;
+		background-color: #FFF;
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+	}
 }
 
 .fxs_ecocal_advanced_filter {

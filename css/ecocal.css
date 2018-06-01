@@ -374,7 +374,7 @@ fxs_ecocal_menu label input {
 	bottom: 0;
 	z-index: 1;
 	padding: 1rem;
-	margin: 55px -1.5rem;
+	margin: 55px -0.5rem;
 }
 @media(min-width:1024px){
 	.fxs_ecocal_simple_filter {

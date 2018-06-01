@@ -19,8 +19,8 @@
     <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active fxs_hidden_s_iBlock">{{Translations.RecentNext}}</button>
     <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s_iBlock">{{Translations.Today}}</button>
     <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s_iBlock">{{Translations.Tomorrow}}</button>
-    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s_iBlock">{{Translations.ThisWeek}}</button>
-    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s_iBlock">{{Translations.NextWeek}}</button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_m_iBlock">{{Translations.ThisWeek}}</button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_m_iBlock">{{Translations.NextWeek}}</button>
     <button class="fxs_btn fxs_btn_xsmall fxs_notify_btn fxs_hidden_s_iBlock fxs_fRight">
         <span>{{Translations.Notifications}} </span>
         <i class="fa fa-volume-up"></i>

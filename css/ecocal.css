@@ -344,7 +344,6 @@ fxs_ecocal_menu label input {
 	display: table;
 	width: auto;
 	margin: 150px 5%;
-	margin-top:51px;
 	height: auto;
 	max-height: calc(100% - 300px);
 }

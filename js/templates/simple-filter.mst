@@ -57,7 +57,7 @@
         </div>
     </div>
 </div>
-<div class="fxs_simple_filter_mobile_toggle fxs_hidden_s">
+<div class="fxs_simple_filter_mobile_toggle fxs_visible_st">
     <button class="fa fa-sliders fxs_btn fxs_btn_icon fxs_txt_dark_4" aria-hidden="true" id="fxs_ecocal_open_filters"></button>
     <div class="fxs_search_box">
         <input type="search" class="fxs_search_input" placeholder="Search">

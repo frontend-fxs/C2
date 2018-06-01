@@ -920,6 +920,10 @@ var addEvents = function () {
   $('#fxs_ecocal_open_filters').click(function () {
     $('#fxs_ecocal_simple_filter').toggleClass('fxs_opened_mobile')
   })
+  $('fxs_ecocal_header .fxs_ecocal_event_row_item.can_be_hidden input[type="checkbox"]').change(function(){
+    $(this).parent().toggleClass('fxs_hideElements');
+    var canBeHiddenWidth = $(this).parent().width();
+  });
 }
 var renderData = function () {
   $.get(templates.data, function (template) {

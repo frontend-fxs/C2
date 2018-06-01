@@ -118,7 +118,7 @@ fxs_ecocal_menu label input {
 .fxs_ecocal_header .fxs_ecocal_event_row_item input[type='checkbox'] {
 	position: absolute;
 	left: 50%;
-	top: 100%;
+	bottom:-6px;
 	transform: translateX(-50%);
 	z-index: 2;
 }

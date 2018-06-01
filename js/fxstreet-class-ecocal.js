@@ -918,10 +918,10 @@ var addEvents = function () {
     $('.fxs_ecocal_advanced_filter').toggleClass('fxs_hideElements')
   })
   $('#fxs_ecocal_open_filters').click(function () {
-    $('#fxs_ecocal_simple_filter').toggleClass('fxs_hideElements')
+    $('#fxs_ecocal_simple_filter').toggleClass('fxs_hidden_s')
   })  
   $('#fxs_ecocal_simple_filter_close').click(function () {
-    $('#fxs_ecocal_simple_filter').toggleClass('fxs_hideElements')
+    $('#fxs_ecocal_simple_filter').toggleClass('fxs_hidden_s')
   })
   $('fxs_ecocal_header .fxs_ecocal_event_row_item.can_be_hidden input[type="checkbox"]').change(function(){
     $(this).parent().toggleClass('fxs_hideElements');

@@ -346,6 +346,7 @@ fxs_ecocal_menu label input {
 	margin: 150px 5%;
 	height: auto;
 	max-height: calc(100% - 300px);
+	overflow-y: scroll;
 }
 
 

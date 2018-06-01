@@ -42,7 +42,7 @@
         <input type="checkbox">
         <span>{{Translations.Tradeable}}</span>
     </label>
-    <button class="fxs_btn fxs_btn_phantom fxs_hidden_s">
+    <button class="fxs_btn fxs_btn_phantom fxs_hidden_s_iBlock">
         <span class="fa fa-download"></span>
     </button>
     <button class="fxs_btn fxs_btn_default fxs_btn_xsmall fxs_hidden_s fxs_fRight" id="fxs_ecocal_advanced_filters_toggle">{{Translations.AdvancedFilters}}</button>

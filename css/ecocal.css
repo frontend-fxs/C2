@@ -414,7 +414,7 @@ fxs_ecocal_menu label input {
 	height: auto;
 }
 
-.fxs_ecocal_advanced_filter_inner .fxs_btn_close_dropdown {
+.fxs_btn_close_dropdown {
 	position: absolute;
 	right: 0;
 	top: 0;

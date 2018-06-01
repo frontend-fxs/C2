@@ -7,50 +7,45 @@
         </button>
     </p>
     <hr class="fxs_divider_third fxs_visible_st" />
-    <div class="fxs_col_100">
-        <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_fLeft">{{Translations.Defaults}}</button>
-        <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_fLeft">{{Translations.MyFilters}}</button>
-        <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall fxs_fLeft">
-            <span class="fa fa-clock-o"></span> {{Translations.SetGMT}}
-            <span class="fa fa-chevron-up"></span>
-        </button>
-        <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_fLeft" id="fxs_ecocal_simple_filter_date_picker_toggle">
-            <span class="fa fa-calendar"></span>
-        </button>
-        <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active fxs_hidden_s fxs_fLeft">{{Translations.RecentNext}}</button>
-        <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s fxs_fLeft">{{Translations.Today}}</button>
-        <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s fxs_fLeft">{{Translations.Tomorrow}}</button>
-        <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s fxs_fLeft">{{Translations.ThisWeek}}</button>
-        <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s fxs_fLeft">{{Translations.NextWeek}}</button>
-        <button class="fxs_btn fxs_btn_xsmall fxs_notify_btn fxs_hidden_s fxs_fRight">
-            <span>{{Translations.Notifications}} </span>
-            <i class="fa fa-volume-up"></i>
-        </button>
-    </div>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_fLeft">{{Translations.Defaults}}</button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_fLeft">{{Translations.MyFilters}}</button>
+    <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall fxs_fLeft">
+        <span class="fa fa-clock-o"></span> {{Translations.SetGMT}}
+        <span class="fa fa-chevron-up"></span>
+    </button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_fLeft" id="fxs_ecocal_simple_filter_date_picker_toggle">
+        <span class="fa fa-calendar"></span>
+    </button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active fxs_hidden_s fxs_fLeft">{{Translations.RecentNext}}</button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s fxs_fLeft">{{Translations.Today}}</button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s fxs_fLeft">{{Translations.Tomorrow}}</button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s fxs_fLeft">{{Translations.ThisWeek}}</button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s fxs_fLeft">{{Translations.NextWeek}}</button>
+    <button class="fxs_btn fxs_btn_xsmall fxs_notify_btn fxs_hidden_s fxs_fRight">
+        <span>{{Translations.Notifications}} </span>
+        <i class="fa fa-volume-up"></i>
+    </button>
     <hr class="fxs_divider_third fxs_visible_st" />
-    <div class="fxs_col_100">
-            <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">
-                <span>{{Translations.Impact}}</span>
-                <span class="fa fa-caret-down"></span>
-            </button>
-            <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">
-                <span>{{Translations.Country}}</span>
-                <span class="fa fa-caret-down"></span>
-            </button>
-            <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">
-                <span>{{Translations.Category}}</span>
-                <span class="fa fa-caret-down"></span>
-            </button>
-            <label class="fxs_btn fxs_btn_xsmall fxs_ecocal_menu_tradeable">
-                <input type="checkbox">
-                <span>{{Translations.Tradeable}}</span>
-            </label>
-            <button class="fxs_btn fxs_btn_phantom fxs_hidden_s">
-                <span class="fa fa-download"></span>
-            </button>
-            <button class="fxs_btn fxs_btn_default fxs_btn_xsmall fxs_hidden_s fxs_fRight" id="fxs_ecocal_advanced_filters_toggle">{{Translations.AdvancedFilters}}</button>
-        </div>
-    </div>
+    <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">
+        <span>{{Translations.Impact}}</span>
+        <span class="fa fa-caret-down"></span>
+    </button>
+    <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">
+        <span>{{Translations.Country}}</span>
+        <span class="fa fa-caret-down"></span>
+    </button>
+    <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">
+        <span>{{Translations.Category}}</span>
+        <span class="fa fa-caret-down"></span>
+    </button>
+    <label class="fxs_btn fxs_btn_xsmall fxs_ecocal_menu_tradeable">
+        <input type="checkbox">
+        <span>{{Translations.Tradeable}}</span>
+    </label>
+    <button class="fxs_btn fxs_btn_phantom fxs_hidden_s">
+        <span class="fa fa-download"></span>
+    </button>
+    <button class="fxs_btn fxs_btn_default fxs_btn_xsmall fxs_hidden_s fxs_fRight" id="fxs_ecocal_advanced_filters_toggle">{{Translations.AdvancedFilters}}</button>
 </div>
 <div class="fxs_simple_filter_mobile_toggle fxs_visible_st">
     <button class="fa fa-sliders fxs_btn fxs_btn_icon fxs_txt_dark_4" aria-hidden="true" id="fxs_ecocal_open_filters"></button>

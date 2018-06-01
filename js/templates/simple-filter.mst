@@ -2,7 +2,7 @@
     <p class="fxs_visible_st">
         <span class="fa fa-filter" aria-hidden="true"></span>
         <strong>{{Translations.Filters}}</strong>
-        <button id="fxs_ecocal_simple_filter_close" class="fxs_btn fxs_btn_close_dropdown">
+        <button id="fxs_ecocal_simple_filter_close" class="fxs_btn fxs_btn_xsmall fxs_btn_close_dropdown ">
             <i class="fa fa-times"></i>
         </button>
     </p>

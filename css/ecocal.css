@@ -378,19 +378,19 @@ label input[type='search'] {
 
 @media(min-width:1024px){
 	label.fxs_seventh {
-		width: calc(100% / 7.2);
+		width: calc(100% / 4.2);
 		white-space: nowrap;
 		overflow: hidden;
 	}
 }@media(min-width:1150px){
 	label.fxs_seventh {
-		width: calc(100% / 7.2);
+		width: calc(100% / 5.2);
 		white-space: nowrap;
 		overflow: hidden;
 	}
 }@media(min-width:1280px){
 	label.fxs_seventh {
-		width: calc(100% / 7.2);
+		width: calc(100% / 6.2);
 		white-space: nowrap;
 		overflow: hidden;
 	}

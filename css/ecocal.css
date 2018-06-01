@@ -368,9 +368,11 @@ fxs_ecocal_menu label input {
 	display: block !important;
 	background-color: #dddee0;
 	position: absolute;
-	top: 51px;
+	top: 0;
 	left: 0;
 	right: 0;
+	bottom: 0;
+	z-index: 1;
 }
 
 .fxs_ecocal_advanced_filter {

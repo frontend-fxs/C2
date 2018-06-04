@@ -1,33 +1,24 @@
-<div class="fxs_ecocal_simple_filter fxs_hidden_s" id="fxs_ecocal_simple_filter">
-    <p class="fxs_visible_st">
-        <span class="fa fa-filter" aria-hidden="true"></span>
-        <strong>{{Translations.Filters}}</strong>
-        <button id="fxs_ecocal_simple_filter_close" class="fxs_btn fxs_btn_xsmall fxs_btn_close_dropdown ">
-            <i class="fa fa-times"></i>
-        </button>
-    </p>
-    <hr class="fxs_divider_third fxs_visible_st" />
-    <div class=" fxs_clearfix"></div>
-    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Defaults}}</button>
-    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.MyFilters}}</button>
-    <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall">
-        <span class="fa fa-clock-o"></span> {{Translations.SetGMT}}
-        <span class="fa fa-chevron-up"></span>
-    </button>
+<div class="fxs_ecocal_simple_filter fxs_hidden_s">
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active">{{Translations.RecentNext}}</button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Today}}</button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Tomorrow}}</button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.ThisWeek}}</button>
+    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.NextWeek}}</button>
     <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall" id="fxs_ecocal_simple_filter_date_picker_toggle">
         <span class="fa fa-calendar"></span>
     </button>
-    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active fxs_hidden_s_iBlock">{{Translations.RecentNext}}</button>
-    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s_iBlock">{{Translations.Today}}</button>
-    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_s_iBlock">{{Translations.Tomorrow}}</button>
-    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_xl_iBlock">{{Translations.ThisWeek}}</button>
-    <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall fxs_hidden_xl_iBlock">{{Translations.NextWeek}}</button>
+     <button class="fxs_btn fxs_btn_phantom fxs_btn_xsmall">
+        <span class="fa fa-clock-o"></span> {{Translations.SetGMT}}
+        <span class="fa fa-chevron-up"></span>
+    </button>
+
     <button class="fxs_btn fxs_btn_xsmall fxs_notify_btn fxs_hidden_s_iBlock fxs_fRight">
-        <span>{{Translations.Notifications}} </span>
+        <span>{{Translations.Notifications}}</span>
         <i class="fa fa-volume-up"></i>
     </button>
-    <hr class="fxs_divider_third fxs_visible_st"/>
-        <div class=" fxs_clearfix"></div>
+
+    <div class=" fxs_clearfix"></div> 
+
     <button class="fxs_btn fxs_btn_line fxs_btn_xsmall">
         <span>{{Translations.Impact}}</span>
         <span class="fa fa-caret-down"></span>
@@ -40,23 +31,16 @@
         <span>{{Translations.Category}}</span>
         <span class="fa fa-caret-down"></span>
     </button>
-    <label class="fxs_btn fxs_btn_xsmall fxs_ecocal_menu_tradeable">
+    <label class="fxs_btn fxs_btn_xsmall fxs_label_xsmall">
         <input type="checkbox">
         <span>{{Translations.Tradeable}}</span>
     </label>
     <button class="fxs_btn fxs_btn_phantom fxs_hidden_s_iBlock">
         <span class="fa fa-download"></span>
     </button>
-    <button class="fxs_btn fxs_btn_default fxs_btn_xsmall fxs_hidden_s fxs_fRight" id="fxs_ecocal_advanced_filters_toggle">{{Translations.AdvancedFilters}}</button>
-</div>
-<div class="fxs_simple_filter_mobile_toggle fxs_visible_st">
-    <button class="fa fa-sliders fxs_btn fxs_btn_icon fxs_txt_dark_4" aria-hidden="true" id="fxs_ecocal_open_filters"></button>
-    <div class="fxs_search_box">
-        <input type="search" class="fxs_search_input" placeholder="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="15px" height="15px">
-            <path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"
-                fill-rule="evenodd"> </path>
-        </svg>
+    <div class="fxs_fRight">
+        <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.MyFilters}}</button>
+        <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Defaults}}</button>
+        <button class="fxs_btn fxs_btn_default fxs_btn_xsmall fxs_ecocal_advanced_filters_toggle" id="fxs_ecocal_advanced_filters_toggle">{{Translations.AdvancedFilters}}</button>
     </div>
-    <button class="fxs_btn fxs_btn_icon fa fa-volume-off fxs_txt_dark_4" id="fxs_simple_filter_mobile_toggle_volume"></button>
 </div>

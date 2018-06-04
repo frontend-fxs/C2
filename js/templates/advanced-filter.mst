@@ -1,6 +1,5 @@
 <div class="fxs_ecocal_advanced_filter fxs_hideElements">
     <div class="fxs_ecocal_advanced_filter_inner">
-        <div class="fxs_ecocal_advanced_filter_inner_scrollable_area">
             <button id="fxs_ecocal_advanced_filter_close" class="fxs_btn fxs_btn_close_dropdown">
                 <i class="fa fa-times">
                 </i>
@@ -326,6 +325,5 @@
                     <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall" id="fxs_ecocal_advanced_filter_cancel"> {{Translations.Cancel}} </button>
                 </span>
             </p>
-        </div>
     </div>
 </div>

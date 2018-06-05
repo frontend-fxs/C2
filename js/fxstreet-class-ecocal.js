@@ -901,7 +901,7 @@ function viewport() {
 }
 var isMobile = function(){
     var viewportWidth = viewport().width;
-    return viewportWidth < 1024;
+    return viewportWidth < 768;
 }
 var addEvents = function() {
     $('.fxs_ecocal_event_row').click(function() {
@@ -910,13 +910,11 @@ var addEvents = function() {
         $(this).find('.fa.left').toggleClass('fa-chevron-left fa-chevron-down')
     })
     $('[data-toggle="tooltip"]').tooltip()
-    $('#fxs_ecocal_simple_filter_date_picker_toggle').daterangepicker()
-    $('#fxs_ecocal_advanced_filter_date_picker_toggle').daterangepicker()
+    $('#fxs_ecocal_simple_filter_date_picker_toggle').daterangepicker({opens: 'center',drops:'down'})
+    $('#fxs_ecocal_advanced_filter_date_picker_toggle').daterangepicker({opens: 'center',drops:'up'})
+    $('#fxs_ecocal_simple_filter_mobile_date_picker_toggle').daterangepicker({opens: 'center',drops:'up'})
     $('#fxs_simple_filter_mobile_toggle_volume').click(function() {
         $(this).toggleClass('fa-volume-off fa-volume-up')
-    })
-    $('.fa-pencil-square-o').click(function() {
-        $('.fxs_ecocal_header input').toggleClass('fxs_hideElements')
     })
     $('#fxs_ecocal_advanced_filters_toggle').click(function() {
         $('.fxs_ecocal_advanced_filter').toggleClass('fxs_hideElements')
@@ -936,10 +934,24 @@ var addEvents = function() {
     $('#fxs_ecocal_simple_filter_close').click(function() {
         $('#fxs_ecocal_simple_filter_mobile').toggleClass('fxs_hideElements')
     })
-    $('fxs_ecocal_header .fxs_ecocal_event_row_item.can_be_hidden input[type="checkbox"]').change(function() {
-        $(this).parent().toggleClass('fxs_hideElements')
-        var canBeHiddenWidth = $(this).parent().width()
+
+
+
+    $('#fxs_show_visibility_selectors').click(function() {
+        $('#fxs_ecocal_header').toggleClass('fxs_edit_cols');
     })
+    $('#fxs_actual_col_visibility').click(function(){
+
+    });
+$('#fxs_deviation_col_visibility').click(function(){
+
+});
+$('#fxs_consensus_col_visibility').click(function(){
+
+});
+$('#fxs_previous_col_visibility').click(function(){
+
+});
 }
 var addEventsMobile = function() {
     $('.fxs_ecocal_event_row').click(function() {
@@ -974,10 +986,7 @@ var addEventsMobile = function() {
     $('#fxs_ecocal_simple_filter_close').click(function() {
         $('#fxs_ecocal_simple_filter_mobile').toggleClass('fxs_hideElements')
     })
-    $('fxs_ecocal_header .fxs_ecocal_event_row_item.can_be_hidden input[type="checkbox"]').change(function() {
-        $(this).parent().toggleClass('fxs_hideElements')
-        var canBeHiddenWidth = $(this).parent().width()
-    })
+
 }
 var renderData = function() {
     $.get(templates.data, function(template) {

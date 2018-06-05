@@ -1,4 +1,4 @@
-<div class="fxs_ecocal_simple_filter fxs_hidden_s">
+<div class="fxs_ecocal_simple_filter">
     <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall active">{{Translations.RecentNext}}</button>
     <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Today}}</button>
     <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">{{Translations.Tomorrow}}</button>
@@ -12,7 +12,7 @@
         <span class="fa fa-chevron-up"></span>
     </button>
 
-    <button class="fxs_btn fxs_btn_xsmall fxs_notify_btn fxs_hidden_s_iBlock fxs_fRight">
+    <button class="fxs_btn fxs_btn_xsmall fxs_notify_btn fxs_fRight">
         <span>{{Translations.Notifications}}</span>
         <i class="fa fa-volume-up"></i>
     </button>
@@ -35,7 +35,7 @@
         <input type="checkbox">
         <span>{{Translations.Tradeable}}</span>
     </label>
-    <button class="fxs_btn fxs_btn_phantom fxs_hidden_s_iBlock">
+    <button class="fxs_btn fxs_btn_phantom">
         <span class="fa fa-download"></span>
     </button>
     <div class="fxs_fRight">

@@ -55,8 +55,7 @@ fxs_ecocal_menu label input {
     float: left;
 }
 
-.fxs_ecocal_next_events,
-.fxs_ecocal_previous_events {
+.fxs_ecocal_next_events, .fxs_ecocal_previous_events {
     text-align: center;
     padding: 5px 0;
     font-size: 12px;
@@ -68,6 +67,34 @@ fxs_ecocal_menu label input {
     display: block;
     float: left;
     text-transform: uppercase;
+}
+
+.fxs_ecocal_header.fxs_edit_cols {
+    height: 70px;
+}
+
+.fxs_ecocal_header .fxs_visibility_selector {
+    display: none;
+}
+
+.fxs_ecocal_header.fxs_edit_cols .fxs_visibility_selector {
+    display: block;
+    width: 100%;
+    clear: both;
+    float: left;
+    text-align: center;
+}
+
+.fxs_ecocal_header .fxs_ecocal_event_row_item {
+    font-weight: 400;
+    padding: 2px 5px;
+    height: 34px;
+    position: relative;
+}
+
+.fxs_ecocal_header.fxs_edit_cols .fxs_ecocal_event_row_item {
+    height: 70px;
+    position: relative;
 }
 
 .fxs_ecocal_data {
@@ -127,21 +154,6 @@ fxs_ecocal_menu label input {
     white-space: nowrap;
 }
 
-.fxs_ecocal_header .fxs_ecocal_event_row_item {
-    font-weight: 400;
-    padding: 2px 5px;
-    height: 34px;
-    position: relative;
-}
-
-.fxs_ecocal_header .fxs_ecocal_event_row_item input[type='checkbox'] {
-    position: absolute;
-    left: 50%;
-    bottom: -6px;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
 .fxs_ecocal_event_row_item.tradeable {
     width: 40px;
 }
@@ -156,6 +168,11 @@ fxs_ecocal_menu label input {
     -moz-animation: colorchange 1s infinite;
     -o-animation: colorchange 1s infinite;
     animation: colorchange 1s infinite;
+}
+
+.fxs_ecocal_event_row_item.actual, .fxs_ecocal_event_row_item.deviation, .fxs_ecocal_event_row_item.consensus, .fxs_ecocal_event_row_item.previous {
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 @-webkit-keyframes colorchange {
@@ -347,8 +364,7 @@ fxs_ecocal_menu label input {
     float: right;
 }
 
-.fxs_simple_filter_mobile_toggle .fxs_search_box,
-.fxs_simple_filter_mobile_toggle .fxs_btn_icon {
+.fxs_simple_filter_mobile_toggle .fxs_search_box, .fxs_simple_filter_mobile_toggle .fxs_btn_icon {
     font-size: 28px;
     line-height: 35px;
     display: inline-block;
@@ -394,27 +410,18 @@ fxs_ecocal_menu label input {
 }
 
 .fxs_ecocal_advanced_filter {
-    display: none;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20000;
 }
 
 .fxs_ecocal_advanced_filters_toggle {
-    display: none;
-}
-
-@media (min-width:1024px) and (min-height:768px) {
-    .fxs_ecocal_advanced_filter {
-        display: block;
-        background-color: rgba(0, 0, 0, 0.5);
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 20000;
-    }
-    .fxs_ecocal_advanced_filters_toggle {
-        display: inline-block;
-    }
+    display: inline-block;
 }
 
 .fxs_ecocal_advanced_filter_inner {
@@ -469,6 +476,7 @@ label.fxs_seventh {
     overflow: hidden;
     height: 23px;
     margin: 0;
+    width: calc(100% / 3.2);
 }
 
 @media(min-width:1024px) {
@@ -497,43 +505,69 @@ label.fxs_seventh {
     }
 }
 
+label.fxs_seventh.fxs_secondary{
+    display:none;
+}
+@media(min-width:1024px){
+    label.fxs_seventh.fxs_secondary{
+        display:inline-block;
+    }
+}
+
 label.fxs_seventh .fxst-flag {
     margin-top: 6px;
 }
 
+.fxs_ecocal_data_mobile_wrapper {}
 
-
-
-.fxs_ecocal_data_mobile_wrapper{
-
-}
-
-
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_first{
+.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_first {
     width: 50px;
-    float:left;
+    float: left;
 }
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second{
+
+.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second {
     width: calc(100% - 55px);
-    float:left;
+    float: left;
 }
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item{
-    height:25px;
+
+.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item {
+    height: 25px;
     line-height: 25px;
 }
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.title{
-    width:calc(100% - 50px);
+
+.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item.type {
+    height: 50px;
+    line-height: 50px;
+    padding: 13px 5px;
+    margin-left: 50px;
 }
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.actual,
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.consensus,
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.previous{
+
+.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item.type .fxs_event_type_label {
+    padding: 0px 10px;
+    float: left;
+    height: 23px;
+    line-height: 23px;
+}
+
+.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.title {
+    width: calc(100% - 50px);
+    text-align: left;
+}
+
+.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.actual, .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.consensus, .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.previous {
     width: calc(100% / 3);
     display: block;
 }
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_first .fxs_ecocal_event_row_item.impact,
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.actual,
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.consensus,
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.previous{
+
+.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_first .fxs_ecocal_event_row_item.impact, .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.actual, .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.consensus, .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.previous {
     line-height: 30px;
     height: 30px;
+}
+
+.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item.tradeable, .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item.time, .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item.impact {
+    width: 50px;
+}
+
+.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item.impact {
+    padding: 0;
 }

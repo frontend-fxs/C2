@@ -67,7 +67,7 @@
       </div>
       {{#EventType}}
       <div class="fxs_ecocal_event_row_item type">
-        <span class="fxs_event_type_label">{{.}}</span>
+        <span class="fxs_label fxs_label_info">{{.}}</span>
       </div>
       {{/EventType}}
       {{^EventType}}

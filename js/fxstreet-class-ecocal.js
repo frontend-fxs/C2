@@ -47,7 +47,10 @@ var translations = {
     Cancel: 'Cancel',
     All: 'All',
     None: 'None',
-    ApplySelection: 'Apply Selection'
+    ApplySelection: 'Apply Selection',
+    OfficialSource: "Official Source",
+    Subscribe: "Subscribe",
+    AddEvent: "Add Event"
 }
 var dataJson = {
     Translations: translations,
@@ -83,7 +86,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -115,7 +131,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -147,7 +176,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -179,7 +221,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -192,7 +247,20 @@ var dataJson = {
                     Currency: 'EUR',
                     Title: 'CBI Distributive Trades Survey - Realized (MoM) (May)',
                     EventType: 'REPORT',
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -205,7 +273,20 @@ var dataJson = {
                     Currency: 'EUR',
                     Title: 'CBI Distributive Trades Survey - Realized (MoM) (May)',
                     EventType: 'SPEECH',
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -237,7 +318,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -269,7 +363,20 @@ var dataJson = {
                             Low: true
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -301,7 +408,20 @@ var dataJson = {
                             Low: true
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 }
             ]
         },
@@ -337,7 +457,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -369,7 +502,20 @@ var dataJson = {
                             Low: true
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -401,7 +547,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -433,7 +592,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -465,7 +637,20 @@ var dataJson = {
                             Low: true
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -497,7 +682,20 @@ var dataJson = {
                             Low: true
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -529,7 +727,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -561,7 +772,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -593,7 +817,20 @@ var dataJson = {
                             Low: true
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 }
             ]
         },
@@ -629,7 +866,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -661,7 +911,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -693,7 +956,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -725,7 +1001,20 @@ var dataJson = {
                             Low: true
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -757,7 +1046,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -789,7 +1091,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -821,7 +1136,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -853,7 +1181,20 @@ var dataJson = {
                             Low: false
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 },
                 {
                     IsActive: true,
@@ -885,21 +1226,36 @@ var dataJson = {
                             Low: true
                         }
                     },
-                    DashboardLink: 'google.es'
+                    DashboardLink: 'google.es',
+                    Detail: {
+                        Main: {
+                            Title: "Event Date",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        Description: {
+                            Title: "Event Date Description",
+                            Content: "Lorem ipsum dolor sit amet, eu qui exerci ridens facilisis, pri ut suas consequat incorrupte. Vix ei inermis omittantur, an vim latine equidem lucilius, mei eu magna sapientem expetendis. Dicant consul latine no pri, petentium consequat gloriatur pri an, eos eu diceret alienum reformidans. Te ius nostrud oporteat, zril assentior his ne. In has debitis lucilius convenire."
+                        },
+                        OfficialSource: "https://fxstreet.com",
+                        Subscribe: "https://fxstreet.com",
+                        AddEvent: "https://fxstreet.com"
+                    }
                 }
             ]
         }
     ]
 }
+
 function viewport() {
-    var e = window, a = 'inner';
-    if (!('innerWidth' in window )) {
+    var e = window,
+        a = 'inner';
+    if (!('innerWidth' in window)) {
         a = 'client';
         e = document.documentElement || document.body;
     }
-    return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+    return { width: e[a + 'Width'], height: e[a + 'Height'] };
 }
-var isMobile = function(){
+var isMobile = function() {
     var viewportWidth = viewport().width;
     return viewportWidth < 768;
 }
@@ -910,9 +1266,9 @@ var addEvents = function() {
         $(this).find('.fa.left').toggleClass('fa-chevron-left fa-chevron-down')
     })
     $('[data-toggle="tooltip"]').tooltip()
-    $('#fxs_ecocal_simple_filter_date_picker_toggle').daterangepicker({opens: 'center',drops:'down'})
-    $('#fxs_ecocal_advanced_filter_date_picker_toggle').daterangepicker({opens: 'center',drops:'up'})
-    $('#fxs_ecocal_simple_filter_mobile_date_picker_toggle').daterangepicker({opens: 'center',drops:'up'})
+    $('#fxs_ecocal_simple_filter_date_picker_toggle').daterangepicker({ opens: 'center', drops: 'down' })
+    $('#fxs_ecocal_advanced_filter_date_picker_toggle').daterangepicker({ opens: 'center', drops: 'up' })
+    $('#fxs_ecocal_simple_filter_mobile_date_picker_toggle').daterangepicker({ opens: 'center', drops: 'up' })
     $('#fxs_simple_filter_mobile_toggle_volume').click(function() {
         $(this).toggleClass('fa-volume-off fa-volume-up')
     })
@@ -940,18 +1296,18 @@ var addEvents = function() {
     $('#fxs_show_visibility_selectors').click(function() {
         $('#fxs_ecocal_header').toggleClass('fxs_edit_cols');
     })
-    $('#fxs_actual_col_visibility').click(function(){
+    $('#fxs_actual_col_visibility').click(function() {
 
     });
-$('#fxs_deviation_col_visibility').click(function(){
+    $('#fxs_deviation_col_visibility').click(function() {
 
-});
-$('#fxs_consensus_col_visibility').click(function(){
+    });
+    $('#fxs_consensus_col_visibility').click(function() {
 
-});
-$('#fxs_previous_col_visibility').click(function(){
+    });
+    $('#fxs_previous_col_visibility').click(function() {
 
-});
+    });
 }
 var addEventsMobile = function() {
     $('.fxs_ecocal_event_row').click(function() {
@@ -1045,14 +1401,14 @@ var renderEcocal = function() {
     $.get(templates.ecocal, function(template) {
         var rendered = Mustache.render(template, ecoCalJson);
         $('#fxs_ecocal').html(rendered);
-        if(isMobile()){
+        if (isMobile()) {
             renderSimpleFiltersMobileToggle();
-        }else{
+        } else {
             renderSimpleFilters();
         }
     })
 }
 renderEcocal();
-$( window ).resize(function() {
+$(window).resize(function() {
     renderEcocal();
 });

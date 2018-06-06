@@ -240,15 +240,16 @@ fxs_ecocal_menu label input {
 }
 
 .fxs_ecocal_event_row_item.impact {
-    width: 50px;
+    width: 20px;
 }
 
 .fxs_ecocal_event_row .fxs_ecocal_event_row_item.impact span {
-    width: 30px;
+    width: 10px;
     height: 10px;
     display: block;
     background-color: #DDDEDF;
     border: 1px solid #DDDEDF;
+    margin: auto;
 }
 
 .fxs_ecocal_event_row .fxs_ecocal_event_row_item.impact_1 span:last-child {
@@ -278,7 +279,7 @@ fxs_ecocal_menu label input {
 }
 
 .fxs_ecocal_event_row_item.title {
-    width: calc(100% - 410px);
+    width: calc(100% - 440px);
     line-height: 1rem;
     white-space: normal;
 }
@@ -290,7 +291,7 @@ fxs_ecocal_menu label input {
 
 @media (min-width: 1480px) {
     .fxs_ecocal_event_row_item.title {
-        width: calc(100% - 580px);
+        width: calc(100% - 610px);
         line-height: 30px;
         white-space: nowrap;
     }

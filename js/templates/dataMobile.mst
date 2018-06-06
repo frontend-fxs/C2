@@ -1,74 +1,73 @@
 <div class="fxs_ecocal_data_mobile_wrapper">
-  <div class="fxs_ecocal_previous_events">
-    <a href="#">{{Translations.PreviousEvents}}
+    <div class="fxs_ecocal_previous_events">
+        <a href="#">{{Translations.PreviousEvents}}
       <span class="fa fa-chevron-up"></span>
     </a>
-  </div>
-  <div class="fxs_ecocal_data">
-    {{#Periods}}
-    <div class="fxs_ecocal_period_header">{{Header}}</div>
-    {{#Rows}} {{#IsActive}}
-    <div class="fxs_ecocal_event_row {{#IsNow}}fxs_now{{/IsNow}} {{#IsLastNow}}fxs_last_now{{/IsLastNow}}">
-      <div class="fxs_ecocal_event_row_mobile_first">
-        {{#Tradeable}}
-        <div class="fxs_ecocal_event_row_item tradeable triggered">
-          <span class="fa fa-star"></span>
-        </div>
-        {{/Tradeable}}
-        <div class="fxs_ecocal_event_row_item time {{^Tradeable}}fxs_not_tradeable{{/Tradeable}}">
-          <span>{{CountDown}}</span>
-        </div>
-        <div class="fxs_ecocal_event_row_item impact {{^Tradeable}}fxs_not_tradeable{{/Tradeable}}">
-          {{#ImpactLevel}}
-          <img src="https://editorial.blob.core.windows.net/ico-logos/ecocal-{{.}}.svg" /> {{/ImpactLevel}}
-        </div>
-      </div>
-      <div class="fxs_ecocal_event_row_mobile_second">
-        <div class="fxs_ecocal_event_row_item currency">
-          <span class="fxst-flag fxst-i-{{Flag}}"></span>
-          <span>{{Currency}}</span>
-        </div>
-        <div class="fxs_ecocal_event_row_item title">
-          <span>{{Title}}</span>
-        </div>
-        {{#EventType}}
-        <div class="fxs_ecocal_event_row_item type">
-          <span class="fxs_label fxs_label_info">{{.}}</span>
-        </div>
-        {{/EventType}} {{^EventType}}
-        <div class="fxs_ecocal_event_row_item fxs_ecocal_event_row_item_header actual">
-          <span>{{Translations.Actual}}</span>
-        </div>
-        <div class="fxs_ecocal_event_row_item fxs_ecocal_event_row_item_header consensus">
-          <span>{{Translations.Consensus}}</span>
-          <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-original-title="Tooltip text Tooltip text Tooltip text Tooltip text "></span>
-        </div>
-        <div class="fxs_ecocal_event_row_item fxs_ecocal_event_row_item_header previous">
-          <span>{{Translations.Previous}}</span>
-        </div>
-        <div class="fxs_ecocal_event_row_item actual">
-          <span class="{{#Actual.High}}fxs_txt_success{{/Actual.High}} {{#Actual.Low}}fxs_txt_danger{{/Actual.Low}}"> {{Actual.Value}} </span>
-        </div>
-        <div class="fxs_ecocal_event_row_item consensus">
-          <span>{{Consensus}}</span>
-        </div>
-        <div class="fxs_ecocal_event_row_item previous">
-          <span class="{{#Previous.Revised.High}}fxs_txt_success{{/Previous.Revised.High}} {{#Previous.Revised.Low}}fxs_txt_danger{{/Previous.Revised.Low}}">
+    </div>
+    <div class="fxs_ecocal_data">
+        {{#Periods}}
+        <div class="fxs_ecocal_period_header">{{Header}}</div>
+        {{#Rows}} {{#IsActive}}
+        <div class="fxs_ecocal_event_row {{#IsNow}}fxs_now{{/IsNow}} {{#IsLastNow}}fxs_last_now{{/IsLastNow}}">
+            <div class="fxs_ecocal_event_row_mobile_first">
+                {{#Tradeable}}
+                <div class="fxs_ecocal_event_row_item tradeable triggered">
+                    <span class="fa fa-star"></span>
+                </div>
+                {{/Tradeable}}
+                <div class="fxs_ecocal_event_row_item time {{^Tradeable}}fxs_not_tradeable{{/Tradeable}}">
+                    <span>{{CountDown}}</span>
+                </div>
+                <div class="fxs_ecocal_event_row_item impact impact_{{ImpactLevel}}">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="fxs_ecocal_event_row_mobile_second">
+                <div class="fxs_ecocal_event_row_item currency">
+                    <span class="fxst-flag fxst-i-{{Flag}}"></span>
+                    <span>{{Currency}}</span>
+                </div>
+                <div class="fxs_ecocal_event_row_item title">
+                    <span>{{Title}}</span>
+                </div>
+                {{#EventType}}
+                <div class="fxs_ecocal_event_row_item type">
+                    <span class="fxs_label fxs_label_info">{{.}}</span>
+                </div>
+                {{/EventType}} {{^EventType}}
+                <div class="fxs_ecocal_event_row_item fxs_ecocal_event_row_item_header actual">
+                    <span>{{Translations.Actual}}</span>
+                </div>
+                <div class="fxs_ecocal_event_row_item fxs_ecocal_event_row_item_header consensus">
+                    <span>{{Translations.Consensus}}</span>
+                    <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-original-title="Tooltip text Tooltip text Tooltip text Tooltip text "></span>
+                </div>
+                <div class="fxs_ecocal_event_row_item fxs_ecocal_event_row_item_header previous">
+                    <span>{{Translations.Previous}}</span>
+                </div>
+                <div class="fxs_ecocal_event_row_item actual">
+                    <span class="{{#Actual.High}}fxs_txt_success{{/Actual.High}} {{#Actual.Low}}fxs_txt_danger{{/Actual.Low}}"> {{Actual.Value}} </span>
+                </div>
+                <div class="fxs_ecocal_event_row_item consensus">
+                    <span>{{Consensus}}</span>
+                </div>
+                <div class="fxs_ecocal_event_row_item previous">
+                    <span class="{{#Previous.Revised.High}}fxs_txt_success{{/Previous.Revised.High}} {{#Previous.Revised.Low}}fxs_txt_danger{{/Previous.Revised.Low}}">
             {{Previous.Value}}
-          </span>
-          {{#Previous.Revised}}
-          <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-original-title="{{{Tooltip}}} {{Value}}"></span>
-          {{/Previous.Revised}} </div>
-        {{/EventType}}
-       </div>
-    </div>
-    <div class="fxs_ecocal_event_collapsible fxs_hideElements">
-      Collapsed content
-    </div>
-    {{/IsActive}} {{/Rows}} {{/Periods}} </div>
-  <div class="fxs_ecocal_next_events">
-    <a href="#">{{Translations.NextEvents}}
+          </span> {{#Previous.Revised}}
+                    <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-original-title="{{{Tooltip}}} {{Value}}"></span> {{/Previous.Revised}} </div>
+                {{/EventType}}
+            </div>
+        </div>
+        <div class="fxs_ecocal_event_collapsible fxs_hideElements">
+            Collapsed content
+        </div>
+        {{/IsActive}} {{/Rows}} {{/Periods}} </div>
+    <div class="fxs_ecocal_next_events">
+        <a href="#">{{Translations.NextEvents}}
       <span class="fa fa-chevron-down"></span>
     </a>
-  </div>
+    </div>
 </div>

@@ -279,7 +279,7 @@ fxs_ecocal_menu label input {
 }
 
 .fxs_ecocal_event_row_item.title {
-    width: calc(100% - 440px);
+    width: calc(100% - 380px);
     line-height: 1rem;
     white-space: normal;
 }
@@ -291,7 +291,7 @@ fxs_ecocal_menu label input {
 
 @media (min-width: 1480px) {
     .fxs_ecocal_event_row_item.title {
-        width: calc(100% - 610px);
+        width: calc(100% - 550px);
         line-height: 30px;
         white-space: nowrap;
     }

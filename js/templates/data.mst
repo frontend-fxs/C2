@@ -51,9 +51,10 @@
             <div class="fxs_ecocal_event_row_item time">
                 <span>{{CountDown}}</span>
             </div>
-            <div class="fxs_ecocal_event_row_item impact">
-                {{#ImpactLevel}}
-                <img src="https://editorial.blob.core.windows.net/ico-logos/ecocal-{{.}}.svg" /> {{/ImpactLevel}}
+            <div class="fxs_ecocal_event_row_item impact impact_{{ImpactLevel}}">
+                <span></span>
+                <span></span>
+                <span></span>                
             </div>
             <div class="fxs_ecocal_event_row_item currency">
                 <span class="fxst-flag fxst-i-{{Flag}}"></span>
@@ -104,13 +105,13 @@
             </div>
             <div class="fxs_ecocal_event_collapsible_right">
                 {{#OfficialSource}}
-                <p><a href="{{.}}" class="fxs_mutedLink"><span class="fa fa-flag"></span> <span class="fxs_entry_metaInfo">{{Translations.OfficialSource}}</span></a></p>
+                <p><span class="fa fa-flag"></span> <a href="{{.}}" class="fxs_mutedLink"><span class="fxs_entry_metaInfo">{{Translations.OfficialSource}}</span></a></p>
                 {{/OfficialSource}} 
                 {{#Subscribe}}
-                <p><a href="{{.}}" class="fxs_mutedLink"><span class="fa fa-envelope-o"></span> <span class="fxs_entry_metaInfo">{{Translations.Subscribe}}</span></a></p>
+                <p><span class="fa fa-envelope-o"></span><a href="{{.}}" class="fxs_mutedLink"> <span class="fxs_entry_metaInfo">{{Translations.Subscribe}}</span></a></p>
                 {{/Subscribe}} 
                 {{#AddEvent}}
-                <p><a href="{{.}}" class="fxs_mutedLink"><span class="fa fa-calendar-plus-o"></span> <span class="fxs_entry_metaInfo">{{Translations.AddEvent}}</span></a></p>
+                <p><span class="fa fa-calendar-plus-o"></span><a href="{{.}}" class="fxs_mutedLink"> <span class="fxs_entry_metaInfo">{{Translations.AddEvent}}</span></a></p>
                 {{/AddEvent}}
             </div>
             {{/Detail}}

@@ -281,11 +281,13 @@ fxs_ecocal_menu label input {
     width: calc(100% - 380px);
     line-height: 1rem;
     white-space: normal;
+    text-align: left;
 }
 
 .fxs_ecocal_header .fxs_ecocal_event_row_item.title {
     line-height: 30px;
     white-space: nowrap;
+    text-align: center;
 }
 
 @media (min-width: 1480px) {

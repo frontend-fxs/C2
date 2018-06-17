@@ -29,6 +29,7 @@
     width: 100%;
     display: block;
     float: left;
+    position: relative;
 }
 
 .fxs_ecocal_menu {
@@ -413,7 +414,7 @@ fxs_ecocal_menu label input {
 }
 
 .fxs_simple_filter_mobile_toggle .fxs_search_box {
-    width: calc(100% - 80px);
+    width: calc(100% - 90px);
     position: relative;
     display: inline-block;
 }
@@ -439,6 +440,12 @@ fxs_ecocal_menu label input {
     z-index: 1;
     padding: 1rem;
     margin: 66px -0.5rem;
+}
+
+@media(min-width:768px) {
+    .fxs_ecocal_simple_filter_mobile {
+        display: none;
+    }
 }
 
 .fxs_ecocal_simple_filter_mobile .fxs_btn_table_filter {
@@ -589,6 +596,7 @@ label.fxs_seventh .fxst-flag {
 .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.title {
     width: calc(100% - 50px);
     text-align: left;
+    height: auto;
 }
 
 .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.actual,
@@ -613,5 +621,26 @@ label.fxs_seventh .fxst-flag {
 }
 
 .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item.impact {
-    padding: 0;
+    padding: 5px 0;
+    height: 40px;
+}
+
+.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item.time,
+.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item.tradeable {
+    height: 30px;
+}
+
+.fxs_ecocal_filter_custom {
+    float: left;
+    background-color: #edecf2;
+    width: 300px;
+    padding: 1rem;
+}
+
+.custom .fxs_ecocal_data_wrapper,
+.custom .fxs_ecocal_data_mobile_wrapper {
+    width: calc(100% - 300px);
+    display: block;
+    float: left;
+    border-bottom: 3px solid #f0f0f1;
 }

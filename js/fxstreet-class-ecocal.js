@@ -1,11 +1,3 @@
-/*var templates = {
-    data: 'https://frontend-fxs.github.io/C2/js/templates/data.mst',
-    simpleFilters: 'https://frontend-fxs.github.io/C2/js/templates/simple-filter.mst',
-    simpleFiltersMobile: 'https://frontend-fxs.github.io/C2/js/templates/simple-filter-mobile.mst',
-    simpleFiltersMobileToggle: 'https://frontend-fxs.github.io/C2/js/templates/simple-filter-mobile-toggle.mst',
-    advancedFilters: 'https://frontend-fxs.github.io/C2/js/templates/advanced-filter.mst',
-    ecocal: 'https://frontend-fxs.github.io/C2/js/templates/ecocal.mst'
-}*/
 var templates = {
     data: 'js/templates/data.mst',
     dataMobile: 'js/templates/dataMobile.mst',

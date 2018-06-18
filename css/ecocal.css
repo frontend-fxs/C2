@@ -644,3 +644,74 @@ label.fxs_seventh .fxst-flag {
     float: left;
     border-bottom: 3px solid #f0f0f1;
 }
+
+.fxs_ecocal_filter_custom {
+    float: left;
+    background-color: #edecf2;
+    width: 300px;
+    padding: 1rem;
+}
+
+.fxs_ecocal_filter_custom.mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: left .2s ease-out;
+    -moz-transition: left .2s ease-out;
+    -o-transition: left .2s ease-out;
+    transition: left .2s ease-out;
+    z-index: 2;
+}
+
+.fxs_ecocal_filter_custom.mobile.fxs_folded {
+    left: -100%;
+}
+
+.fxs_ecocal_filter_custom label {
+    width: 100%;
+}
+
+.fxs_ecocal_filter_custom label.fxs_ecocal_custom_menu_tradeable {
+    width: auto;
+}
+
+@media(min-width:768px) {
+    .fxs_ecocal_filter_custom .fxs_ecocal_custom_secondary_countries {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .fxs_ecocal_filter_custom .fxs_ecocal_custom_secondary_countries .fxs_ecocal_custom_secondary_countries_inner {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 1rem;
+    }
+    .fxs_ecocal_filter_custom .fxs_ecocal_custom_secondary_countries .fxs_ecocal_custom_secondary_countries_inner label {
+        width: calc(100% / 2);
+        float: left;
+        z-index: 1;
+    }
+}
+
+@media(min-width:1024px) {
+    .fxs_ecocal_filter_custom .fxs_ecocal_custom_secondary_countries .fxs_ecocal_custom_secondary_countries_inner label {
+        width: calc(100% / 3);
+    }
+}
+
+@media(min-width:1480px) {
+    .fxs_ecocal_filter_custom .fxs_ecocal_custom_secondary_countries .fxs_ecocal_custom_secondary_countries_inner label {
+        width: calc(100% / 4);
+    }
+}
+
+.fxs_ecocal_filter_toggle_custom {
+    display: inline-block;
+}

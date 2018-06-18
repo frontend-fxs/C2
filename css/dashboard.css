@@ -1,0 +1,29 @@
+.fxs_ecocal_event_dashboard_top_left {
+    float: left;
+    width: calc(100% - 150px);
+    padding: 1rem;
+}
+
+.fxs_ecocal_event_dashboard_top_right {
+    float: right;
+    width: 150px;
+    padding: 1rem;
+}
+
+.fxs_responsive_table {
+    float: left;
+    width: 100%;
+    border: 1px solid #DDDEDF;
+}
+
+.fxs_responsive_table .fxs_responsive_table_header {
+    background-color: #ECECF1;
+    border: 1px solid #DDDEDF;
+    width: 100%;
+    float: left;
+}
+
+.fxs_responsive_table_fifth {
+    width: 20%;
+    float: left;
+}

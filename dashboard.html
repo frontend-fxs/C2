@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Economic Calendar Event Date Dashboard</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <script src="https://staticcontent.fxstreet.com/widgets/core/js/d3.min.js" charset="utf-8"></script>
+    <script src="https://staticcontent.fxstreet.com/widgets/core/js/c3.min.js"></script>
+    <link rel="stylesheet" href="https://staticcontentqa.blob.core.windows.net/website/css/fxs_screen.css">
+    <link rel="stylesheet" href="https://staticcontent.fxstreet.com/calendarwidget-css/default-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/dashboard.css"> </head>
+
+<body class="cbp-spmenu-push">
+    <a id="" class="fxs_skip" href="#fxs_content">Skip to main content</a>
+    <div class="fxs_bgHeader">
+        <div class="fxs_mediaHeader_bar fxs_hidden_s">
+            <div class="fxs_mediaHeader_content">
+                <span class="fxs_mediaHeader_icon"></span>
+                <div class="fxs_mediaHeader_items">
+                    <ul class="fxs_mediaHeader_social">
+                        <li>
+                            <div class="fxs_sectionTitle_header">
+                                <span>Follow us on</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fxs_staticHeader">
+            <header class="fxs_header">
+                <div id="fxs_socialLogo_header" class="fxs_socialHeader">
+                    <button type="button" id="fxs_showLeftPush" class="fxs_show_navmenu">
+                            <span class="fxs_menu_txt">MENU</span>
+                            <i class="fa fa-bars"></i>
+                            <span class="fxs_skip">Show navigation</span>
+                        </button>
+                    <a class="fxs_logo" href="/" title="FXStreet">FXStreet</a>
+                </div>
+                <div class="fxs_clearfix"></div>
+                <div id="fxs_nav_position" class="fxs_clearfix fxs_navControl">
+                    <div class="fxs_navBg">
+                        <a id="fxs_logo_reduced" class="fxs_logo fxs_logo_reduced" href="#" title="FXStreet"> FXStreet - The forex market </a>
+                        <div id="fxs_it_horizontalMenu">
+                            <nav class="fxs_nav_menu fxs_main_nav" role="navigation">
+                                <ul>
+                                    <li>
+                                        <a class="fxs_nav_main_menu_desktop" href="./index.html">Default Layout</a>
+                                    </li>
+                                    <li>
+                                        <a class="fxs_nav_main_menu_desktop" href="./custom.html">Custom Layout</a>
+                                    </li>
+                                    <li>
+                                        <a class="fxs_nav_main_menu_desktop" href="./dashboard.html">Dashboard</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="fxs_wrapper fxs_content_wide">
+        <div class="fxs_pageSidebar fxs_sidebar_nav" id="cbp-spmenu-s1">
+            <div id="fxs_it_verticalMenu">
+                <nav class="fxs_nav_menu fxs_main_nav" role="navigation">
+                    <ul class="fxs_nav_menu_mobile">
+                        <li>
+                            <a class="fxs_nav_main_menu_desktop" href="./index.html">Default Layout</a>
+                        </li>
+                        <li>
+                            <a class="fxs_nav_main_menu_desktop" href="./custom.html">Custom Layout</a>
+                        </li>
+                        <li>
+                            <a class="fxs_nav_main_menu_desktop" href="./dashboard.html">Dashboard</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="fxs_content">
+            <div id="fxs_content">
+                <div class="fxs_contentView">
+                    <div class="fxs_leaderboard fxs_leaderboard_transition">
+                        <div class="fxs_roadblock_slide">
+                            <div class="fxs_ad">
+                                <img src="https://tpc.googlesyndication.com/simgad/11873754357304985773" border="0" width="1280" height="300" alt="" class="img_ad" style="filter:blur(4px);"> </div>
+                        </div>
+                    </div>
+                    <div class="fxs_wallpaper_wrap">
+                        <div class="fxs_wallpaper_img fxs_image_left">
+                            <div class="fxs_ad">
+                                <img src="https://tpc.googlesyndication.com/simgad/268443621108452530" border="0" width="585" height="1190" alt="" class="img_ad" style="filter:blur(4px);"> </div>
+                        </div>
+                        <div class="fxs_wallpaper_img fxs_image_right">
+                            <div class="fxs_ad">
+                                <img src="https://tpc.googlesyndication.com/simgad/10739667962623457361" border="0" width="585" height="1190" alt="" class="img_ad" style="filter:blur(4px);"> </div>
+                        </div>
+                    </div>
+                    <main id="fxs_it_detail" role="main">
+                        <div fxs_section="" id="fxs_home" class="fxs_detail">
+                            <div class="fxs_row">
+                                <div class="fxs_col fxs_col_100">
+                                    <header class="fxs_sectionTitle fxs_sectionTitle_innerDetail">
+                                        <h1 class="fxs_sectionTitle_header">Event Date Dashboard Title</h1>
+                                        <div id="fxs_socialmedia_bar_header">
+                                            <div class="fxs_shareContent_holder">
+                                                <ul class="fxs_shareOptions_boxed">
+                                                    <li class="fxs_socialMedia_item">
+                                                        <a href="#" class="fxs_btn_icon" title="Share on Twitter" onclick="MyWindow = window.open('https://twitter.com/home?status=%0Ahttps://www.fxstreet.com/economic-calendar', 'MyWindow', 'width=500,height=500'); return false;">
+                                                            <i class="fa fa-twitter" data-element="Share on Twitter"></i> <span class="fxs_skip">Share on Twitter</span> </a>
+                                                    </li>
+                                                    <li class="fxs_socialMedia_item">
+                                                        <a href="#" class="fxs_btn_icon" title="Share on Facebook" onclick="MyWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=%0Ahttps://www.fxstreet.com/economic-calendar', 'MyWindow', 'width=500,height=500'); return false;">
+                                                            <i class="fa fa-facebook" data-element="Share on Facebook"></i> <span class="fxs_skip">Share on Facebook</span> </a>
+                                                    </li>
+                                                    <li class="fxs_socialMedia_item">
+                                                        <a href="#" class="fxs_btn_icon" title="Share on Linkedin" onclick="MyWindow = window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=%0Ahttps://www.fxstreet.com/economic-calendar', 'MyWindow', 'width=500,height=500'); return false;">
+                                                            <i class="fa fa-linkedin" data-element="Share on Linkedin"></i> <span class="fxs_skip">Share on Linkedin</span> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <hr class="fxs_divider_wide">
+                                    <div class="fxs_row">
+                                        <div class="fxs_col_100">
+                                            <div class="fxs_ecocal_event_dashboard_top_left">
+                                                <div class="fxs_responsive_table">
+                                                    <div class="fxs_responsive_table_header">
+                                                        <div class="fxs_responsive_table_fifth fxs_txt_center"> <span>RELEASE</span> </div>
+                                                        <div class="fxs_responsive_table_fifth fxs_txt_center"> <span>CONSENSUS</span> </div>
+                                                        <div class="fxs_responsive_table_fifth fxs_txt_center"> <span>PREVIOUS</span> </div>
+                                                        <div class="fxs_responsive_table_fifth fxs_txt_center"> <span>ACTUAL</span> </div>
+                                                        <div class="fxs_responsive_table_fifth fxs_txt_center"> <span>DEVIATION</span> <span class="fa fa-info-circle" aria-hidden="true"></span> </div>
+                                                    </div>
+                                                    <div class="fxs_responsive_table_fifth  fxs_txt_center">
+                                                        <p class="fxs_marginBase_top fxs_marginBase_bottom">15:40</p>
+                                                    </div>
+                                                    <div class="fxs_responsive_table_fifth  fxs_txt_center">
+                                                        <p class="fxs_marginBase_top fxs_marginBase_bottom">0.1%</p>
+                                                    </div>
+                                                    <div class="fxs_responsive_table_fifth  fxs_txt_center">
+                                                        <p class="fxs_marginBase_top fxs_marginBase_bottom">0.1%</p>
+                                                    </div>
+                                                    <div class="fxs_responsive_table_fifth  fxs_txt_center">
+                                                        <p class="fxs_marginBase_top fxs_marginBase_bottom">-</p>
+                                                    </div>
+                                                    <div class="fxs_responsive_table_fifth  fxs_txt_center">
+                                                        <p class="fxs_marginBase_top fxs_marginBase_bottom">-</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fxs_ecocal_event_dashboard_top_right">
+                                                <p><span class="fa fa-flag"></span> <a href="https://fxstreet.com" class="fxs_mutedLink"><span class="fxs_entry_metaInfo">Official Source</span></a></p>
+                                                <p><span class="fa fa-envelope-o"></span>
+                                                    <a href="https://fxstreet.com" class="fxs_mutedLink"> <span class="fxs_entry_metaInfo">Subscribe</span></a>
+                                                </p>
+                                                <p><span class="fa fa-calendar-plus-o"></span>
+                                                    <a href="https://fxstreet.com" class="fxs_mutedLink"> <span class="fxs_entry_metaInfo">Add Event</span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fxs_row">
+                                        <div class="fxs_col fxs_col_50">
+                                            <h3 class="fxs_headline_small">Description</h3>
+                                            <p class="fxs_entryPlain_txt">Ex cillum laboris in dolor in velit labore aute non excepteur. Non nulla quis mollit excepteur voluptate et dolor. Ex fugiat qui irure cillum laboris in nulla sint nulla incididunt. Ipsum quis ad commodo dolore
+                                                voluptate culpa esse reprehenderit et id occaecat do officia. Reprehenderit adipisicing ut nostrud duis veniam commodo. Veniam voluptate pariatur ad magna pariatur veniam magna dolore qui adipisicing culpa
+                                                anim nulla ea. Proident ut dolore cillum deserunt reprehenderit in.</p>
+                                        </div>
+                                        <div class="fxs_col fxs_col_50">
+                                            <h3 class="fxs_headline_small">Actual Historic</h3>
+                                            <div id="chart1"></div>
+                                            <script>
+                                                var chart = c3.generate({
+                                                    bindto: '#chart1',
+                                                    data: {
+                                                        x: 'x',
+                                                        y: 'y',
+                                                        names: {
+                                                            x: 'Year',
+                                                            y: 'UK PPI Core Output (YoY) n.s.a'
+                                                        },
+                                                        columns: [
+                                                            ['x', '2013', '2014', '2015', '2016', '2017', '2018'],
+                                                            ['y', 1.946045199376229, -0.8081877192409772, 3.257389694768551, 1.402040767501715, 0.010590451683283097, -0.31099137145319333, 3.2929225016618835, -0.3691257239193859, 1.8687880787952302, -0.990563055185484, -0.9961981571126857, -0.32674534884888495, 3.3154688190592623, 2.1761865932301436, 2.6459267041264454, 2.081766656880709, 2.6346880591105846, 2.517972588936317, 1.3133912124575993, 2.7815374127184818, 2.9982929802645395, 2.3960203099077866, -0.7739176696784047, 3.5361456210217597, 2.14064319696461, 2.6121666450188226, 3.1696213677783565, -0.49865997108873206, -0.6462462723815567, 0.07093079423033921, 2.484377525367205, 2.1437423160045084, 0.5608630064726581, -0.05814260811034777, 2.171185106841279, 2.4260271500893715, 3.484910532483882, 3.6411977487336884, -0.16524416948066745, 1.093765853952354, -0.9408273396245772, -0.3430862042437479, 1.469185216123786, 3.513767632932277, 2.510482245208537, -0.4327734128775276, -0.5779120017561936, 3.550810419602013, -0.2050554175614696, 1.5262774561412957]
+                                                        ],
+                                                        colors: {
+                                                            y: '#E4871B',
+                                                            x: '#E4871B'
+                                                        }
+                                                    },
+                                                    point: {
+                                                        show: false
+                                                    },
+                                                    grid: {
+                                                        x: {
+                                                            show: true,
+                                                            lines: [{
+                                                                value: '2013',
+                                                            }, {
+                                                                value: '2014',
+                                                            }, {
+                                                                value: '2015',
+                                                            }, {
+                                                                value: '2016',
+                                                            }, {
+                                                                value: '2017',
+                                                            }, {
+                                                                value: '2018'
+                                                            }]
+                                                        },
+                                                        y: {
+                                                            show: true,
+                                                            lines: [{
+                                                                value: -1,
+                                                            }, {
+                                                                value: 0,
+                                                            }, {
+                                                                value: 1,
+                                                            }, {
+                                                                value: 2,
+                                                            }, {
+                                                                value: 3,
+                                                            }]
+                                                        }
+                                                    },
+                                                    axis: {
+                                                        x: {
+                                                            tick: {
+                                                                values: ['2013', '2014', '2015', '2016', '2017', '2018']
+                                                            }
+                                                        },
+                                                        y: {
+                                                            tick: {
+                                                                values: [-1, 0, 1, 2, 3]
+                                                            }
+                                                        }
+                                                    }
+                                                });
+                                                d3.select('.container').insert('div', '.chart').attr('class', 'legend').selectAll('span').data(['data1', 'data2', 'data3']).enter().append('span').attr('data-id', function(id) {
+                                                    return id;
+                                                }).html(function(id) {
+                                                    return id;
+                                                }).each(function(id) {
+                                                    d3.select(this).style('background-color', chart.color(id));
+                                                }).on('mouseover', function(id) {
+                                                    chart.focus(id);
+                                                }).on('mouseout', function(id) {
+                                                    chart.revert();
+                                                }).on('click', function(id) {
+                                                    chart.toggle(id);
+                                                });
+                                                var x1 = $('#chart1 .c3-legend-item-tile').attr('x1');
+                                                $('#chart1 .c3-legend-item-tile').attr('x1', x1 - 30);
+                                                $('#chart1 .c3-legend-item-tile').attr('stroke-width', 1);
+                                            </script>
+                                        </div>
+                                    </div>
+                                    <div class="fxs_row">
+                                        <div class="fxs_col fxs_col_50">
+                                            <div class="fxs_marginBase_top_big"></div>
+                                            <h3 class="fxs_headline_small">Indicators</h3>
+                                            <div class="fxs_marginBase_top_big"></div>
+                                            <div class="fxst-gnral">
+                                                <table id="fxst-calendartable" class="fxst-calendarpro fxst-table-s1" width="100%" cellspacing="0" cellpadding="0">
+                                                    <thead>
+                                                        <tr class="fxst-calendarhead">
+                                                            <th>
+                                                                <div class="fxit-event">
+                                                                    <div class="fxs_new_calendar_header_item">
+                                                                        <div id="fxst-thtime" class="fxit-eventInfo-time">GMT+2</div>
+                                                                        <div id="fxst-thcountdown" class="fxit-eventInfo-time fxs_event_info_time_header">Time left</div>
+                                                                        <div id="fxst-thevent" class="fxit-event-url fxs_event_hedaer">Event</div>
+                                                                    </div>
+                                                                    <div class="fxit-event-numbers">
+                                                                        <div id="fxst-thvolatility" class="fxit-eventInfo-vol fxit-event-info-desktop"><span title="Volatility">Vol.</span></div>
+                                                                        <div id="fxst-thactual" class="fxit-actual" data-actual="">Actual</div>
+                                                                        <div id="fxst-thconsensus" class="fxit-consensus"><span class="fxs_show_d">Consensus</span><span class="fxs_show_m">Consensus</span></div>
+                                                                        <div id="fxst-thprevious" class="fxst-td-previous fxit-previous">Previous</div>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="fxst-dateRow">
+                                                            <td colspan="11">Friday, Jun 15</td>
+                                                        </tr>
+                                                        <tr class="fxst-tr-event fxst-oddRow  fxit-eventrow fxst-evenRow " data-eventdateid="ed8b2e82-1cdc-4881-b9a2-9be9057e688c" data-actual="1.000" data-unit="%" data-precision="1" data-pot="" data-isbetter="False" data-countryname="Italy">
+                                                            <td colspan="11">
+                                                                <div class="fxit-event">
+                                                                    <div class="fxit-eventInfo">
+                                                                        <div class="fxit-eventInfo-time fxs_event_time">11:00</div>
+                                                                        <div class="fxit-eventInfo-time fxs_cal_timeLeft">
+                                                                            <div><i class="fa fa-check"></i></div>
+                                                                        </div>
+                                                                        <div class="fxit-eventInfo-country"> <a href="/economic-calendar/country/0ffb7ca7-930e-4587-bd41-61f4864d552b" class="fxit-noleftclick fxit-countryurl" data-idcountry="0ffb7ca7-930e-4587-bd41-61f4864d552b"><b class="fxst-flag fxst-i-it" title="Italy"></b></a>                                                                            </div>
+                                                                        <div class="fxit-eventInfo-vol fxit-event-info-mobile">
+                                                                            <div class="fxit-eventInfo-vol-c"> <span class="fxst-i-vol fxst-i-vol1" title="Low volatility expected">1</span> </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="fxit-event-url">
+                                                                        <div class="fxit-event-name"> EUR </div>
+                                                                        <div class="fxit-event-title"> <a class="fxit-noleftclick fxit-eventurl" data-idevent="61c0a3c0-8ece-40f0-a85e-8a0537b9c23c" href="/economic-calendar/event/61c0a3c0-8ece-40f0-a85e-8a0537b9c23c">Consumer Price Index (YoY)</a>                                                                            </div>
+                                                                    </div>
+                                                                    <hr class="fxs_divider_mobile">
+                                                                    <div class="fxit-event-numbers fxit-move-volatily">
+                                                                        <div class="fxit-eventInfo-vol-c fxit-event-info-desktop"> <span class="fxst-i-vol fxst-i-vol1" title="Low volatility expected">1</span> </div>
+                                                                        <div class="fxst-worst  fxit-actual" data-actual="1.000">1.0%</div>
+                                                                        <div class="fxit-consensus">1.1%</div>
+                                                                        <div class="fxst-td-previous fxit-previous" data-revised="1.1%"> <span> 1.0% <i class="fa fa-info-circle fxs_cal_yellow"></i> <b class="fxst-revised" title="Revised from 1.1%">Revised from 1.1%</b> </span> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="fxst-tr-detail fxst-detailRow" style="display:none;">
+                                                            <td colspan="11" class="fxst-eventDetails"></td>
+                                                        </tr>
+                                                        <tr class="fxst-tr-event fxst-oddRow  fxit-eventrow fxst-evenRow " data-eventdateid="3ce263e8-ba43-49c4-9767-3c15bd95eff5" data-actual="0.300" data-unit="%" data-precision="1" data-pot="" data-isbetter="" data-countryname="European Monetary Union">
+                                                            <td colspan="11">
+                                                                <div class="fxit-event">
+                                                                    <div class="fxit-eventInfo">
+                                                                        <div class="fxit-eventInfo-time fxs_event_time">11:00</div>
+                                                                        <div class="fxit-eventInfo-time fxs_cal_timeLeft">
+                                                                            <div><i class="fa fa-check"></i></div>
+                                                                        </div>
+                                                                        <div class="fxit-eventInfo-country"> <a href="/economic-calendar/country/c9822cb1-6cee-45f4-a9a2-89d136990308" class="fxit-noleftclick fxit-countryurl" data-idcountry="c9822cb1-6cee-45f4-a9a2-89d136990308"><b class="fxst-flag fxst-i-emu" title="European Monetary Union"></b></a>                                                                            </div>
+                                                                        <div class="fxit-eventInfo-vol fxit-event-info-mobile">
+                                                                            <div class="fxit-eventInfo-vol-c"> <span class="fxst-i-vol fxst-i-vol2" title="Moderate volatility expected">2</span> </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="fxit-event-url">
+                                                                        <div class="fxit-event-name"> EUR </div>
+                                                                        <div class="fxit-event-title"> <a class="fxit-noleftclick fxit-eventurl" data-idevent="26886022-1762-46ca-ae8b-58f0ff65924d" href="/economic-calendar/event/26886022-1762-46ca-ae8b-58f0ff65924d">Consumer Price Index - Core (MoM)</a>                                                                            </div>
+                                                                    </div>
+                                                                    <hr class="fxs_divider_mobile">
+                                                                    <div class="fxit-event-numbers fxit-move-volatily">
+                                                                        <div class="fxit-eventInfo-vol-c fxit-event-info-desktop"> <span class="fxst-i-vol fxst-i-vol2" title="Moderate volatility expected">2</span> </div>
+                                                                        <div class=" fxit-actual" data-actual="0.300">0.3%</div>
+                                                                        <div class="fxit-consensus">0.3%</div>
+                                                                        <div class="fxst-td-previous fxit-previous" data-revised="0.2%"> 0.2% </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="fxst-tr-detail fxst-detailRow" style="display:none;">
+                                                            <td colspan="11" class="fxst-eventDetails"></td>
+                                                        </tr>
+                                                        <tr class="fxst-tr-event fxst-oddRow  fxit-eventrow fxst-evenRow " data-eventdateid="926b8b40-a1c8-4952-854c-3e049e5c5993" data-actual="1.900" data-unit="%" data-precision="1" data-pot="" data-isbetter="" data-countryname="European Monetary Union">
+                                                            <td colspan="11">
+                                                                <div class="fxit-event">
+                                                                    <div class="fxit-eventInfo">
+                                                                        <div class="fxit-eventInfo-time fxs_event_time">11:00</div>
+                                                                        <div class="fxit-eventInfo-time fxs_cal_timeLeft">
+                                                                            <div><i class="fa fa-check"></i></div>
+                                                                        </div>
+                                                                        <div class="fxit-eventInfo-country"> <a href="/economic-calendar/country/c9822cb1-6cee-45f4-a9a2-89d136990308" class="fxit-noleftclick fxit-countryurl" data-idcountry="c9822cb1-6cee-45f4-a9a2-89d136990308"><b class="fxst-flag fxst-i-emu" title="European Monetary Union"></b></a>                                                                            </div>
+                                                                        <div class="fxit-eventInfo-vol fxit-event-info-mobile">
+                                                                            <div class="fxit-eventInfo-vol-c"> <span class="fxst-i-vol fxst-i-vol3" title="High volatility expected">3</span> </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="fxit-event-url">
+                                                                        <div class="fxit-event-name"> EUR </div>
+                                                                        <div class="fxit-event-title"> <a class="fxit-noleftclick fxit-eventurl" data-idevent="54334a3a-4347-40bc-8755-78f6f4ae4b9a" href="/economic-calendar/event/54334a3a-4347-40bc-8755-78f6f4ae4b9a">Consumer Price Index (YoY)</a>                                                                            </div>
+                                                                    </div>
+                                                                    <hr class="fxs_divider_mobile">
+                                                                    <div class="fxit-event-numbers fxit-move-volatily">
+                                                                        <div class="fxit-eventInfo-vol-c fxit-event-info-desktop"> <span class="fxst-i-vol fxst-i-vol3" title="High volatility expected">3</span> </div>
+                                                                        <div class=" fxit-actual" data-actual="1.900">1.9%</div>
+                                                                        <div class="fxit-consensus">1.9%</div>
+                                                                        <div class="fxst-td-previous fxit-previous" data-revised="1.9%"> 1.9% </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="fxst-tr-detail fxst-detailRow" style="display:none;">
+                                                            <td colspan="11" class="fxst-eventDetails"></td>
+                                                        </tr>
+                                                        <tr class="fxst-tr-event fxst-oddRow  fxit-eventrow fxst-evenRow " data-eventdateid="aa72625c-bc20-4269-ae15-65db339423c0" data-actual="1.100" data-unit="%" data-precision="1" data-pot="" data-isbetter="" data-countryname="European Monetary Union">
+                                                            <td colspan="11">
+                                                                <div class="fxit-event">
+                                                                    <div class="fxit-eventInfo">
+                                                                        <div class="fxit-eventInfo-time fxs_event_time">11:00</div>
+                                                                        <div class="fxit-eventInfo-time fxs_cal_timeLeft">
+                                                                            <div><i class="fa fa-check"></i></div>
+                                                                        </div>
+                                                                        <div class="fxit-eventInfo-country"> <a href="/economic-calendar/country/c9822cb1-6cee-45f4-a9a2-89d136990308" class="fxit-noleftclick fxit-countryurl" data-idcountry="c9822cb1-6cee-45f4-a9a2-89d136990308"><b class="fxst-flag fxst-i-emu" title="European Monetary Union"></b></a>                                                                            </div>
+                                                                        <div class="fxit-eventInfo-vol fxit-event-info-mobile">
+                                                                            <div class="fxit-eventInfo-vol-c"> <span class="fxst-i-vol fxst-i-vol3" title="High volatility expected">3</span> </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="fxit-event-url">
+                                                                        <div class="fxit-event-name"> EUR </div>
+                                                                        <div class="fxit-event-title"> <a class="fxit-noleftclick fxit-eventurl" data-idevent="9225eef1-de8e-4276-a1f7-43be5f314b1f" href="/economic-calendar/event/9225eef1-de8e-4276-a1f7-43be5f314b1f">Consumer Price Index - Core (YoY)</a>                                                                            </div>
+                                                                    </div>
+                                                                    <hr class="fxs_divider_mobile">
+                                                                    <div class="fxit-event-numbers fxit-move-volatily">
+                                                                        <div class="fxit-eventInfo-vol-c fxit-event-info-desktop"> <span class="fxst-i-vol fxst-i-vol3" title="High volatility expected">3</span> </div>
+                                                                        <div class=" fxit-actual" data-actual="1.100">1.1%</div>
+                                                                        <div class="fxit-consensus">1.1%</div>
+                                                                        <div class="fxst-td-previous fxit-previous" data-revised="1.1%"> 1.1% </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="fxst-tr-detail fxst-detailRow" style="display:none;">
+                                                            <td colspan="11" class="fxst-eventDetails"></td>
+                                                        </tr>
+                                                        <tr class="fxst-tr-event fxst-oddRow  fxit-eventrow fxst-evenRow " data-eventdateid="e1321419-e835-4bf9-92af-351afd2b8869" data-actual="0.500" data-unit="%" data-precision="1" data-pot="" data-isbetter="" data-countryname="European Monetary Union">
+                                                            <td colspan="11">
+                                                                <div class="fxit-event">
+                                                                    <div class="fxit-eventInfo">
+                                                                        <div class="fxit-eventInfo-time fxs_event_time">11:00</div>
+                                                                        <div class="fxit-eventInfo-time fxs_cal_timeLeft">
+                                                                            <div><i class="fa fa-check"></i></div>
+                                                                        </div>
+                                                                        <div class="fxit-eventInfo-country"> <a href="/economic-calendar/country/c9822cb1-6cee-45f4-a9a2-89d136990308" class="fxit-noleftclick fxit-countryurl" data-idcountry="c9822cb1-6cee-45f4-a9a2-89d136990308"><b class="fxst-flag fxst-i-emu" title="European Monetary Union"></b></a>                                                                            </div>
+                                                                        <div class="fxit-eventInfo-vol fxit-event-info-mobile">
+                                                                            <div class="fxit-eventInfo-vol-c"> <span class="fxst-i-vol fxst-i-vol2" title="Moderate volatility expected">2</span> </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="fxit-event-url">
+                                                                        <div class="fxit-event-name"> EUR </div>
+                                                                        <div class="fxit-event-title"> <a class="fxit-noleftclick fxit-eventurl" data-idevent="39da71dd-6a75-4669-adbf-36819ba1089a" href="/economic-calendar/event/39da71dd-6a75-4669-adbf-36819ba1089a">Consumer Price Index (MoM)</a>                                                                            </div>
+                                                                    </div>
+                                                                    <hr class="fxs_divider_mobile">
+                                                                    <div class="fxit-event-numbers fxit-move-volatily">
+                                                                        <div class="fxit-eventInfo-vol-c fxit-event-info-desktop"> <span class="fxst-i-vol fxst-i-vol2" title="Moderate volatility expected">2</span> </div>
+                                                                        <div class=" fxit-actual" data-actual="0.500">0.5%</div>
+                                                                        <div class="fxit-consensus">0.5%</div>
+                                                                        <div class="fxst-td-previous fxit-previous" data-revised="0.3%"> 0.3% </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="fxst-tr-detail fxst-detailRow" style="display:none;">
+                                                            <td colspan="11" class="fxst-eventDetails"></td>
+                                                        </tr>
+                                                        <tr class="fxst-tr-event fxst-oddRow  fxit-eventrow fxst-evenRow " data-eventdateid="704fc5ff-d62f-477f-a9ad-189d5676b878" data-actual="2.000" data-unit="%" data-precision="1" data-pot="" data-isbetter="True" data-countryname="European Monetary Union">
+                                                            <td colspan="11">
+                                                                <div class="fxit-event">
+                                                                    <div class="fxit-eventInfo">
+                                                                        <div class="fxit-eventInfo-time fxs_event_time">11:00</div>
+                                                                        <div class="fxit-eventInfo-time fxs_cal_timeLeft">
+                                                                            <div><i class="fa fa-check"></i></div>
+                                                                        </div>
+                                                                        <div class="fxit-eventInfo-country"> <a href="/economic-calendar/country/c9822cb1-6cee-45f4-a9a2-89d136990308" class="fxit-noleftclick fxit-countryurl" data-idcountry="c9822cb1-6cee-45f4-a9a2-89d136990308"><b class="fxst-flag fxst-i-emu" title="European Monetary Union"></b></a>                                                                            </div>
+                                                                        <div class="fxit-eventInfo-vol fxit-event-info-mobile">
+                                                                            <div class="fxit-eventInfo-vol-c"> <span class="fxst-i-vol fxst-i-vol2" title="Moderate volatility expected">2</span> </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="fxit-event-url">
+                                                                        <div class="fxit-event-name"> EUR </div>
+                                                                        <div class="fxit-event-title"> <a class="fxit-noleftclick fxit-eventurl" data-idevent="1de438c2-aece-451c-8bd2-295c3f2be712" href="/economic-calendar/event/1de438c2-aece-451c-8bd2-295c3f2be712">Labour cost (Q1)</a>                                                                            </div>
+                                                                    </div>
+                                                                    <hr class="fxs_divider_mobile">
+                                                                    <div class="fxit-event-numbers fxit-move-volatily">
+                                                                        <div class="fxit-eventInfo-vol-c fxit-event-info-desktop"> <span class="fxst-i-vol fxst-i-vol2" title="Moderate volatility expected">2</span> </div>
+                                                                        <div class="fxst-better  fxit-actual" data-actual="2.000">2.0%</div>
+                                                                        <div class="fxit-consensus">1.9%</div>
+                                                                        <div class="fxst-td-previous fxit-previous" data-revised="1.5%"> <span> 1.4% <i class="fa fa-info-circle fxs_cal_yellow"></i> <b class="fxst-revised" title="Revised from 1.5%">Revised from 1.5%</b> </span> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="fxst-tr-detail fxst-detailRow" style="display:none;">
+                                                            <td colspan="11" class="fxst-eventDetails"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="fxs_col fxs_col_50">
+                                            <div class="fxs_marginBase_top_big"></div>
+                                            <h3 class="fxs_headline_small">Trading opportunities</h3>
+                                            <div class="fxs_marginBase_top_big"></div>
+                                            <div class="fxs_hidden_s marquetImpactSignals simplified">
+                                                <div class="fxs_col_100 fxs_sub_header">
+                                                    <div class="fxs_col_20">
+                                                        <div class="fxs_inner"> TRIGGER </div>
+                                                    </div>
+                                                    <div class="fxs_col_20">
+                                                        <div class="fxs_inner"> <strong> ENTRY POINT </strong> </div>
+                                                    </div>
+                                                    <div class="fxs_col_20">
+                                                        <div class="fxs_inner"> <strong> STOP LOSS </strong> </div>
+                                                    </div>
+                                                    <div class="fxs_col_20">
+                                                        <div class="fxs_inner"> <strong> TAKE PROFIT </strong> </div>
+                                                    </div>
+                                                    <div class="fxs_col_20"></div>
+                                                </div>
+                                                <div class="fxs_bodyData">
+                                                    <div id="marketsignals_1541944e-9ec1-4a28-bb86-1b4fa97ac772_signalsPositiveTrigger" class="fxs_bodyDataRow fxs_col_100">
+                                                        <div class="fxs_col_20">
+                                                            <div class="fxs_inner"> <span class="fxs_txt_success">≥</span> <strong> ? </strong> </div>
+                                                        </div>
+                                                        <div class="fxs_col_20">
+                                                            <div class="fxs_inner"> 1.4452 </div>
+                                                        </div>
+                                                        <div class="fxs_col_20">
+                                                            <div class="fxs_inner"> 1.4452 </div>
+                                                        </div>
+                                                        <div class="fxs_col_20">
+                                                            <div class="fxs_inner"> 1.4452 </div>
+                                                        </div>
+                                                        <div class="fxs_col_20">
+                                                            <div class="fxs_inner"> <a href="" class="fxs_btn fxs_btn_success" data-gtmid="marketsignals-6f0c1252-66a7-41ae-805a-1c9e35380e09"> Long </a> </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="marketsignals_0f8c0ef4-3f76-4529-ba6a-185bad01142f_signalsNegativeTrigger" class="fxs_bodyDataRow fxs_col_100">
+                                                        <div class="fxs_col_20">
+                                                            <div class="fxs_inner"> <span class="fxs_txt_danger">≤</span> <strong> ? </strong> </div>
+                                                        </div>
+                                                        <div class="fxs_col_20">
+                                                            <div class="fxs_inner"> 1.4452 </div>
+                                                        </div>
+                                                        <div class="fxs_col_20">
+                                                            <div class="fxs_inner"> 1.4452 </div>
+                                                        </div>
+                                                        <div class="fxs_col_20">
+                                                            <div class="fxs_inner"> 1.4452 </div>
+                                                        </div>
+                                                        <div class="fxs_col_20">
+                                                            <div class="fxs_inner"> <a href="" class="fxs_btn fxs_btn_danger" data-gtmid="marketsignals-6f0c1252-66a7-41ae-805a-1c9e35380e09"> Short </a> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fxs_row">
+                                        <div class="fxs_col fxs_col_100">
+                                            <h2 class="fxs_marginBase_top_big fxs_underlined_headline_highlight_clr">Market Impact</h2>
+                                        </div>
+                                    </div>
+                                    <div class="fxs_row">
+                                        <div class="fxs_col fxs_col_50">
+                                            <div class="fxs_marginBase_top_big"></div>
+                                            <h3 class="fxs_headline_small">Calc. Deviation</h3>
+                                            <div class="fxs_marginBase_top_big"></div>
+                                            <div id="chart2"></div>
+                                            <script>
+                                                var chart = c3.generate({
+                                                    bindto: '#chart2',
+                                                    point: {
+                                                        show: false
+                                                    },
+                                                    data: {
+                                                        x: 'x',
+                                                        columns: [
+                                                            ['x', '2014-07-24', '2014-07-25', '2014-07-26', '2014-07-27', '2014-07-28', '2014-07-29'],
+                                                            ['Consensus', 5, 2, 4, -3, 6, 5],
+                                                            ['Deviation', 130, 340, 200, 500, 250, 350],
+                                                            ['Actual', 500, 50, 250, 450, 60, 350]
+                                                        ],
+                                                        axes: {
+                                                            'Deviation': 'y',
+                                                            'Actual': 'y2'
+                                                        },
+                                                        type: 'line',
+                                                        types: {
+                                                            Deviation: 'bar'
+                                                        },
+                                                        colors: {
+                                                            Consensus: '#cf4a5d',
+                                                            Deviation: '#efb776',
+                                                            Actual: '#304c70'
+                                                        }
+                                                    },
+                                                    axis: {
+                                                        x: {
+                                                            type: 'timeseries',
+                                                            tick: {
+                                                                format: '%m/%d/%Y'
+                                                            }
+                                                        },
+                                                        y: {
+                                                            label: {
+                                                                text: 'DEVIATION',
+                                                                position: 'outer-middle'
+                                                            }
+                                                        },
+                                                        y2: {
+                                                            show: true,
+                                                            label: {
+                                                                text: 'ACTUAL & CONSENSUS',
+                                                                position: 'outer-middle'
+                                                            },
+                                                            max: 30,
+                                                            min: -10
+                                                        }
+                                                    }
+                                                });
+                                            </script>
+
+                                        </div>
+                                        <div class="fxs_col fxs_col_50">
+                                            <div class="fxs_marginBase_top_big"></div>
+                                            <h3 class="fxs_headline_small">True Range</h3>
+                                            <div class="fxs_marginBase_top_big"></div>
+                                            <div id="chart3"></div>
+                                            <script>
+                                                var chart = c3.generate({
+                                                    bindto: '#chart3',
+                                                    data: {
+                                                        x: 'x',
+                                                        y: 'y',
+                                                        names: {
+                                                            x: 'Year',
+                                                            y: 'UK PPI Core Output (YoY) n.s.a'
+                                                        },
+                                                        columns: [
+                                                            ['x', '2013', '2014', '2015', '2016', '2017', '2018'],
+                                                            ['y', 1.946045199376229, -0.8081877192409772, 3.257389694768551, 1.402040767501715, 0.010590451683283097, -0.31099137145319333, 3.2929225016618835, -0.3691257239193859, 1.8687880787952302, -0.990563055185484, -0.9961981571126857, -0.32674534884888495, 3.3154688190592623, 2.1761865932301436, 2.6459267041264454, 2.081766656880709, 2.6346880591105846, 2.517972588936317, 1.3133912124575993, 2.7815374127184818, 2.9982929802645395, 2.3960203099077866, -0.7739176696784047, 3.5361456210217597, 2.14064319696461, 2.6121666450188226, 3.1696213677783565, -0.49865997108873206, -0.6462462723815567, 0.07093079423033921, 2.484377525367205, 2.1437423160045084, 0.5608630064726581, -0.05814260811034777, 2.171185106841279, 2.4260271500893715, 3.484910532483882, 3.6411977487336884, -0.16524416948066745, 1.093765853952354, -0.9408273396245772, -0.3430862042437479, 1.469185216123786, 3.513767632932277, 2.510482245208537, -0.4327734128775276, -0.5779120017561936, 3.550810419602013, -0.2050554175614696, 1.5262774561412957]
+                                                        ],
+                                                        colors: {
+                                                            y: '#E4871B',
+                                                            x: '#E4871B'
+                                                        }
+                                                    },
+                                                    point: {
+                                                        show: false
+                                                    },
+                                                    grid: {
+                                                        x: {
+                                                            show: true,
+                                                            lines: [{
+                                                                value: '2013',
+                                                            }, {
+                                                                value: '2014',
+                                                            }, {
+                                                                value: '2015',
+                                                            }, {
+                                                                value: '2016',
+                                                            }, {
+                                                                value: '2017',
+                                                            }, {
+                                                                value: '2018'
+                                                            }]
+                                                        },
+                                                        y: {
+                                                            show: true,
+                                                            lines: [{
+                                                                value: -1,
+                                                            }, {
+                                                                value: 0,
+                                                            }, {
+                                                                value: 1,
+                                                            }, {
+                                                                value: 2,
+                                                            }, {
+                                                                value: 3,
+                                                            }]
+                                                        }
+                                                    },
+                                                    axis: {
+                                                        x: {
+                                                            tick: {
+                                                                values: ['2013', '2014', '2015', '2016', '2017', '2018']
+                                                            }
+                                                        },
+                                                        y: {
+                                                            tick: {
+                                                                values: [-1, 0, 1, 2, 3]
+                                                            }
+                                                        }
+                                                    }
+                                                });
+                                                d3.select('.container').insert('div', '.chart').attr('class', 'legend').selectAll('span').data(['data1', 'data2', 'data3']).enter().append('span').attr('data-id', function(id) {
+                                                    return id;
+                                                }).html(function(id) {
+                                                    return id;
+                                                }).each(function(id) {
+                                                    d3.select(this).style('background-color', chart.color(id));
+                                                }).on('mouseover', function(id) {
+                                                    chart.focus(id);
+                                                }).on('mouseout', function(id) {
+                                                    chart.revert();
+                                                }).on('click', function(id) {
+                                                    chart.toggle(id);
+                                                });
+                                                var x1 = $('#chart1 .c3-legend-item-tile').attr('x1');
+                                                $('#chart1 .c3-legend-item-tile').attr('x1', x1 - 30);
+                                                $('#chart1 .c3-legend-item-tile').attr('stroke-width', 1);
+                                            </script>
+
+                                        </div>
+                                    </div>
+                                    <div class="fxs_row">
+                                        <div class="fxs_col fxs_col_50">
+                                            <div class="fxs_marginBase_top_big"></div>
+                                            <h3 class="fxs_headline_small">Volatility Ratio</h3>
+                                            <div class="fxs_marginBase_top_big"></div>
+                                            <div id="chart4"></div>
+                                            <script>
+                                                var chart = c3.generate({
+                                                    bindto: '#chart4',
+                                                    data: {
+                                                        x: 'x',
+                                                        y: 'y',
+                                                        names: {
+                                                            x: 'Year',
+                                                            y: 'UK PPI Core Output (YoY) n.s.a'
+                                                        },
+                                                        columns: [
+                                                            ['x', '2013', '2014', '2015', '2016', '2017', '2018'],
+                                                            ['y', 1.946045199376229, -0.8081877192409772, 3.257389694768551, 1.402040767501715, 0.010590451683283097, -0.31099137145319333, 3.2929225016618835, -0.3691257239193859, 1.8687880787952302, -0.990563055185484, -0.9961981571126857, -0.32674534884888495, 3.3154688190592623, 2.1761865932301436, 2.6459267041264454, 2.081766656880709, 2.6346880591105846, 2.517972588936317, 1.3133912124575993, 2.7815374127184818, 2.9982929802645395, 2.3960203099077866, -0.7739176696784047, 3.5361456210217597, 2.14064319696461, 2.6121666450188226, 3.1696213677783565, -0.49865997108873206, -0.6462462723815567, 0.07093079423033921, 2.484377525367205, 2.1437423160045084, 0.5608630064726581, -0.05814260811034777, 2.171185106841279, 2.4260271500893715, 3.484910532483882, 3.6411977487336884, -0.16524416948066745, 1.093765853952354, -0.9408273396245772, -0.3430862042437479, 1.469185216123786, 3.513767632932277, 2.510482245208537, -0.4327734128775276, -0.5779120017561936, 3.550810419602013, -0.2050554175614696, 1.5262774561412957]
+                                                        ],
+                                                        colors: {
+                                                            y: '#E4871B',
+                                                            x: '#E4871B'
+                                                        }
+                                                    },
+                                                    point: {
+                                                        show: false
+                                                    },
+                                                    grid: {
+                                                        x: {
+                                                            show: true,
+                                                            lines: [{
+                                                                value: '2013',
+                                                            }, {
+                                                                value: '2014',
+                                                            }, {
+                                                                value: '2015',
+                                                            }, {
+                                                                value: '2016',
+                                                            }, {
+                                                                value: '2017',
+                                                            }, {
+                                                                value: '2018'
+                                                            }]
+                                                        },
+                                                        y: {
+                                                            show: true,
+                                                            lines: [{
+                                                                value: -1,
+                                                            }, {
+                                                                value: 0,
+                                                            }, {
+                                                                value: 1,
+                                                            }, {
+                                                                value: 2,
+                                                            }, {
+                                                                value: 3,
+                                                            }]
+                                                        }
+                                                    },
+                                                    axis: {
+                                                        x: {
+                                                            tick: {
+                                                                values: ['2013', '2014', '2015', '2016', '2017', '2018']
+                                                            }
+                                                        },
+                                                        y: {
+                                                            tick: {
+                                                                values: [-1, 0, 1, 2, 3]
+                                                            }
+                                                        }
+                                                    }
+                                                });
+                                                d3.select('.container').insert('div', '.chart').attr('class', 'legend').selectAll('span').data(['data1', 'data2', 'data3']).enter().append('span').attr('data-id', function(id) {
+                                                    return id;
+                                                }).html(function(id) {
+                                                    return id;
+                                                }).each(function(id) {
+                                                    d3.select(this).style('background-color', chart.color(id));
+                                                }).on('mouseover', function(id) {
+                                                    chart.focus(id);
+                                                }).on('mouseout', function(id) {
+                                                    chart.revert();
+                                                }).on('click', function(id) {
+                                                    chart.toggle(id);
+                                                });
+                                                var x1 = $('#chart1 .c3-legend-item-tile').attr('x1');
+                                                $('#chart1 .c3-legend-item-tile').attr('x1', x1 - 30);
+                                                $('#chart1 .c3-legend-item-tile').attr('stroke-width', 1);
+                                            </script>
+
+                                        </div>
+                                        <div class="fxs_col fxs_col_50">
+                                            <div class="fxs_marginBase_top_big"></div>
+                                            <h3 class="fxs_headline_small">True Range vs Deviation Ratio</h3>
+                                            <div class="fxs_marginBase_top_big"></div>
+                                            <div id="chart5"></div>
+                                            <script>
+                                                var chart = c3.generate({
+                                                    bindto: '#chart5',
+                                                    data: {
+                                                        x: 'x',
+                                                        y: 'y',
+                                                        names: {
+                                                            x: 'Year',
+                                                            y: 'UK PPI Core Output (YoY) n.s.a'
+                                                        },
+                                                        columns: [
+                                                            ['x', '2013', '2014', '2015', '2016', '2017', '2018'],
+                                                            ['y', 1.946045199376229, -0.8081877192409772, 3.257389694768551, 1.402040767501715, 0.010590451683283097, -0.31099137145319333, 3.2929225016618835, -0.3691257239193859, 1.8687880787952302, -0.990563055185484, -0.9961981571126857, -0.32674534884888495, 3.3154688190592623, 2.1761865932301436, 2.6459267041264454, 2.081766656880709, 2.6346880591105846, 2.517972588936317, 1.3133912124575993, 2.7815374127184818, 2.9982929802645395, 2.3960203099077866, -0.7739176696784047, 3.5361456210217597, 2.14064319696461, 2.6121666450188226, 3.1696213677783565, -0.49865997108873206, -0.6462462723815567, 0.07093079423033921, 2.484377525367205, 2.1437423160045084, 0.5608630064726581, -0.05814260811034777, 2.171185106841279, 2.4260271500893715, 3.484910532483882, 3.6411977487336884, -0.16524416948066745, 1.093765853952354, -0.9408273396245772, -0.3430862042437479, 1.469185216123786, 3.513767632932277, 2.510482245208537, -0.4327734128775276, -0.5779120017561936, 3.550810419602013, -0.2050554175614696, 1.5262774561412957]
+                                                        ],
+                                                        colors: {
+                                                            y: '#E4871B',
+                                                            x: '#E4871B'
+                                                        }
+                                                    },
+                                                    point: {
+                                                        show: false
+                                                    },
+                                                    grid: {
+                                                        x: {
+                                                            show: true,
+                                                            lines: [{
+                                                                value: '2013',
+                                                            }, {
+                                                                value: '2014',
+                                                            }, {
+                                                                value: '2015',
+                                                            }, {
+                                                                value: '2016',
+                                                            }, {
+                                                                value: '2017',
+                                                            }, {
+                                                                value: '2018'
+                                                            }]
+                                                        },
+                                                        y: {
+                                                            show: true,
+                                                            lines: [{
+                                                                value: -1,
+                                                            }, {
+                                                                value: 0,
+                                                            }, {
+                                                                value: 1,
+                                                            }, {
+                                                                value: 2,
+                                                            }, {
+                                                                value: 3,
+                                                            }]
+                                                        }
+                                                    },
+                                                    axis: {
+                                                        x: {
+                                                            tick: {
+                                                                values: ['2013', '2014', '2015', '2016', '2017', '2018']
+                                                            }
+                                                        },
+                                                        y: {
+                                                            tick: {
+                                                                values: [-1, 0, 1, 2, 3]
+                                                            }
+                                                        }
+                                                    }
+                                                });
+                                                d3.select('.container').insert('div', '.chart').attr('class', 'legend').selectAll('span').data(['data1', 'data2', 'data3']).enter().append('span').attr('data-id', function(id) {
+                                                    return id;
+                                                }).html(function(id) {
+                                                    return id;
+                                                }).each(function(id) {
+                                                    d3.select(this).style('background-color', chart.color(id));
+                                                }).on('mouseover', function(id) {
+                                                    chart.focus(id);
+                                                }).on('mouseout', function(id) {
+                                                    chart.revert();
+                                                }).on('click', function(id) {
+                                                    chart.toggle(id);
+                                                });
+                                                var x1 = $('#chart1 .c3-legend-item-tile').attr('x1');
+                                                $('#chart1 .c3-legend-item-tile').attr('x1', x1 - 30);
+                                                $('#chart1 .c3-legend-item-tile').attr('stroke-width', 1);
+                                            </script>
+
+                                        </div>
+                                    </div>
+                                    <d iv class="fxs_row">
+                                        <div class="fxs_marginBase_top_big"></div>
+                                        <hr class="fxs_divider_third">
+                                        <div class="fxs_marginBase_top_big"></div>
+                                </div>
+                                <div class="fxs_row">
+                                    <div class="fxs_col fxs_col_50">
+                                        <div class="fxs_marginBase_top_big"></div>
+                                        <h3 class="fxs_headline_small">Country Historic</h3>
+                                        <div class="fxs_marginBase_top_big"></div>
+                                        <div class="fxst-gnral">
+                                            <table id="fxst-calendartable" class="fxst-calendarpro fxst-table-s1" width="100%" cellspacing="0" cellpadding="0">
+                                                <thead>
+                                                    <tr class="fxst-calendarhead">
+                                                        <th>
+                                                            <div class="fxit-event">
+                                                                <div class="fxs_new_calendar_header_item">
+                                                                    <div id="fxst-thtime" class="fxit-eventInfo-time">GMT+2</div>
+                                                                    <div id="fxst-thcountdown" class="fxit-eventInfo-time fxs_event_info_time_header">Time left</div>
+                                                                    <div id="fxst-thevent" class="fxit-event-url fxs_event_hedaer">Event</div>
+                                                                </div>
+                                                                <div class="fxit-event-numbers">
+                                                                    <div id="fxst-thvolatility" class="fxit-eventInfo-vol fxit-event-info-desktop"><span title="Volatility">Vol.</span></div>
+                                                                    <div id="fxst-thactual" class="fxit-actual" data-actual="">Actual</div>
+                                                                    <div id="fxst-thconsensus" class="fxit-consensus"><span class="fxs_show_d">Consensus</span><span class="fxs_show_m">Consensus</span></div>
+                                                                    <div id="fxst-thprevious" class="fxst-td-previous fxit-previous">Previous</div>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="fxst-dateRow">
+                                                        <td colspan="11">Friday, Jun 15</td>
+                                                    </tr>
+                                                    <tr class="fxst-tr-event fxst-oddRow  fxit-eventrow fxst-evenRow " data-eventdateid="ed8b2e82-1cdc-4881-b9a2-9be9057e688c" data-actual="1.000" data-unit="%" data-precision="1" data-pot="" data-isbetter="False" data-countryname="Italy">
+                                                        <td colspan="11">
+                                                            <div class="fxit-event">
+                                                                <div class="fxit-eventInfo">
+                                                                    <div class="fxit-eventInfo-time fxs_event_time">11:00</div>
+                                                                    <div class="fxit-eventInfo-time fxs_cal_timeLeft">
+                                                                        <div><i class="fa fa-check"></i></div>
+                                                                    </div>
+                                                                    <div class="fxit-eventInfo-country"> <a href="/economic-calendar/country/0ffb7ca7-930e-4587-bd41-61f4864d552b" class="fxit-noleftclick fxit-countryurl" data-idcountry="0ffb7ca7-930e-4587-bd41-61f4864d552b"><b class="fxst-flag fxst-i-it" title="Italy"></b></a>                                                                        </div>
+                                                                    <div class="fxit-eventInfo-vol fxit-event-info-mobile">
+                                                                        <div class="fxit-eventInfo-vol-c"> <span class="fxst-i-vol fxst-i-vol1" title="Low volatility expected">1</span> </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fxit-event-url">
+                                                                    <div class="fxit-event-name"> EUR </div>
+                                                                    <div class="fxit-event-title"> <a class="fxit-noleftclick fxit-eventurl" data-idevent="61c0a3c0-8ece-40f0-a85e-8a0537b9c23c" href="/economic-calendar/event/61c0a3c0-8ece-40f0-a85e-8a0537b9c23c">Consumer Price Index (YoY)</a>                                                                        </div>
+                                                                </div>
+                                                                <hr class="fxs_divider_mobile">
+                                                                <div class="fxit-event-numbers fxit-move-volatily">
+                                                                    <div class="fxit-eventInfo-vol-c fxit-event-info-desktop"> <span class="fxst-i-vol fxst-i-vol1" title="Low volatility expected">1</span> </div>
+                                                                    <div class="fxst-worst  fxit-actual" data-actual="1.000">1.0%</div>
+                                                                    <div class="fxit-consensus">1.1%</div>
+                                                                    <div class="fxst-td-previous fxit-previous" data-revised="1.1%"> <span> 1.0% <i class="fa fa-info-circle fxs_cal_yellow"></i> <b class="fxst-revised" title="Revised from 1.1%">Revised from 1.1%</b> </span> </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="fxst-tr-detail fxst-detailRow" style="display:none;">
+                                                        <td colspan="11" class="fxst-eventDetails"></td>
+                                                    </tr>
+                                                    <tr class="fxst-tr-event fxst-oddRow  fxit-eventrow fxst-evenRow " data-eventdateid="3ce263e8-ba43-49c4-9767-3c15bd95eff5" data-actual="0.300" data-unit="%" data-precision="1" data-pot="" data-isbetter="" data-countryname="European Monetary Union">
+                                                        <td colspan="11">
+                                                            <div class="fxit-event">
+                                                                <div class="fxit-eventInfo">
+                                                                    <div class="fxit-eventInfo-time fxs_event_time">11:00</div>
+                                                                    <div class="fxit-eventInfo-time fxs_cal_timeLeft">
+                                                                        <div><i class="fa fa-check"></i></div>
+                                                                    </div>
+                                                                    <div class="fxit-eventInfo-country"> <a href="/economic-calendar/country/c9822cb1-6cee-45f4-a9a2-89d136990308" class="fxit-noleftclick fxit-countryurl" data-idcountry="c9822cb1-6cee-45f4-a9a2-89d136990308"><b class="fxst-flag fxst-i-emu" title="European Monetary Union"></b></a>                                                                        </div>
+                                                                    <div class="fxit-eventInfo-vol fxit-event-info-mobile">
+                                                                        <div class="fxit-eventInfo-vol-c"> <span class="fxst-i-vol fxst-i-vol2" title="Moderate volatility expected">2</span> </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fxit-event-url">
+                                                                    <div class="fxit-event-name"> EUR </div>
+                                                                    <div class="fxit-event-title"> <a class="fxit-noleftclick fxit-eventurl" data-idevent="26886022-1762-46ca-ae8b-58f0ff65924d" href="/economic-calendar/event/26886022-1762-46ca-ae8b-58f0ff65924d">Consumer Price Index - Core (MoM)</a>                                                                        </div>
+                                                                </div>
+                                                                <hr class="fxs_divider_mobile">
+                                                                <div class="fxit-event-numbers fxit-move-volatily">
+                                                                    <div class="fxit-eventInfo-vol-c fxit-event-info-desktop"> <span class="fxst-i-vol fxst-i-vol2" title="Moderate volatility expected">2</span> </div>
+                                                                    <div class=" fxit-actual" data-actual="0.300">0.3%</div>
+                                                                    <div class="fxit-consensus">0.3%</div>
+                                                                    <div class="fxst-td-previous fxit-previous" data-revised="0.2%"> 0.2% </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="fxst-tr-detail fxst-detailRow" style="display:none;">
+                                                        <td colspan="11" class="fxst-eventDetails"></td>
+                                                    </tr>
+                                                    <tr class="fxst-tr-event fxst-oddRow  fxit-eventrow fxst-evenRow " data-eventdateid="926b8b40-a1c8-4952-854c-3e049e5c5993" data-actual="1.900" data-unit="%" data-precision="1" data-pot="" data-isbetter="" data-countryname="European Monetary Union">
+                                                        <td colspan="11">
+                                                            <div class="fxit-event">
+                                                                <div class="fxit-eventInfo">
+                                                                    <div class="fxit-eventInfo-time fxs_event_time">11:00</div>
+                                                                    <div class="fxit-eventInfo-time fxs_cal_timeLeft">
+                                                                        <div><i class="fa fa-check"></i></div>
+                                                                    </div>
+                                                                    <div class="fxit-eventInfo-country"> <a href="/economic-calendar/country/c9822cb1-6cee-45f4-a9a2-89d136990308" class="fxit-noleftclick fxit-countryurl" data-idcountry="c9822cb1-6cee-45f4-a9a2-89d136990308"><b class="fxst-flag fxst-i-emu" title="European Monetary Union"></b></a>                                                                        </div>
+                                                                    <div class="fxit-eventInfo-vol fxit-event-info-mobile">
+                                                                        <div class="fxit-eventInfo-vol-c"> <span class="fxst-i-vol fxst-i-vol3" title="High volatility expected">3</span> </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fxit-event-url">
+                                                                    <div class="fxit-event-name"> EUR </div>
+                                                                    <div class="fxit-event-title"> <a class="fxit-noleftclick fxit-eventurl" data-idevent="54334a3a-4347-40bc-8755-78f6f4ae4b9a" href="/economic-calendar/event/54334a3a-4347-40bc-8755-78f6f4ae4b9a">Consumer Price Index (YoY)</a>                                                                        </div>
+                                                                </div>
+                                                                <hr class="fxs_divider_mobile">
+                                                                <div class="fxit-event-numbers fxit-move-volatily">
+                                                                    <div class="fxit-eventInfo-vol-c fxit-event-info-desktop"> <span class="fxst-i-vol fxst-i-vol3" title="High volatility expected">3</span> </div>
+                                                                    <div class=" fxit-actual" data-actual="1.900">1.9%</div>
+                                                                    <div class="fxit-consensus">1.9%</div>
+                                                                    <div class="fxst-td-previous fxit-previous" data-revised="1.9%"> 1.9% </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="fxst-tr-detail fxst-detailRow" style="display:none;">
+                                                        <td colspan="11" class="fxst-eventDetails"></td>
+                                                    </tr>
+                                                    <tr class="fxst-tr-event fxst-oddRow  fxit-eventrow fxst-evenRow " data-eventdateid="aa72625c-bc20-4269-ae15-65db339423c0" data-actual="1.100" data-unit="%" data-precision="1" data-pot="" data-isbetter="" data-countryname="European Monetary Union">
+                                                        <td colspan="11">
+                                                            <div class="fxit-event">
+                                                                <div class="fxit-eventInfo">
+                                                                    <div class="fxit-eventInfo-time fxs_event_time">11:00</div>
+                                                                    <div class="fxit-eventInfo-time fxs_cal_timeLeft">
+                                                                        <div><i class="fa fa-check"></i></div>
+                                                                    </div>
+                                                                    <div class="fxit-eventInfo-country"> <a href="/economic-calendar/country/c9822cb1-6cee-45f4-a9a2-89d136990308" class="fxit-noleftclick fxit-countryurl" data-idcountry="c9822cb1-6cee-45f4-a9a2-89d136990308"><b class="fxst-flag fxst-i-emu" title="European Monetary Union"></b></a>                                                                        </div>
+                                                                    <div class="fxit-eventInfo-vol fxit-event-info-mobile">
+                                                                        <div class="fxit-eventInfo-vol-c"> <span class="fxst-i-vol fxst-i-vol3" title="High volatility expected">3</span> </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fxit-event-url">
+                                                                    <div class="fxit-event-name"> EUR </div>
+                                                                    <div class="fxit-event-title"> <a class="fxit-noleftclick fxit-eventurl" data-idevent="9225eef1-de8e-4276-a1f7-43be5f314b1f" href="/economic-calendar/event/9225eef1-de8e-4276-a1f7-43be5f314b1f">Consumer Price Index - Core (YoY)</a>                                                                        </div>
+                                                                </div>
+                                                                <hr class="fxs_divider_mobile">
+                                                                <div class="fxit-event-numbers fxit-move-volatily">
+                                                                    <div class="fxit-eventInfo-vol-c fxit-event-info-desktop"> <span class="fxst-i-vol fxst-i-vol3" title="High volatility expected">3</span> </div>
+                                                                    <div class=" fxit-actual" data-actual="1.100">1.1%</div>
+                                                                    <div class="fxit-consensus">1.1%</div>
+                                                                    <div class="fxst-td-previous fxit-previous" data-revised="1.1%"> 1.1% </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="fxst-tr-detail fxst-detailRow" style="display:none;">
+                                                        <td colspan="11" class="fxst-eventDetails"></td>
+                                                    </tr>
+                                                    <tr class="fxst-tr-event fxst-oddRow  fxit-eventrow fxst-evenRow " data-eventdateid="e1321419-e835-4bf9-92af-351afd2b8869" data-actual="0.500" data-unit="%" data-precision="1" data-pot="" data-isbetter="" data-countryname="European Monetary Union">
+                                                        <td colspan="11">
+                                                            <div class="fxit-event">
+                                                                <div class="fxit-eventInfo">
+                                                                    <div class="fxit-eventInfo-time fxs_event_time">11:00</div>
+                                                                    <div class="fxit-eventInfo-time fxs_cal_timeLeft">
+                                                                        <div><i class="fa fa-check"></i></div>
+                                                                    </div>
+                                                                    <div class="fxit-eventInfo-country"> <a href="/economic-calendar/country/c9822cb1-6cee-45f4-a9a2-89d136990308" class="fxit-noleftclick fxit-countryurl" data-idcountry="c9822cb1-6cee-45f4-a9a2-89d136990308"><b class="fxst-flag fxst-i-emu" title="European Monetary Union"></b></a>                                                                        </div>
+                                                                    <div class="fxit-eventInfo-vol fxit-event-info-mobile">
+                                                                        <div class="fxit-eventInfo-vol-c"> <span class="fxst-i-vol fxst-i-vol2" title="Moderate volatility expected">2</span> </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fxit-event-url">
+                                                                    <div class="fxit-event-name"> EUR </div>
+                                                                    <div class="fxit-event-title"> <a class="fxit-noleftclick fxit-eventurl" data-idevent="39da71dd-6a75-4669-adbf-36819ba1089a" href="/economic-calendar/event/39da71dd-6a75-4669-adbf-36819ba1089a">Consumer Price Index (MoM)</a>                                                                        </div>
+                                                                </div>
+                                                                <hr class="fxs_divider_mobile">
+                                                                <div class="fxit-event-numbers fxit-move-volatily">
+                                                                    <div class="fxit-eventInfo-vol-c fxit-event-info-desktop"> <span class="fxst-i-vol fxst-i-vol2" title="Moderate volatility expected">2</span> </div>
+                                                                    <div class=" fxit-actual" data-actual="0.500">0.5%</div>
+                                                                    <div class="fxit-consensus">0.5%</div>
+                                                                    <div class="fxst-td-previous fxit-previous" data-revised="0.3%"> 0.3% </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="fxst-tr-detail fxst-detailRow" style="display:none;">
+                                                        <td colspan="11" class="fxst-eventDetails"></td>
+                                                    </tr>
+                                                    <tr class="fxst-tr-event fxst-oddRow  fxit-eventrow fxst-evenRow " data-eventdateid="704fc5ff-d62f-477f-a9ad-189d5676b878" data-actual="2.000" data-unit="%" data-precision="1" data-pot="" data-isbetter="True" data-countryname="European Monetary Union">
+                                                        <td colspan="11">
+                                                            <div class="fxit-event">
+                                                                <div class="fxit-eventInfo">
+                                                                    <div class="fxit-eventInfo-time fxs_event_time">11:00</div>
+                                                                    <div class="fxit-eventInfo-time fxs_cal_timeLeft">
+                                                                        <div><i class="fa fa-check"></i></div>
+                                                                    </div>
+                                                                    <div class="fxit-eventInfo-country"> <a href="/economic-calendar/country/c9822cb1-6cee-45f4-a9a2-89d136990308" class="fxit-noleftclick fxit-countryurl" data-idcountry="c9822cb1-6cee-45f4-a9a2-89d136990308"><b class="fxst-flag fxst-i-emu" title="European Monetary Union"></b></a>                                                                        </div>
+                                                                    <div class="fxit-eventInfo-vol fxit-event-info-mobile">
+                                                                        <div class="fxit-eventInfo-vol-c"> <span class="fxst-i-vol fxst-i-vol2" title="Moderate volatility expected">2</span> </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fxit-event-url">
+                                                                    <div class="fxit-event-name"> EUR </div>
+                                                                    <div class="fxit-event-title"> <a class="fxit-noleftclick fxit-eventurl" data-idevent="1de438c2-aece-451c-8bd2-295c3f2be712" href="/economic-calendar/event/1de438c2-aece-451c-8bd2-295c3f2be712">Labour cost (Q1)</a>                                                                        </div>
+                                                                </div>
+                                                                <hr class="fxs_divider_mobile">
+                                                                <div class="fxit-event-numbers fxit-move-volatily">
+                                                                    <div class="fxit-eventInfo-vol-c fxit-event-info-desktop"> <span class="fxst-i-vol fxst-i-vol2" title="Moderate volatility expected">2</span> </div>
+                                                                    <div class="fxst-better  fxit-actual" data-actual="2.000">2.0%</div>
+                                                                    <div class="fxit-consensus">1.9%</div>
+                                                                    <div class="fxst-td-previous fxit-previous" data-revised="1.5%"> <span> 1.4% <i class="fa fa-info-circle fxs_cal_yellow"></i> <b class="fxst-revised" title="Revised from 1.5%">Revised from 1.5%</b> </span> </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="fxst-tr-detail fxst-detailRow" style="display:none;">
+                                                        <td colspan="11" class="fxst-eventDetails"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="fxs_col fxs_col_50">
+                                        <div class="fxs_marginBase_top_big"></div>
+                                        <h3 class="fxs_headline_small">Related Content</h3>
+                                        <div class="fxs_marginBase_top_big"></div>
+                                        <aside class="fxs_entriesList">
+                                            <ol>
+                                                <li>
+                                                    <div class="fxs_squareImage fxs_squareImage_small"><img class=" lazyloaded" data-src="https://editorial.azureedge.net/images/Markets/Currencies/Majors/USDJPY/japanese-yen-currency-and-dollar-bank-note-60447532_XtraSmall.jpg" src="https://editorial.azureedge.net/images/Markets/Currencies/Majors/USDJPY/japanese-yen-currency-and-dollar-bank-note-60447532_XtraSmall.jpg"></div>
+                                                    <article class="fxs_entriesList_article_with_image ">
+                                                        <h3 class="fxs_entryHeadline"><a href="https://www.fxstreet.com/news/usd-jpy-technical-analysis-usd-bull-trend-stalling-near-the-11100-resistance-201806151241" title="USD/JPY Technical Analysis: USD bull trend stalling near the 111.00 resistance">USD/JPY Technical Analysis: USD bull trend stalling near the 111.00 resistance</a></h3>
+                                                        <address class="fxs_entry_metaInfo"><span class="fxs_article_author">By <a href="/author/flavio-tosti" rel="nofollow">Flavio Tosti</a></span> | <time pubdate="" datetime="">41 minutes ago</time></address>
+                                                    </article>
+                                                </li>
+                                                <li>
+                                                    <div class="fxs_squareImage fxs_squareImage_small"><img class=" lazyloaded" data-src="https://editorial.azureedge.net/images/Markets/Currencies/Majors/USDJPY/japanese-yen-62890274_XtraSmall.jpg" src="https://editorial.azureedge.net/images/Markets/Currencies/Majors/USDJPY/japanese-yen-62890274_XtraSmall.jpg"></div>
+                                                    <article class="fxs_entriesList_article_with_image ">
+                                                        <h3 class="fxs_entryHeadline"><a href="https://www.fxstreet.com/news/usd-jpy-unmoved-around-mid-11000s-post-us-data-201806151235" title="USD/JPY unmoved around mid-110.00s post-US data">USD/JPY unmoved around mid-110.00s post-US data</a></h3>
+                                                        <address class="fxs_entry_metaInfo"><span class="fxs_article_author">By <a href="/author/haresh-menghani" rel="nofollow">Haresh Menghani</a></span> | <time pubdate="" datetime="">47 minutes ago</time></address>
+                                                    </article>
+                                                </li>
+                                                <li>
+                                                    <div class="fxs_squareImage fxs_squareImage_small"><img class=" lazyloaded" data-src="https://editorial.azureedge.net/images/Markets/Currencies/Majors/USDJPY/japanese-yen-62890274_XtraSmall.jpg" src="https://editorial.azureedge.net/images/Markets/Currencies/Majors/USDJPY/japanese-yen-62890274_XtraSmall.jpg"></div>
+                                                    <article class="fxs_entriesList_article_with_image ">
+                                                        <h3 class="fxs_entryHeadline"><a href="https://www.fxstreet.com/news/usd-jpy-108-to-111-range-is-well-defined-westpac-201806151213" title="USD/JPY: 108 to 111 range is well defined - Westpac">USD/JPY: 108 to 111 range is well defined - Westpac</a></h3>
+                                                        <address class="fxs_entry_metaInfo"><span class="fxs_article_author">By <a href="/author/sandeep-kanihama" rel="nofollow">Sandeep Kanihama</a></span> | <time pubdate="" datetime="">14:13</time></address>
+                                                    </article>
+                                                </li>
+                                                <li>
+                                                    <div class="fxs_squareImage fxs_squareImage_small"><img class=" lazyloaded" data-src="https://editorial.azureedge.net/images/Markets/Currencies/Majors/USDJPY/japanease-10000-yen-and-100-dollar-24332032_XtraSmall.jpg" src="https://editorial.azureedge.net/images/Markets/Currencies/Majors/USDJPY/japanease-10000-yen-and-100-dollar-24332032_XtraSmall.jpg"></div>
+                                                    <article class="fxs_entriesList_article_with_image ">
+                                                        <h3 class="fxs_entryHeadline"><a href="https://www.fxstreet.com/news/usd-jpy-expected-to-settle-within-11000-11500-danske-bank-201806150826" title="USD/JPY expected to settle within 110.00-115.00 – Danske Bank">USD/JPY expected to settle within 110.00-115.00 – Danske Bank</a></h3>
+                                                        <address class="fxs_entry_metaInfo"><span class="fxs_article_author">By <a href="/author/pablo-piovano" rel="nofollow">Pablo Piovano</a></span> | <time pubdate="" datetime="">10:26</time></address>
+                                                    </article>
+                                                </li>
+                                                <li>
+                                                    <div class="fxs_squareImage fxs_squareImage_small"><img class=" lazyloaded" data-src="https://editorial.azureedge.net/images/Markets/Currencies/Majors/USDJPY/japanese-yen-62890274_XtraSmall.jpg" src="https://editorial.azureedge.net/images/Markets/Currencies/Majors/USDJPY/japanese-yen-62890274_XtraSmall.jpg"></div>
+                                                    <article class="fxs_entriesList_article_with_image ">
+                                                        <h3 class="fxs_entryHeadline"><a href="https://www.fxstreet.com/news/usd-jpy-fails-ahead-of-11100-mark-drops-back-closer-to-session-lows-201806150747" title="USD/JPY fails ahead of 111.00 mark, drops back closer to session lows">USD/JPY fails ahead of 111.00 mark, drops back closer to session lows</a></h3>
+                                                        <address class="fxs_entry_metaInfo"><span class="fxs_article_author">By <a href="/author/haresh-menghani" rel="nofollow">Haresh Menghani</a></span> | <time pubdate="" datetime="">09:47</time></address>
+                                                    </article>
+                                                </li>
+                                                <li>
+                                                    <div class="fxs_squareImage fxs_squareImage_small"><img class=" lazyloaded" data-src="https://editorial.azureedge.net/images/Macroeconomics/CentralBanks/BOJ/Haruhiko_Kuroda_-_World_Economic_Forum_Annual_Meeting_Davos_2010_XtraSmall.jpg" src="https://editorial.azureedge.net/images/Macroeconomics/CentralBanks/BOJ/Haruhiko_Kuroda_-_World_Economic_Forum_Annual_Meeting_Davos_2010_XtraSmall.jpg"></div>
+                                                    <article class="fxs_entriesList_article_with_image ">
+                                                        <h3 class="fxs_entryHeadline"><a href="https://www.fxstreet.com/news/boj-monetary-policy-unchanged-danske-bank-201806150606" title="BoJ: Monetary policy unchanged – Danske Bank">BoJ: Monetary policy unchanged – Danske Bank</a></h3>
+                                                        <address class="fxs_entry_metaInfo"><span class="fxs_article_author">By <a href="/author/sandeep-kanihama" rel="nofollow">Sandeep Kanihama</a></span> | <time pubdate="" datetime="">08:06</time></address>
+                                                    </article>
+                                                </li>
+                                            </ol>
+                                        </aside>
+                                        <div>
+                                            <div style="text-align:right;"><a href="https://www.fxstreet.com/news/latest?q=&amp;hPP=25&amp;idx=FxsIndexPro&amp;p=0&amp;dFR%5BTags%5D%5B0%5D=USDJPY&amp;is_v=1" rel="nofollow" style="font-size:.8em;margin-top:-8px;">More USD/JPY News <span class="fa fa-angle-double-right"></span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

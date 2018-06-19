@@ -1312,6 +1312,20 @@ var addEvents = function() {
     $('#fxs_toggle_filter_mobile_volume').click(function() {
         $(this).toggleClass('fa-volume-up fa-volume-off');
     });
+    $('#fxs_ecocal_custom_advanced_filter_date_picker_toggle').daterangepicker({ opens: 'center', drops: 'down' });
+    $('#fxs_ecocal_custom_filter_save_all').click(function() {
+        $('#fxs_ecocal_filter_custom').removeClass('opened');
+    });
+    $('#fxs_ecocal_custom_advanced_filter_cancel').click(function() {
+        $('#fxs_ecocal_filter_custom').removeClass('opened');
+    });
+    $('.fxs_ecocal_event_row').click(function() {
+        $(this).next('.fxs_ecocal_event_collapsible').toggleClass('fxs_hideElements')
+        $(this).find('.fa.right').toggleClass('fa-chevron-right fa-chevron-down')
+        $(this).find('.fa.left').toggleClass('fa-chevron-left fa-chevron-down')
+    })
+    $('[data-toggle="tooltip"]').tooltip()
+
 }
 renderEcocalCustom();
 $(window).on('resize', function() { renderEcocalCustom() });

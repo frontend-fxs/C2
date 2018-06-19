@@ -1,3 +1,32 @@
+.fxs_flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.fxs_flexbox.fxs_space_between {
+    justify-content: space-between;
+}
+
+.fxs_flexbox.fxs_wrap {
+    flex-wrap: wrap;
+}
+
+.fxs_flexbox.fxs_wrap>* {
+    flex: 1 1;
+}
+
+.fxs_flexbox.fxs_align_center {
+    align-items: center;
+}
+
+.fxs_btn,
+.fxs_btn * {
+    white-space: nowrap;
+}
+
 .fxs_row.fxs_col_dismissible .fxs_col_dismissible {
     display: none;
 }
@@ -690,6 +719,10 @@ label.fxs_seventh .fxst-flag {
     width: auto;
 }
 
+.fxs_ecocal_filter_custom .fxs_btn_table_filter {
+    border-color: #49494F;
+}
+
 @media(min-width:768px) {
     .fxs_ecocal_filter_custom .fxs_ecocal_custom_secondary_countries {
         position: fixed;
@@ -725,4 +758,8 @@ label.fxs_seventh .fxst-flag {
     .fxs_ecocal_filter_custom .fxs_ecocal_custom_secondary_countries .fxs_ecocal_custom_secondary_countries_inner label {
         width: calc(100% / 4);
     }
+}
+
+.fxs_ecocal_filter_custom .fxs_btn {
+    margin: 5px;
 }

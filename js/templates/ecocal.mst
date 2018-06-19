@@ -1,6 +1,6 @@
 <div class="fxs_widget_ecocal">
     <div id="fxs_ecocal_simple_filter" class="fxs_ecocal_simple_filter"></div>
-    <div id="fxs_ecocal_simple_filter_mobile_toggle" class="fxs_simple_filter_mobile_toggle"></div>
+    <div id="fxs_ecocal_simple_filter_mobile_toggle" class="fxs_toggle_filter_mobile"></div>
     <div id="fxs_ecocal_simple_filter_mobile" class="fxs_ecocal_simple_filter_mobile"></div>
     <div id="fxs_ecocal_advanced_filter" class="fxs_ecocal_advanced_filter fxs_hideElements"></div>
     <div id="fxs_ecocal_data" class="fxs_ecocal_data_wrapper"></div>

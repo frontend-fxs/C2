@@ -1259,9 +1259,9 @@ var addEvents = function() {
     })
     $('[data-toggle="tooltip"]').tooltip()
     $('#fxs_ecocal_simple_filter_date_picker_toggle').daterangepicker({ opens: 'center', drops: 'down' })
-    $('#fxs_ecocal_advanced_filter_date_picker_toggle').daterangepicker({ opens: 'center', drops: 'up' })
-    $('#fxs_ecocal_simple_filter_mobile_date_picker_toggle').daterangepicker({ opens: 'center', drops: 'up' })
-    $('#fxs_simple_filter_mobile_toggle_volume').click(function() {
+    $('#fxs_ecocal_advanced_filter_date_picker_toggle').daterangepicker({ opens: 'center', drops: 'down' })
+    $('#fxs_ecocal_simple_filter_mobile_date_picker_toggle').daterangepicker({ opens: 'center', drops: 'down' })
+    $('#fxs_toggle_filter_mobile_volume').click(function() {
         $(this).toggleClass('fa-volume-off fa-volume-up')
     })
     $('#fxs_ecocal_advanced_filters_toggle').click(function() {
@@ -1310,7 +1310,7 @@ var addEventsMobile = function() {
     $('[data-toggle="tooltip"]').tooltip()
     $('.fxs_ecocal_event_row_item.expandable .fa-pencil-square-o').on('click', function() {})
     $('#fxs_ecocal_simple_filter_mobile_date_picker_toggle').daterangepicker()
-    $('#fxs_simple_filter_mobile_toggle_volume').click(function() {
+    $('#fxs_toggle_filter_mobile_volume').click(function() {
         $(this).toggleClass('fa-volume-off fa-volume-up')
     })
     $('.fa-pencil-square-o').click(function() {

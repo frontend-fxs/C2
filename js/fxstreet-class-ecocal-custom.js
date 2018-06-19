@@ -1277,6 +1277,8 @@ var renderDataMobile = function() {
         $('#fxs_ecocal_data_mobile').html(rendered);
         if (isMobile()) {
             renderMobileToggle();
+        } else {
+            addEvents();
         }
     })
 }
@@ -1284,13 +1286,32 @@ var renderMobileToggle = function() {
     $.get(templates.simpleFilterMobileToggle, function(template) {
         var rendered = Mustache.render(template, dataJson)
         $('#fxs_ecocal_filter_toggle').html(rendered);
+        addEvents();
     });
 }
 var renderData = function() {
     $.get(templates.data, function(template) {
         var rendered = Mustache.render(template, dataJson)
         $('#fxs_ecocal_data').html(rendered);
+        addEvents();
     })
+}
+var addEvents = function() {
+    $('#fxs_ecocal_custom_show_secondary_countries').click(function() {
+        $('#fxs_ecocal_custom_secondary_countries').toggleClass('fxs_hideElements ');
+    })
+    $('#fxs_ecocal_custom_secondary_countries_close').click(function() {
+        $('#fxs_ecocal_custom_secondary_countries').toggleClass('fxs_hideElements ');
+    });
+    $('#fxs_ecocal_open_filters').click(function() {
+        $('#fxs_ecocal_filter_custom').toggleClass('opened');
+    });
+    $('#fxs_ecocal_custom_advanced_filter_close').click(function() {
+        $('#fxs_ecocal_filter_custom').toggleClass('opened');
+    });
+    $('#fxs_toggle_filter_mobile_volume').click(function() {
+        $(this).toggleClass('fa-volume-up fa-volume-off');
+    });
 }
 renderEcocalCustom();
 $(window).on('resize', function() { renderEcocalCustom() });

@@ -1,5 +1,5 @@
 <button id="fxs_ecocal_custom_advanced_filter_close" class="fxs_btn fxs_btn_close_dropdown fxs_visible_s">
-    <i class="fa fa-2x fa-times"></i>
+    <i class="fa fa-times"></i>
 </button>
 <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">My Filters</button>
 <button class="fxs_btn fxs_btn_table_filter fxs_btn_xsmall">Defaults</button>
@@ -115,7 +115,7 @@
 <div class="fxs_hideElements fxs_ecocal_custom_secondary_countries" id="fxs_ecocal_custom_secondary_countries">
     <div class="fxs_ecocal_custom_secondary_countries_inner">
         <button id="fxs_ecocal_custom_secondary_countries_close" class="fxs_btn fxs_btn_close_dropdown">
-            <i class="fa fa-2x fa-times">
+            <i class="fa fa-times">
             </i>
         </button>
         <label>
@@ -312,7 +312,7 @@
 </label>
 <div class="fxs_marginBase_top fxs_clearfix"></div>
 <div class="fxs_col_50">
-    <label class="fxs_btn fxs_btn_xsmall">
+    <label>
         <input type="checkbox">
         <span> Save settings </span>
     </label>

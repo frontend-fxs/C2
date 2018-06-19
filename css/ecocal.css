@@ -408,14 +408,25 @@ fxs_ecocal_menu label input {
 
 .fxs_ecocal_event_collapsible_left {
     float: left;
-    width: calc(100% - 150px);
+    width: 100%;
     padding: 1rem;
 }
 
 .fxs_ecocal_event_collapsible_right {
-    float: right;
-    width: 150px;
+    float: left;
+    width: 100%;
     padding: 1rem;
+}
+
+@media(min-width:768px) {
+    .fxs_ecocal_event_collapsible_left {
+        float: left;
+        width: calc(100% - 150px);
+    }
+    .fxs_ecocal_event_collapsible_right {
+        float: right;
+        width: 150px;
+    }
 }
 
 .fxs_ecocal_event_collapsible_left .fxs_headline_tiny.fxs_entry_metaInfo,

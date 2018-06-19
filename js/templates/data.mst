@@ -93,15 +93,6 @@
     </div>
     <div class="fxs_ecocal_event_collapsible fxs_hideElements">
         {{#Detail}}
-        <div class="fxs_ecocal_event_collapsible_left">
-            {{#Description}}
-            <h2 class="fxs_headline_tiny fxs_entry_metaInfo">{{Title}}</h2>
-            <p class="fxs_entryPlain_txt fxs_entry_metaInfo">{{Content}}</p>
-            {{/Description}} {{#Main}}
-            <h2 class="fxs_headline_tiny fxs_entry_metaInfo">{{Title}}</h2>
-            <p class="fxs_entryPlain_txt fxs_entry_metaInfo">{{Content}}</p>
-            {{/Main}}
-        </div>
         <div class="fxs_ecocal_event_collapsible_right">
             {{#OfficialSource}}
             <p><span class="fa fa-flag"></span> <a href="{{.}}" class="fxs_mutedLink"><span class="fxs_entry_metaInfo">{{Translations.OfficialSource}}</span></a></p>
@@ -114,6 +105,15 @@
                 <a href="{{.}}" class="fxs_mutedLink"> <span class="fxs_entry_metaInfo">{{Translations.AddEvent}}</span></a>
             </p>
             {{/AddEvent}}
+        </div>
+        <div class="fxs_ecocal_event_collapsible_left">
+            {{#Description}}
+            <h2 class="fxs_headline_tiny fxs_entry_metaInfo">{{Title}}</h2>
+            <p class="fxs_entryPlain_txt fxs_entry_metaInfo">{{Content}}</p>
+            {{/Description}} {{#Main}}
+            <h2 class="fxs_headline_tiny fxs_entry_metaInfo">{{Title}}</h2>
+            <p class="fxs_entryPlain_txt fxs_entry_metaInfo">{{Content}}</p>
+            {{/Main}}
         </div>
         {{/Detail}}
     </div>

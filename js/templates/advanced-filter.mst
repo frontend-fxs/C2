@@ -264,8 +264,8 @@
                 <span> United States </span>
             </label>
     <label class="fxs_seventh fxs_secondary">
-                <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall"> {{Translations.All}} </button> /
-                <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall"> {{Translations.None}} </button>
+                <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall"> <span>{{Translations.All}}</span> </button> /
+                <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall"> <span>{{Translations.None}}</span> </button>
             </label>
     <div class="fxs_clearfix">
 
@@ -320,8 +320,8 @@
                         <input type="checkbox">
                         <span> {{Translations.SaveSettings}} </span>
         </label>
-        <button class="fxs_btn fxs_btn_cta fxs_btn_xsmall" id="fxs_ecocal_advanced_filter_apply"> {{Translations.Apply}} </button>
-        <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall" id="fxs_ecocal_advanced_filter_cancel"> {{Translations.Cancel}} </button>
+        <button class="fxs_btn fxs_btn_cta fxs_btn_xsmall" id="fxs_ecocal_advanced_filter_apply"> <span>{{Translations.Apply}} </span></button>
+        <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall" id="fxs_ecocal_advanced_filter_cancel"> <span>{{Translations.Cancel}} </span></button>
         </span>
     </p>
 </div>

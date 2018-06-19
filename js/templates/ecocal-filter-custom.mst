@@ -319,6 +319,6 @@
        <input type="checkbox">
        <span>Save settings</span>
    </label>
-    <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall" id="fxs_ecocal_custom_advanced_filter_cancel">Cancel</button>
+    <button class="fxs_btn fxs_btn_anchor fxs_btn_xsmall" id="fxs_ecocal_custom_advanced_filter_cancel"><span>Cancel</span></button>
 </div>
 <img src="https://picsum.photos/300/200"></div>

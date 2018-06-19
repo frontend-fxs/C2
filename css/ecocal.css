@@ -27,6 +27,10 @@
     white-space: nowrap;
 }
 
+.fxs_btn_anchor:hover span {
+    text-decoration: underline;
+}
+
 .fxs_row.fxs_col_dismissible .fxs_col_dismissible {
     display: none;
 }
@@ -589,8 +593,6 @@ label.fxs_seventh .fxst-flag {
     margin-top: 6px;
 }
 
-.fxs_ecocal_data_mobile_wrapper {}
-
 .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_first {
     width: 50px;
     float: left;
@@ -602,13 +604,13 @@ label.fxs_seventh .fxst-flag {
 }
 
 .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item {
-    height: 25px;
-    line-height: 25px;
+    line-height: 20px;
+    height: auto;
 }
 
 .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item.fxs_not_tradeable {
     height: 37px;
-    line-height: 37px;
+    line-height: 20px;
 }
 
 .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_item.type {
@@ -633,13 +635,6 @@ label.fxs_seventh .fxst-flag {
 .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.previous {
     width: calc(100% / 3);
     display: block;
-}
-
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.actual,
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.consensus,
-.fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_second .fxs_ecocal_event_row_item.previous {
-    line-height: 30px;
-    height: 30px;
 }
 
 .fxs_ecocal_data_mobile_wrapper .fxs_ecocal_event_row_mobile_first .fxs_ecocal_event_row_item.impact {

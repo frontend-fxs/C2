@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/knockout-min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <link rel="stylesheet" href="css/daterangepicker.min.css">
+    <script src="js/daterangepicker.min.js"></script>
+</head>
+
+<body>
+    <button id="abrir" style="float:left;">Abrir</button>
+    <div id="seleccion" data-bind="daterangepicker: dateRange"></div>
+    <div id="dateRangePickerContainer" style="display:none;">
+        <button id="cerrar">cerrar</button>
+        <div id="dateRangePickerId" />
+    </div>
+    <script>
+        $("#dateRangePickerId").daterangepicker({
+            callback: function(startDate, endDate, period) {
+                $('#seleccion').html(startDate.format('L') + ' – ' + endDate.format('L'));
+            },
+            standalone: true,
+            ranges: {
+                'Custom Range': 'custom'
+            },
+            period: 'day',
+            periods: ['day']
+        });
+        $('#abrir').click(function() {
+            $('#dateRangePickerContainer').css({
+                'display': 'block'
+            });
+        })
+        $('#cerrar').click(function() {
+            $('#dateRangePickerContainer').css({
+                'display': 'none'
+            });
+        })
+    </script>
+</body>
+
+</html>

@@ -504,6 +504,9 @@ fxs_ecocal_menu label input {
     bottom: auto;
     margin: 0;
 }
+.fxs_ecocal_simple_filter .fxs_btn_phantom .fa-download{
+    padding-right:0;
+}
 
 .fxs_ecocal_advanced_filter {
     display: block;

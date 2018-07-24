@@ -1260,7 +1260,7 @@ var addEvents = function() {
     $('[data-toggle="tooltip"]').tooltip()
     $('#fxs_ecocal_simple_filter_date_picker_toggle').daterangepicker({ opens: 'center', drops: 'down' })
     $('#fxs_ecocal_advanced_filter_date_picker_toggle').daterangepicker({ opens: 'center', drops: 'down' })
-    $('#fxs_ecocal_simple_filter_mobile_date_picker_toggle').daterangepicker({ opens: 'center', drops: 'down' })
+    $('#fxs_ecocal_simple_filter_mobile_date_picker_toggle').daterangepicker({  "alwaysShowCalendars": true })
     $('#fxs_toggle_filter_mobile_volume').click(function() {
         $(this).toggleClass('fa-volume-off fa-volume-up')
     })

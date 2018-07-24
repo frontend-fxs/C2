@@ -96,6 +96,12 @@ fxs_ecocal_menu label input {
     font-size: 12px;
 }
 
+.fxs_ecocal_next_events:hover,
+.fxs_ecocal_previous_event:hover{
+        color: #E4871B;
+        text-decoration: underline;
+}
+
 .fxs_ecocal_header {
     background-color: #edecf2;
     width: 100%;

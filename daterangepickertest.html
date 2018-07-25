@@ -22,6 +22,7 @@
     </div>
     <script>
         $("#dateRangePickerId").daterangepicker({
+            minDate: moment().subtract(10, 'years'),
             callback: function(startDate, endDate, period) {
                 $('#seleccion').html(startDate.format('L') + ' – ' + endDate.format('L'));
             },

@@ -77,7 +77,7 @@
     font-size: 18px;
 }
 
-fxs_ecocal_menu label input {
+.fxs_ecocal_menu label input {
     vertical-align: middle;
 }
 
@@ -97,9 +97,9 @@ fxs_ecocal_menu label input {
 }
 
 .fxs_ecocal_next_events a:hover,
-.fxs_ecocal_previous_events a:hover{
-        color: #E4871B;
-        text-decoration: underline;
+.fxs_ecocal_previous_events a:hover {
+    color: #E4871B;
+    text-decoration: underline;
 }
 
 .fxs_ecocal_header {
@@ -510,8 +510,9 @@ fxs_ecocal_menu label input {
     bottom: auto;
     margin: 0;
 }
-.fxs_ecocal_simple_filter .fxs_btn_phantom .fa-download{
-    padding-right:0;
+
+.fxs_ecocal_simple_filter .fxs_btn_phantom .fa-download {
+    padding-right: 0;
 }
 
 .fxs_ecocal_advanced_filter {
